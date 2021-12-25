@@ -14,6 +14,7 @@ THEN
     CreateCreature("TSGrd01",[910.1283],2)
     CreateCreature("TSGrd01",[774.1178],2)
     CreateCreature("TSGrd00",[794.1261],2)
+    Wait(120)
 END
 
 IF
@@ -27,5 +28,3 @@ THEN
   RESPONSE #100
     SetGlobal("TSSpawnGuards","AR1000",0)
 END
-
-

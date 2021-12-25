@@ -8,6 +8,5 @@ THEN
     CreateCreature("TSPick4",[846.1814],14)
     CreateCreature("TSPick2",[1770.861],6)
     CreateCreature("TSPick8",[1114.1142],14)
+    Wait(120)
 END
-
-
