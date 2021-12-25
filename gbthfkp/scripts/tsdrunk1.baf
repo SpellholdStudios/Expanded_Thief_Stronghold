@@ -1,0 +1,406 @@
+// guild stuff
+IF
+  Global("PGFailed","GLOBAL",1)
+  !Global("TSGActive","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSGActive","LOCALS",0)
+    Deactivate(Myself)
+END
+
+IF
+  !Global("TSGActive","LOCALS",1)
+  !Global("PGFailed","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSGActive","LOCALS",1)
+    Activate(Myself)
+END
+
+IF
+  Dead("ShThStor")
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+// facing
+IF
+  !GlobalTimerNotExpired("TSDrunkFace","LOCALS")
+  Name("TSDrunk1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFace","LOCALS",ONE_DAY)
+    Face(10)
+END
+
+IF
+  !GlobalTimerNotExpired("TSDrunkFace","LOCALS")
+  Name("TSDrunk2",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFace","LOCALS",ONE_DAY)
+    Face(10)
+END
+
+IF
+  !GlobalTimerNotExpired("TSDrunkFace","LOCALS")
+  Name("TSDrunk3",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFace","LOCALS",ONE_DAY)
+    Face(6)
+END
+
+// set global active
+IF
+  !Dead("TSDrunk1")
+  !Global("TSDrunkFlirter","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSDrunkFlirter","GLOBAL",1)
+END
+
+IF
+  Dead("TSDrunk1")
+  !Dead("TSDrunk2")
+  !Global("TSDrunkFlirter","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("TSDrunkFlirter","GLOBAL",2)
+END
+
+IF
+  Dead("TSDrunk1")
+  Dead("TSDrunk2")
+  !Dead("TSDrunk3")
+  !Global("TSDrunkFlirter","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("TSDrunkFlirter","GLOBAL",3)
+END
+
+// reset local active
+IF
+  !GlobalTimerNotExpired("TSDrunkCheck","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkCheck","LOCALS",ONE_DAY)
+    SetGlobal("TSDrunkFActive","LOCALS",0)
+END
+
+// initiate
+IF
+  Global("TSDrunkFActive","LOCALS",0)
+  Global("TSDrunkFlirter","GLOBAL",1)
+  Name("TSDrunk1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TSDrunkFActive","LOCALS",1)
+END
+
+IF
+  Global("TSDrunkFActive","LOCALS",0)
+  Global("TSDrunkFlirter","GLOBAL",2)
+  Name("TSDrunk2",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TSDrunkFActive","LOCALS",1)
+END
+
+IF
+  Global("TSDrunkFActive","LOCALS",0)
+  Global("TSDrunkFlirter","GLOBAL",3)
+  Name("TSDrunk3",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TSDrunkFActive","LOCALS",1)
+END
+
+// flirting
+IF
+  Delay(10)
+  See("TSWench1")
+  Detect([PC])
+  !GlobalTimerNotExpired("TSDrunkFlirt","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Global("TSDrunkFActive","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1003)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1004)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1005)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1006)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1007)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1008)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1009)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1010)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1011)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1012)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1013)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1014)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1015)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1016)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1017)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1018)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1019)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1020)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1021)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1022)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1023)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1024)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1025)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1026)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1027)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1028)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1029)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1030)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk1",@1031)
+    Wait(3)
+    ActionOverride("TSwench1",FaceObject("TSDrunk1"))
+    DisplayStringHead("TSWench1",@1032)
+    Wait(3)
+    DisplayStringHead("TSDrunk1",@1033)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1003)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1004)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1005)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1006)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1007)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1008)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1009)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1010)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1011)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1012)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1013)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1014)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1015)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1016)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1017)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1018)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1019)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1020)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1021)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1022)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1023)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1024)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1025)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1026)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1027)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1028)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1029)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1030)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk2",@1031)
+    Wait(3)
+    ActionOverride("TSwench1",FaceObject("TSDrunk2"))
+    DisplayStringHead("TSWench1",@1032)
+    Wait(3)
+    DisplayStringHead("TSDrunk2",@1033)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1003)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1004)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1005)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1006)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1007)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1008)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1009)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1010)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1011)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1012)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1013)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1014)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1015)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1016)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1017)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1018)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1019)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1020)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1021)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1022)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1023)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1024)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1025)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1026)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1027)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1028)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1029)
+    Wait(1)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1030)
+  RESPONSE #100
+    SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
+    DisplayStringHead("TSDrunk3",@1031)
+    Wait(3)
+    ActionOverride("TSwench1",FaceObject("TSDrunk3"))
+    DisplayStringHead("TSWench1",@1032)
+    Wait(3)
+    DisplayStringHead("TSDrunk3",@1033)
+END
+

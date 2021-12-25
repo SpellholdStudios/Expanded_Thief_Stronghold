@@ -1,0 +1,23 @@
+IF
+  !GlobalTimerNotExpired("TSPickAR0300","AR0300")
+  TimeGT(8)
+  TimeLT(16)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSPickAR0300","AR0300",4320)
+    CreateCreature("TSPick8",[2370.559],14)
+    CreateCreature("TSPick3",[3211.1320],6)
+    CreateCreature("TSPick4",[1174.2898],14)
+    CreateCreature("TSPick6",[1816.3038],6)
+    CreateCreature("TSPick5",[3713.2898],14)
+END
+
+IF
+  Global("TSGuardHouse","AR0300",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSGuardHouse","AR0300",1)
+    AddMapNote([3509.938],19351)
+END
+
+

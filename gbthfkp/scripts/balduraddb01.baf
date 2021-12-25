@@ -1,0 +1,32 @@
+IF
+  Global("TSNarlenWork","GLOBAL",1)
+  GlobalTimerExpired("TSSmugglerTimer","GLOBAL")
+  Global("PGFailed","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DisplayString(Player1,@1001)
+    SetGlobalTimer("TSSmugglerTimer","GLOBAL",FIVE_DAYS)
+    IncrementGlobal("TSSmuggle","GLOBAL",1)
+END
+
+IF
+  GlobalGT("BodhiJob","GLOBAL",0)
+  Global("PlayerThiefGuild","GLOBAL",1)
+  Global("TSBodhiThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSBodhiThief","GLOBAL",1)
+END
+
+IF
+  Global("TSBodhiThief","GLOBAL",1)
+  OR(2)
+    !Global("PGFailed","GLOBAL",0)
+    !Global("JosterLeave","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("PGFailed","GLOBAL",0)
+    SetGlobal("JosterLeave","GLOBAL",0)
+END
+
+

@@ -1,0 +1,21 @@
+// MAEGUY01 translation file
+@38  = ~I... <CHARNAME>, could I...~
+@39  = ~Yes?  What is it Kamuzu?~
+@40  = ~Enough!  Begone foul-smelling beggar!~
+@41  = ~I... I thought I would leave this place and never look back, but... I'm still a Shadow Thief!  I am not without talents.  Why do you think Mae'var kept me alive for so long?  I am an Alchemist, by trade, and I can make many potions for you and would do so gladly!  I owe you my life and more!  Would take me on?~
+@42  = ~Of course!  I welcome you back into the ranks of the Shadow Thieves.~
+@43  = ~What?!  And have you smelling up the place?  I think not.  Go, and be glad I don't throw you back in your hole!~
+@44  = ~Thank you!  Thank you my <LADYLORD>!  You won't regret this, I promise!  Please, come and speak to me on the third floor when you are finished here.~
+@45  = ~Kamuzu... the Potion Maker?
+
+It seems that old man, Kamuzu, is a talented alchemist.  Talented enough, at least, that Mae'Var kept him alive all that time.  He has asked to work for me and I have accepted his offer.  Should I have need of his services, I can find him on the third floor of the guild.  I wonder what he can make?  I'll have to pay him a visit soon.~
+@46  = ~No!  Please no!  Gotta get away!!~
+@47  = ~Yes... yes of course...  Goodbye!  (Kamuzu quickly runs away.)~
+@48  = ~Greetings <CHARNAME>.  I will always be grateful to you, for what you have done for me.  I am ready to begin working if you wish?  I can make many potions, all very useful to thieves in particular, though I'm afraid to say that the raw materials are expensive.~
+@49  = ~Yes, let's see what you can make.~
+@50  = ~My pleasure!  It is good to work as a free man again!~
+@51  = ~Greetings once again, my <LADYLORD>.  Do you wish me to make more potions for you?~
+@53  = ~No, not at this time Kamuzu.  Just take it easy.~
+@54  = ~Always willing to serve you, my <LADYLORD>...~
+@55  = ~You are most gracious.  I will be here whenever you have need of me.  I'll just go back to my gardening...~
+@56  = ~A pearl to you, <GABBER>.  Is <PRO_LADYLORD> <CHARNAME> about?~

@@ -1,0 +1,47 @@
+@1  = ~Gute Nachrichten, Boss!  Gerade kam ein Bote von Renal... wir bekommen Verstärkung in den nächsten Tagen!  Wir sind dann zwar immer noch etwas knapp, aber die zusätzlichen Diebe werden sicherlich 'ne Menge bringen.~ 
+@2  = ~Ausgezeichnet!  Ich höre bereits das Gold in unserer Kasse klingeln.  Irgendeine Idee, wer sie sind?~
+@3  = ~Solange sie ihr Geschäft verstehen.  Ich habe keine Zeit, mich mit Rekruten abzugeben.  Wisst Ihr, wer sie sind?~ 
+@4  = ~Genau das, was ich brauche.  Noch mehr mürrische Penner, die in meiner Gilde herumlungern.  Ihr wisst wohl nicht, wer diese Trottel sind?~
+@5  = ~Einige Kameraden von unserer Zweigstelle im Norden, von Baldurs Tor, angeführt von einem Mann namens Narlen Darkwalk und Black Lily, einer Frau.  Insgesamt zehn oder zwölf sollen's sein, vielleicht auch mehr...~ 
+@6  = ~Narlen Darkwalk?  Black Lily...?~
+@7  = ~Ja.  Kennt Ihr sie?~
+@8  = ~Das tue ich in der Tat!  Narlen und ich sind uns früher einmal begegnet.  Gute Diebe, sowohl er als auch Lily.  Ich bin sicher, auch der Rest ist aus gutem Holz.  Ich frage mich nur, wieso sie Baldurs Tor verlassen haben?~ 
+@9  = ~Oh ja.  Ich kenne diesen Idioten.  Wir haben noch eine Rechnung zu begleichen.  Und jetzt arbeitet er für mich, eh?  Ich bin froh, dass der jetzt unter meiner Kontrolle steht.  Warum aber kommt er hierher?~
+@10 = ~Nun, so weit ich weiß, haben die letzten... Schwierigkeiten... unsere Reihen ein wenig gelichtet.  Schattenmeister von überall senden soviel Männer, wie sie können, um uns zu unterstützen.  Wir können es uns nicht leisten, Atkatla zu verlieren.  Nicht nach dem, was in Tiefwasser passiert ist.~ 
+@11 = ~Ich bin nicht sicher, ob's reichen wird, aber jeder Mann zählt.  Auch wenn die meisten nur der letzte Abschaum der anderen Gilden sind.~
+@12 = ~Narlen und Lily sind kein Abschaum.  Macht Euch keine Sorgen.  Sie werden eine willkommene Hilfe sein, und ich bin sicher, auch die anderen werden ihren Wert beweisen.  Wie lange wird es dauern, bis sie hier sind?~
+@13 = ~Hmmph.  Wir werden sehen.  Wann sollen sie da sein?~ 
+@14 = ~Man sagte mir, sie hätten Baldurs Tor vor einiger Zeit verlassen...  also... mmmm... mal sehen... sieben und acht, eins im Sinn... eine Sekunde... lasst mich den Schuh ausziehen...~
+@15 = ~Hallo!~ 
+@16 = ~Sie sollten in ein oder zwei Tagen hier sein!~
+@17 = ~Sagt mir einfach, wenn sie da sind.~
+@18 = ~Mach ich, Boss!  Ihr könnt auf mich zählen!~
+@19 = ~Narlen Darkwalk und Black Lily kommen nach Atkatla
+
+Lathan hat mich informiert, dass Unterstützung vom Gildenzweig aus Baldurs Tor in ein oder zwei Tagen eintreffen wird.  Die Diebe werden angeführt von niemand anderem als Narlen Darkwalk und Black Lily.  Ich frage mich, wieso die beiden Baldurs Tor verlassen haben?~ 
+@20 = ~Hallo, Boss.  Da seid Ihr ja!  Etwas ist passiert!  Renal will, dass Ihr Euch sobald wie möglich darum kümmert.~
+@21 = ~Es gibt wohl einen neuen Hauptmann der Wachen hier im Hafenviertel, und glaubt es oder nicht, aber er scheint einen Krieg gegen die Schattendiebe führen zu wollen!  Ich vermute, dass wegen den Schwierigkeiten, die wir in letzter Zeit hatten, er oder einer seiner Vorgesetzten entschieden haben, dass jetzt der perfekte Zeitpunkt für einen Schlag gegen uns sei.~ 
+@22 = ~Ihr müsst das nicht alleine regeln, wenn Ihr nicht wollt.  Renal hat Euch ein paar Diebe zur Verfügung gestellt und wir haben ebenso ein paar zusätzliche Hände.~ 
+@23 = ~Befehle von ganz oben besagen, dass Ihr die Baracke der Wache hier im Hafenviertel überfallen und die Garnison auslöschen müsst.  Besonders wichtig ist, dass der Hauptmann bei dieser Operation getötet wird.  Man kann weder vernünftig mit ihm reden, noch ist er bestechlich, also ist dieses der einzige Weg.~
+@24 = ~Und nun zum wichtigen Teil: wollt Ihr Hilfe bei dieser Operation?  Oder glaubt Ihr, dass Ihr das alleine schafft?  Ich an Eurer Stelle würde die Hilfe nehmen, aber es ist Eure Entscheidung.~ 
+@25 = ~Ja, ich akzeptiere die Unterstützung.  Ich kann die Hilfe gebrauchen.~
+@26 = ~Nein, dazu besteht kein Grund.  Ich kann diesen Narren alleine erledigen.~
+@27 = ~Gut, sehr gut!  Ich wünschte nur, ich könnte bei diesem Überfall dabei sein!  Verlasst die Gilde einfach durch den Vorderausgang.  Eure Diebe werden Euch draußen erwarten.  Sprecht einfach einen von ihnen an und sie werden Euch zur Baracke der Wachen folgen.~
+@28 = ~Die Wachbaracke selbst liegt im nördlichen mittleren Teil des Hafenviertels, zwei Häuser entfernt vom Oghma-Tempel.  Der Ort ist voll mit Wachen, und der Hauptmann wird äußerst gut geschützt sein.~
+@29 = ~Sehr gut.  Wir können es uns wirklich nicht erlauben, mehr Diebe zu verlieren.  Ich berichte Renal, dass Ihr die Sache alleine regeln wollt.  Es wird eine weitere Feder an Eurem Hut sein, wenn Ihr das schafft.~
+@30 = ~Die Wachbaracke selbst liegt im nördlichen mittleren Teil des Hafenviertels, zwei Häuser entfernt vom Oghma-Tempel.  Der Ort ist voll mit Wachen, und der Hauptmann wird äußerst gut geschützt sein.~
+@31 = ~Verzögert Euren Überfall auf die Garnison nicht zu lange, Boss.  Renal ist besorgt, weil dieser Hauptmann seine Autorität in Frage stellt.  Falls die Sache nicht sehr bald erledigt wird, geht's uns allen an den Kragen!~
+@32 = ~Verzögert Euren Überfall auf die Garnison nicht zu lange, Boss.  Renal ist besorgt, weil dieser Hauptmann seine Autorität in Frage stellt.  Falls die Sache nicht sehr bald erledigt wird, geht's uns allen an den Kragen!~
+@33 = ~Vergesst nicht, mit einem der Diebe vor der Gilde zu reden.  Sie dürsten nach einem Kampf, und werden Euch zu den Baracken folgen.~
+@34 = ~Großartig, Boss!  Wir haben von Eurem Erfolg gehört!  Der Blutskalp war sehr erfreut.~
+@35 = ~Er hat mir etwas für Euch als Belohnung gegeben.  Scheint wertvoll zu sein...  Hier ist es.~
+@36 = ~Ich lasse Euch wissen, falls es etwas gibt, was Eure Aufmerksamkeit verlangt.~
+@37 = ~Es tut mir leid, aber ich kann nur mit <CHARNAME> reden.  Ich hoffe, Ihr versteht das.~
+@38 = ~Sprecht wieder mit mir, wenn er tot ist, und ich informiere Renal, dass Ihr Eure Aufgabe erfüllt habt.  Wartet nicht zu lange, oder uns geht's alles dreckig!~
+@39 = ~Der Überfall auf die Wachbaracke.
+
+Mir wurde befohlen, die örtliche Garnison zu überfallen und den Hauptmann der Wache zu töten.  Die Wachbaracke ist im nördlichen mittleren Teil des Hafenviertels.  Mir wurde ein Kontingent von Dieben und Mördern übergeben, das mir bei meiner Aufgabe helfen soll.  Ich muss mit einem der Diebe reden, und sie werden mir zur Garnison folgen.  Ich sollte nicht zu lange zögern, sonst verliere ich die Gilde... und vielleicht mehr.~
+@40 = ~Sprecht wieder mit mir, wenn er tot ist, und ich informiere Renal, dass Ihr Eure Aufgabe erfüllt habt.  Wartet nicht zu lange, oder uns geht's alles dreckig!~
+@41 = ~Der Überfall auf die Wachbaracke.
+
+Mir wurde befohlen, die örtliche Garnison zu überfallen und den Hauptmann der Wache zu töten.  Die Wachbaracke ist im nördlichen mittleren Teil des Hafenviertels.  Ich sollte nicht zu lange zögern, sonst verliere ich die Gilde... und vielleicht mehr.~

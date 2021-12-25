@@ -1,0 +1,13 @@
+IF
+  !GlobalTimerNotExpired("TSPickAR0800","AR0800")
+  TimeGT(8)
+  TimeLT(16)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSPickAR0800","AR0800",4320)
+    CreateCreature("TSPick4",[846.1814],14)
+    CreateCreature("TSPick2",[1770.861],6)
+    CreateCreature("TSPick8",[1114.1142],14)
+END
+
+

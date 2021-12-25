@@ -1,0 +1,228 @@
+IF
+  Global("TSNarlenMove","GLOBAL",0)
+  Global("TSNarlenStart","LOCALS",0)
+  Name("TSNarlen",Myself)
+  !Allegiance(Myself,ENEMY)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("TSNarlenStart","LOCALS",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("TSNarlenTalk","LOCALS",0)
+  Name("TSNarlen",Myself)
+  !Dead("TSNBad1")
+  AreaCheck("TS0010")
+THEN
+  RESPONSE #100
+    Wait(2)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("TSNarlenCave","LOCALS",0)
+  Name("TSNarlen",Myself)
+  Dead("TSNDoor")
+  AreaCheck("TS0010")
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([430.181])
+    SetGlobal("TSNarlenCave","LOCALS",1)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Global("TSNarlenTalk","LOCALS",1)
+  Name("TSNarlen",Myself)
+  Dead("TSNBad1")
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+THEN
+  RESPONSE #100
+    Wait(2)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  Dead("TSNBad1")
+  Dead("TSNarlen")
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+  Name("TSBlackL",Myself)
+THEN
+  RESPONSE #100
+    Wait(2)
+    StartDialogueNoSet([PC])
+END
+
+IF
+  !See(Player1)
+  !See(NearestEnemyOf(Myself))
+  !Dead("TSNBad1")
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+IF
+  Dead("TSBlackL")
+  Dead("TSNarlen")
+  !Global("TSNarlenMove","GLOBAL",3)
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    SetGlobal("TSNarlenMove","GLOBAL",3)
+END
+
+IF
+  Dead("TSNBad1")
+  Global("TSNarlenMove","GLOBAL",3)
+  Name("TSSmugB",Myself)
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    IncrementGlobal("TSSpwanSmugB","GLOBAL",1)
+    EscapeArea()
+END
+
+IF
+  Dead("TSNBad1")
+  Global("TSNarlenMove","GLOBAL",3)
+  Name("TSSmugM",Myself)
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    IncrementGlobal("TSSpwanSmugM","GLOBAL",1)
+    EscapeArea()
+END
+
+IF
+  Dead("TSNBad1")
+  Global("TSNarlenMove","GLOBAL",3)
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+  Name("TSSmugF",Myself)
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    IncrementGlobal("TSSpwanSmugF","GLOBAL",1)
+    EscapeArea()
+END
+
+IF
+  Dead("TSNBad1")
+  Global("TSNarlenMove","GLOBAL",3)
+  CombatCounter(0)
+  !Detect([EVILCUTOFF])
+  Name("TSBlackL",Myself)
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0323",837,512,2)
+END
+
+IF
+  !See([EVILCUTOFF])
+  !Range([PC],15)
+  OR(2)
+    AreaCheck("TS0010")
+    AreaCheck("TS0011")
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+END
+
+IF
+  See([EVILCUTOFF])
+  Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  See([EVILCUTOFF])
+  !Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  !Allegiance(Myself,GOODBUTBLUE)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,GOODBUTBLUE)
+END
+
+IF
+  AreaCheck("AR0323")
+  Global("TSSmugAI","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSmugAI","LOCALS",1)
+    ChangeAIScript("PGuild",OVERRIDE)
+END
+
+IF
+  False()
+  AreaCheck("AR0323")
+  Global("TSScared","LOCALS",0)
+  RandomNum(50,1)
+  OR(3)
+    Name("TSSmugB",Myself)
+    Name("TSSmugM",Myself)
+    Name("TSSmugF",Myself)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,5196) // I hope my master appreciates my effort
+    Wait(5)
+END
+
+IF
+  AreaCheck("AR0323")
+  !GlobalTimerNotExpired("TSGuildDoors231","GLOBAL")
+  !GlobalTimerNotExpired("TSGuildDoors232","GLOBAL")
+  !GlobalTimerNotExpired("TSGuildDoors233","GLOBAL")
+  Global("TSScared","LOCALS",0)
+  OR(3)
+    Name("TSSmugB",Myself)
+    Name("TSSmugM",Myself)
+    Name("TSSmugF",Myself)
+THEN
+  RESPONSE #100
+    RandomWalk()
+END
+
+

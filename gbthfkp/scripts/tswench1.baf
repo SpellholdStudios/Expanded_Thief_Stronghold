@@ -1,0 +1,77 @@
+// guild stuff
+IF
+  Global("PGFailed","GLOBAL",1)
+  Global("TSGActive","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSGActive","LOCALS",1)
+    Deactivate(Myself)
+END
+
+IF
+  Global("TSGActive","LOCALS",1)
+  Global("PGFailed","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSGActive","LOCALS",0)
+    Activate(Myself)
+END
+
+IF
+  Dead("ShThStor")
+THEN
+  RESPONSE #100
+    EscapeArea()
+END
+
+// activity
+IF
+  !See("ShThStor")
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([400.740])
+END
+
+IF
+  See("TSDrunk3")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+THEN
+  RESPONSE #100
+    RandomWalk()
+    Wait(60)
+  RESPONSE #10
+    MoveToPoint([580.635])
+    Face(6)
+    Wait(1)
+    MoveToPoint([500.830])
+    Face(10)
+    DisplayStringHead(Myself,@145)
+    Wait(3)
+    MoveToPoint([325.700])
+    RandomWalk()
+    Wait(60)
+  RESPONSE #10
+    MoveToPoint([580.635])
+    Face(6)
+    DisplayStringHead(Myself,@146)
+    Wait(6)
+    RandomWalk()
+    Wait(60)
+END
+
+IF
+  !See("TSDrunk3")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+THEN
+  RESPONSE #100
+    RandomWalk()
+    Wait(60)
+  RESPONSE #10
+    MoveToPoint([580.635])
+    Face(6)
+    DisplayStringHead(Myself,@146)
+    Wait(6)
+    RandomWalk()
+    Wait(60)
+END
+

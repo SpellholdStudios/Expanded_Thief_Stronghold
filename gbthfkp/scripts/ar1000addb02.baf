@@ -1,0 +1,31 @@
+IF
+  Global("TSSpawnGuards","AR1000",0)
+  OR(5)
+    Global("HanzThief","GLOBAL",5)
+    Global("MilphThief","GLOBAL",5)
+    Global("KretorThief","GLOBAL",5)
+    Global("MorsaThief","GLOBAL",5)
+    Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpawnGuards","AR1000",1)
+    CreateCreature("TSGrd02",[830.1177],2)
+    CreateCreature("TSGrd02",[892.1223],2)
+    CreateCreature("TSGrd01",[910.1283],2)
+    CreateCreature("TSGrd01",[774.1178],2)
+    CreateCreature("TSGrd00",[794.1261],2)
+END
+
+IF
+  Global("TSSpawnGuards","AR1000",1)
+  !Global("HanzThief","GLOBAL",5)
+  !Global("MilphThief","GLOBAL",5)
+  !Global("KretorThief","GLOBAL",5)
+  !Global("MorsaThief","GLOBAL",5)
+  !Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpawnGuards","AR1000",0)
+END
+
+

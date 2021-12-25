@@ -1,0 +1,81 @@
+IF
+  Global("TSSpy1Active","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpy1Active","LOCALS",1)
+    Deactivate(Myself)
+END
+
+IF
+  Global("TSPlot5Help","GLOBAL",1)
+  Global("TSPlot5Spawn","AR0300",0)
+  Global("TSPlot","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot5Spawn","AR0300",1)
+    CloseDoor("Door0332")
+    CloseDoor("Door0333")
+    Lock("Door0332")
+    Lock("Door0333")
+    TriggerActivation("Tran0332",FALSE)
+    TriggerActivation("Tran0333",FALSE)
+    CreateCreature("TS5Thf1",[3050.2725],8)
+    CreateCreature("TS5Thf2",[2995.2730],8)
+    CreateCreature("TS5Thf3",[3100.2730],8)
+    CreateCreature("TS5Thf4",[3154.2673],8)
+    CreateCreature("TS5Thf5",[2956.2680],8)
+    CreateCreature("TS5Thf6",[3107.2638],8)
+    CreateCreature("TS5Door",[3463.1145],3)
+    CreateCreature("TS5Grd1",[3412.1120],3)
+    CreateCreature("TS5Grd2",[3515.1164],3)
+END
+
+IF
+  Global("TSPlot5Spawn","AR0300",0)
+  Global("TSPlot5Help","GLOBAL",0)
+  Global("TSPlot","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot5Spawn","AR0300",1)
+    CloseDoor("Door0332")
+    CloseDoor("Door0333")
+    Lock("Door0332")
+    Lock("Door0333")
+    TriggerActivation("Tran0332",FALSE)
+    TriggerActivation("Tran0333",FALSE)
+    CreateCreature("TS5Door",[3463.1145],3)
+    CreateCreature("TS5Grd1",[3412.1120],3)
+    CreateCreature("TS5Grd2",[3515.1164],3)
+END
+
+IF
+  Dead("TS5Door")
+  Global("TSPlot5Door","AR0300",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot5Door","AR0300",1)
+    Unlock("Door0332")
+    OpenDoor("Door0332")
+    TriggerActivation("Tran0332",TRUE)
+END
+
+IF
+  Dead("TS5Bad")
+  Global("TSPlot5Door","AR0300",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot5Door","AR0300",2)
+    Unlock("Door0333")
+    OpenDoor("Door0333")
+    TriggerActivation("Tran0333",TRUE)
+END
+
+IF
+  Dead("TS5Bad")
+  Global("TSPlot5Door","AR0300",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+

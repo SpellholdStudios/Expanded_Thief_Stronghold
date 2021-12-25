@@ -1,0 +1,35 @@
+IF
+  OnCreation()
+  Global("TSMaePet","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSMaePet","GLOBAL",1)
+    CreateCreatureObjectOffset("TSMaePet","MaeVar",[3.3])
+    ActionOverride("TSMaePet",FaceObject("MaeGuy01"))
+END
+
+IF
+  OR(2)
+    Global("MaeVarExposed","GLOBAL",1)
+    Allegiance("MaeVar",ENEMY)
+  !Dead("MaeVar")
+  Global("TSCloseDoors0301","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSCloseDoors0301","GLOBAL",1)
+    TriggerActivation("Tran0300",FALSE)
+    TriggerActivation("Tran0301",FALSE)
+    DisplayStringHead(Player1,@1000)
+END
+
+IF
+  Dead("MaeVar")
+  Global("TSCloseDoors0301","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSCloseDoors0301","GLOBAL",2)
+    TriggerActivation("Tran0300",TRUE)
+    TriggerActivation("Tran0301",TRUE)
+END
+
+

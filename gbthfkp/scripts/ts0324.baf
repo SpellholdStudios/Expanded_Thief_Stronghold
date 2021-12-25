@@ -1,0 +1,25 @@
+IF
+  OnCreation()
+  Global("TSReveal0324","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSReveal0324","GLOBAL",1)
+    SetAreaRestFlag(1)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+    OpenDoor("Door03")
+    OpenDoor("Door04")
+    Explore()
+END
+
+IF
+  !GlobalTimerNotExpired("TSGuildDoors24","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSGuildDoors24","GLOBAL",ONE_DAY)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+    OpenDoor("Door03")
+    OpenDoor("Door04")
+END
+

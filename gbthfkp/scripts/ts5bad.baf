@@ -1,0 +1,48 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ReputationInc(-3)
+END
+
+IF
+  NumTimesTalkedTo(0)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    StartDialogueNoSet([PC])
+END
+
+IF
+  HaveSpell(PALADIN_LAY_ON_HANDS)
+  HPPercentLT(Myself,60)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",8)
+    Spell(Myself,PALADIN_LAY_ON_HANDS)
+END
+
+IF
+  HaveSpellRES("spcl222") // Remove Fear
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("InvokeCourage","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("InvokeCourage","LOCALS",180)
+    SetGlobalTimer("Busy","LOCALS",8)
+    SpellRES("spcl222",Myself) // Remove Fear
+END
+
+IF
+  HaveSpell(4213)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("ProtFromEvil","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ProtFromEvil","LOCALS",180)
+    SetGlobalTimer("Busy","LOCALS",8)
+    Spell(Myself,4213)
+END
+
+

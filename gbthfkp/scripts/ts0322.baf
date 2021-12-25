@@ -1,0 +1,185 @@
+IF
+  OnCreation()
+  Global("TSReveal0322","GLOBAL",0)
+THEN
+  RESPONSE #100
+    FadeToColor([0.0],0)
+    SetGlobal("TSReveal0322","GLOBAL",1)
+    CreateCreature("TSSpy1",[550.500],8)
+    TakePartyItem("EdwinKey") // Mae'Var's Strongbox Key
+    GiveItemCreate("TSKey",Player1,0,0,0)
+    DisplayStringHead(Player1,17576) // The Party Has Gained An Item
+    SetAreaRestFlag(1)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+    CreateCreature("TSDrunk1",[359.642],10)
+    CreateCreature("TSDrunk2",[392.665],10)
+    CreateCreature("TSDrunk3",[536.785],6)
+    CreateCreature("TSWench1",[580.635],3)
+    Explore()
+    FadeFromColor([50.0],0)
+END
+
+IF
+  !GlobalTimerNotExpired("PGThievesReturn","GLOBAL")
+  !Global("PGThievesLeave","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("PGThievesLeave","GLOBAL",0)
+END
+
+IF
+  !GlobalTimerNotExpired("TSGuildDoors22","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSGuildDoors22","GLOBAL",ONE_DAY)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+END
+
+IF
+  GlobalTimerExpired("LathanLeaving","GLOBAL")
+  Global("LathanComesBack","AR0322",0)
+THEN
+  RESPONSE #100
+    SetGlobal("LathanComesBack","AR0322",1)
+    CreateCreature("SHTHLT02",[596.267],0) // Lathan
+END
+
+IF
+  Global("FreedKamuzu","GLOBAL",1)
+  Global("AmaWaukeen","GLOBAL",1)
+  !Dead("maeguy01")
+THEN
+  RESPONSE #100
+    SetGlobal("FreedKamuzu","GLOBAL",2)
+    Wait(1)
+    CreateCreature("maeguy01",[493.325],9) // Kamuzu
+    ActionOverride("maeguy01",StartDialogueNoSet([PC]))
+END
+
+IF
+  Global("JosterLeave","GLOBAL",2)
+  Global("PGFailed","GLOBAL",0)
+  Global("TSBodhiThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("JosterLeave","GLOBAL",0)
+    CreateCreature("SHTH05",[691.292],2) // Joster
+END
+
+IF
+  False()
+  Global("JosterLeave","GLOBAL",2)
+  Global("JosterSpawn","GLOBAL",0)
+  Global("PGFailed","GLOBAL",0)
+  Global("BodhiJob","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("JosterSpawn","GLOBAL",1)
+    CreateCreature("SHTH05",[691.292],2) // Joster
+END
+
+IF
+  False()
+  OR(2)
+    Global("PGFailed","GLOBAL",1)
+    Global("JosterLeave","GLOBAL",1)
+  !Global("JosterSpawn","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("JosterSpawn","GLOBAL",0)
+END
+
+IF
+  Global("MilphRescue","GLOBAL",1)
+  Global("MilphIsBack","GLOBAL",0)
+  !Dead("Milph")
+THEN
+  RESPONSE #100
+    SetGlobal("MilphIsBack","GLOBAL",1)
+    CreateCreature("SHTH02",[935.445],0) // Goshan
+END
+
+IF
+  Global("HanzRescue","GLOBAL",1)
+  Global("HanzIsBack","GLOBAL",0)
+  !Dead("Hanz")
+THEN
+  RESPONSE #100
+    SetGlobal("HanzIsBack","GLOBAL",1)
+    CreateCreature("SHTH01",[712.472],8) // Hanz
+END
+
+IF
+  Global("KretorRescue","GLOBAL",1)
+  Global("KretorIsBack","GLOBAL",0)
+  !Global("KretorThief","GLOBAL",9)
+  !Dead("Kretor")
+THEN
+  RESPONSE #100
+    SetGlobal("KretorIsBack","GLOBAL",1)
+    CreateCreature("SHTH03",[834.410],6) // Kretor
+END
+
+IF
+  Global("MorsaRescue","GLOBAL",1)
+  Global("MorsaIsBack","GLOBAL",0)
+  !Dead("Morsa")
+THEN
+  RESPONSE #100
+    SetGlobal("MorsaIsBack","GLOBAL",1)
+    CreateCreature("SHTH04",[1049.371],10) // Morsa
+END
+
+IF
+  Global("VariaRescue","GLOBAL",1)
+  Global("VariaIsBack","GLOBAL",0)
+  !Dead("Varia")
+THEN
+  RESPONSE #100
+    SetGlobal("VariaIsBack","GLOBAL",1)
+    CreateCreature("SHTH06",[828.630],8) // Varia
+END
+
+IF
+  Dead("Hanz")
+  !Global("HanzThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("HanzThief","GLOBAL",0)
+END
+
+IF
+  Dead("Milph")
+  !Global("MilphThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("MilphThief","GLOBAL",0)
+END
+
+IF
+  Dead("Kretor")
+  !Global("KretorThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("KretorThief","GLOBAL",0)
+END
+
+IF
+  Dead("Morsa")
+  !Global("MorsaThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("MorsaThief","GLOBAL",0)
+END
+
+IF
+  Dead("Varia")
+  !Global("VariaThief","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("VariaThief","GLOBAL",0)
+END
+
+

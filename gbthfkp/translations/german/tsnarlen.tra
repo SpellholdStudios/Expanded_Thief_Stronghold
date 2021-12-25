@@ -1,0 +1,40 @@
+@1  = ~Mann, bin ich froh, Euch gefunden zu haben!  Die Jungs, ich und Lily, wir waren schon kurz vor der Stadt, als wir von 'ner Bande Strauchdiebe mitten auf der Straße überfallen wurden.~ 
+@2  = ~Orks waren's, verdammt scheußliche Gestalten.  Die Hälfte der Jungs hält ein Schwätzchen mit dem Teufel, und Lily und der Rest sind gefangen und in Ketten. Ich selbst konnte mich gerade noch so vom Acker machen.~
+@3  = ~Nun denke ich, mit Eurer Hilfe können wir dem Versteck der Dreckskerle 'nen Besuch abstatten und unsere Leute befreien, bevor's mit denen zu Ende ist.  Was sagt Ihr?  Bereit für etwas schmutzige Arbeit?~ 
+@4  = ~Ja!  Wir befreien unsere Leute und jagen die Kerle zum Teufel bevor die Sonne aufgeht.~
+@5  = ~Ihr seid ein verdammter Bastard, Narlen, ich steck' Euch 'nen Dolch zwischen die Rippen und schick' Euch schreiend in die Hölle.  Narr, zieht Eure Waffe!~ 
+@6  = ~Gut, sehr gut!  Wir treffen uns beim Stadttor, wenn Ihr fertig seid!~
+@7  = ~Black Lily und die Diebe aus Baldurs Tor befreien.
+
+Die Diebe aus Baldurs Tor wurden von orkischen Banditen überfallen!  Narlen Darkwalk gelang es zu entkommen, aber Black Lily und der Rest werden im Versteck der Banditen gefangen gehalten.  Ich soll Narlen Darkwalk heute Abend vor Mitternacht im Stadttorviertel in der Nähe des Stadttores treffen.  Viele der Diebe wurden bereits getötet, und wenn wir uns nicht beeilen, so wird es zu spät sein, um Black Lily und der Bande ein Ende in einem orkischen Kochtopf zu ersparen.~
+@8  = ~Was?  Und das ist, wie es ist, eh?  Ich lass' mich nicht wie 'nen Schaf zur Schlachtbank führen!~ 
+@9  = ~Narlen Darkwalk - der verdammte Bursche!
+
+Dieser Narr, Narlen Darkwalk, hatte tatsächlich die Nerven, mich um Hilfe zu bitten.  Ich habe natürlich abgelehnt und ihn stattdessen getötet.  Geschieht ihm nur recht nach seinen Eskapaden in Baldurs Tor.~
+@10 = ~Da seid ihr.  Fertig?  Ich bring' Euch zu ihrem Versteck, bevor die Sonne aufgeht.~ 
+@11 = ~Ja, los geht's!~
+@12 = ~Noch nicht.  Ich muss mich noch vorbereiten.~
+@13 = ~Hier geht's lang, <CHARNAME>.~ 
+@14 = ~Trödelt nicht zu lange, oder mit Lily und den Jungs ist's zu Ende bevor der Morgen graut.~
+@15 = ~Da wären wir.  Schnell, die Grunzer sind direkt im Norden.~ 
+@16 = ~Hier geht's lang, <CHARNAME>.  Das Versteck der Strauchdiebe ist in der Höhle dort drüben.~
+@17 = ~Alles erledigt, und nicht zu schlecht!  Wir trauern um die Ermordeten, wenn wir zurück in der Gildenhalle sind.  Wir sehen uns im ersten Stock, <CHARNAME>.~
+@18 = ~Alles erledigt, aber 's ist schade um Lily.  Ich werd' sie vermissen.  Wir trauern um die Ermordeten, wenn wir zurück in der Gildenhalle sind.  Wir sehen uns im ersten Stock, <CHARNAME>.~
+@19 = ~Jawohl, <CHARNAME>, die Jungs und ich halten den Laden am Laufen.  Schaut so alle fünf Tage in Euren Safe.~ 
+@20 = ~Die Diebe aus Baldurs Tor.
+
+Narlen und die Diebe aus Baldurs Tor werden jede Menge Beute einbringen, da bin ich mir sicher.  Man sagte mir, wegen meines Anteils alle fünf Tage den Safe in meinem Zimmer im ersten Stock der Diebesgilde zu überprüfen.  Es ist so gut wie Gold auf der Bank, sagen sie.  Ich bin sicher, dass Narlen und seine Bande eine feine Ergänzung für mein Team sind.~
+@21 = ~Immer zu Diensten, <CHARNAME>.  Braucht Ihr irgendetwas?~ 
+@22 = ~Wo, sagtet Ihr noch mal, versteckt Ihr die Beute?~ 
+@23 = ~Alles, was meine Leute einbringen, tun wir in den Safe.  Und der ist in Eurem Büro, wie Ihr wohl wisst, auf genau dieser Etage.~
+@24 = ~Immer zu Diensten, <CHARNAME>.  Braucht Ihr irgendetwas?~ 
+@25 = ~Ich habe wohl meinen Safeschlüssel verlegt.  Habt Ihr vielleicht einen Ersatzschlüssel?~
+@26 = ~Nein.  Wir können Sachen hinein tun, aber nur Ihr könnt den Safe öffnen.  Es ist der beste Safe, den wir haben.~
+@27 = ~Wir könnten wohl den Safe zerstören und einen neuen bauen.  Ist aber nicht ganz billig, das ganze.~
+@28 = ~Wie viel?~
+@29 = ~So um die fünftausend Goldstücke.  Ist 'ne stolze Summe.  Wollt Ihr, das wir's machen?~
+@30 = ~Ja, macht es so.~
+@31 = ~Nein, vielleicht finde ich den Schlüssel doch noch irgendwo...~
+@32 = ~Hier ist der Schlüssel, aber passt auf, dass ihn Euch nicht wieder irgendein Straßenbengel aus der Tasche zieht.~
+@33 = ~Es ist wirklich 'ne Schande, der Blutskalp hat den Laden an jemand anderen übergeben.~
+@34 = ~Ihr seid 'nen toller Gildenmeister, <CHARNAME>.  Das erzähl' ich allen, die ich treffe.~ ~Ihr seid 'ne tolle Gildenmeisterin, <CHARNAME>.  Das erzähl' ich allen, die ich treffe.~

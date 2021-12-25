@@ -1,0 +1,13 @@
+IF
+  Global("TSPlot","GLOBAL",4)
+  Global("TSGTalk1","LOCALS",0)
+  Global("PGFailed","GLOBAL",0)
+  See(Player1)
+  !GlobalTimerNotExpired("TSPlotTimer","GLOBAL")
+  !NumTimesTalkedTo(0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSGTalk1","LOCALS",1)
+    StartDialogueNoSet(Player1)
+END
+

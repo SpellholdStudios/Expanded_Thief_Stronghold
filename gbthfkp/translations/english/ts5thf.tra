@@ -1,0 +1,41 @@
+// TS5THF translation file
+@1   = ~Greetings <CHARNAME>!  Is it time?  Renal sent us to aid you in your assault on the barracks.  We are yours to command 'til this is over.~
+@2   = ~It is time.  Go to the barracks entrance.  I'll meet you there.~
+@3   = ~I'll let you know when I'm ready.  Stay put until then.~
+@4   = ~You heard the <MANWOMAN>!  Move out!~
+
+@5   = ~<NO TEXT>~
+@6   = ~It is time.  Go to the barracks entrance.  I'll meet you there.~
+@7   = ~We await your command <CHARNAME>.~
+@8   = ~Begin the assault!  I'll meet you inside once I've secured this area.~
+@9   = ~At once!  Move out rogues!  Go!  Go!~
+@10  = ~Looks like we'll have to clear this place out one room at a time, <SIRMAAM>.  It'll be tough going!~
+@11  = ~Indeed.  Now. get a move on!  Pick off any stragglers and flush the rest out of their holes.  We'll herd them like lambs to the slaughter.~
+@12  = ~Yes <SIRMAAM>!~
+@13  = ~We've got 'em on the ropes, chief!~
+@14  = ~Don't get too cocky.  I want you and the rest of your gang to advance.  Clear out those hallways.  I don't want to get caught in an ambush.  Now get moving!~
+@15  = ~Move it slugs!  You heard <LADYLORD> <CHARNAME>!~
+
+@16  = ~Perfectly executed <CHARNAME>!  'Twas a pleasure serving under you.  Meet us at the Sea's Bounty, aye?  The first round is on me!~
+@17  = ~I just might take you up on that offer.   Well done rogues!  Fall out!~
+@18  = ~As you wish.  Just speak to any one of us when you are ready.~
+@19  = ~Ah, <CHARNAME>!  There you are!  We're just getting started.  Allow me to buy you a drink?~
+@20  = ~Yes, thank you.  Let's see... some Alurlyath Wine should do nicely.~
+@21  = ~An excellent suggestion!  I'll take an Arabellan Wine please.~
+@22  = ~I will indeed.  Bitter Black Ale with a head on it will hit the spot!~
+@23  = ~I'll try an Elminster's Beer, thank you.  I wonder if it's really his recipe?~
+@24  = ~The Evermead is ever good for me... and tell the Thumb I'll take it in a CLEAN mug this time!~
+@25  = ~Aye, thank ye kindly.  A Shadowdark Ale if you please.~
+@26  = ~Not at this time.  Thanks all the same.  Perhaps later?~
+@27  = ~Alurlyath Wine comin' up!~
+@28  = ~My pleasure.  Thumb!  An Arabellan Wine for the <MANWOMAN> and make it quick!~
+
+@29  = ~A good choice!  That's what I'm having!  Move your arse, Thumb.  We've got drinking to do!~
+@30  = ~Probably not, knowing that scoundrel Thumb.  He's the biggest thief here  (and I do mean BIG).~
+@31  = ~Well belly up to the bar me <LADYLORD> and we'll give the old Thumb hell this <DAYNIGHT>!~
+@32  = ~Shadowdark for a Shadow Thief!  Step lively Thumb!  This is <LADYLORD> <CHARNAME> ye be serving!~
+
+@33  = ~Of course.  I'll be here if you change your mind.~
+@34  = ~Always a pleasure <GABBER>.  Is <CHARNAME> about?~
+@35  = ~Ha ha ha!  Why hello there, <GABBER>!  Hic!  'Scuse me!  Now where's me drink...?  I puts it here somewhere...~
+@36  = ~Pardon me, but I can only take orders from <CHARNAME>.~

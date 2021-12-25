@@ -1,0 +1,24 @@
+IF
+  !Global("HanzThief","GLOBAL",5)
+  !Global("MilphThief","GLOBAL",5)
+  !Global("KretorThief","GLOBAL",5)
+  !Global("MorsaThief","GLOBAL",5)
+  !Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    Activate(Myself)
+END
+
+IF
+  OR(5)
+    Global("HanzThief","GLOBAL",5)
+    Global("MilphThief","GLOBAL",5)
+    Global("KretorThief","GLOBAL",5)
+    Global("MorsaThief","GLOBAL",5)
+    Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    Deactivate(Myself)
+END
+
+

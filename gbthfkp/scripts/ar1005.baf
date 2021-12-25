@@ -1,0 +1,88 @@
+IF
+  Global("TSSpawnGuards","AR1005",0)
+  OR(5)
+    Global("HanzThief","GLOBAL",5)
+    Global("MilphThief","GLOBAL",5)
+    Global("KretorThief","GLOBAL",5)
+    Global("MorsaThief","GLOBAL",5)
+    Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpawnGuards","AR1005",1)
+    CreateCreature("TSGrd00",[840.583],10)
+    CreateCreature("TSGrd01",[212.995],10)
+    CreateCreature("TSGrd01",[332.899],10)
+    CreateCreature("TSGrd02",[406.820],10)
+    CreateCreature("TSGrd01",[283.614],10)
+    CreateCreature("TSGrd01",[736.630],10)
+    CreateCreature("TSGrd01",[917.516],10)
+    CreateCreature("TSGrd02",[1096.476],10)
+    CreateCreature("TSGrd02",[1326.367],10)
+    CreateCreature("TSGrd01",[989.110],10)
+    CreateCreature("TSGrd01",[636.357],10)
+    CreateCreature("TSGrd02",[313.595],10)
+END
+
+IF
+  Global("TSSpawnGuards","AR1005",1)
+  !Global("HanzThief","GLOBAL",5)
+  !Global("MilphThief","GLOBAL",5)
+  !Global("KretorThief","GLOBAL",5)
+  !Global("MorsaThief","GLOBAL",5)
+  !Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpawnGuards","AR1005",0)
+END
+
+IF
+  Global("TSHanzJail","GLOBAL",0)
+  Global("HanzThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CreateCreature("SHTH01",[1245.436],10) // Hanz
+    SetGlobal("TSHanzJail","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("TSMilphJail","GLOBAL",0)
+  Global("MilphThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CreateCreature("SHTH02",[535.748],10) // Goshan
+    SetGlobal("TSMilphJail","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("TSKretorJail","GLOBAL",0)
+  Global("KretorThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CreateCreature("SHTH03",[425.670],10) // Kretor
+    SetGlobal("TSKretorJail","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("TSMorsaJail","GLOBAL",0)
+  Global("MorsaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CreateCreature("SHTH04",[450.995],10) // Morsa
+    SetGlobal("TSMorsaJail","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("TSVariaJail","GLOBAL",0)
+  Global("VariaThief","GLOBAL",5)
+THEN
+  RESPONSE #100
+    CreateCreature("SHTH06",[327.1080],10) // Varia
+    SetGlobal("TSVariaJail","GLOBAL",1)
+    Continue()
+END
+
+

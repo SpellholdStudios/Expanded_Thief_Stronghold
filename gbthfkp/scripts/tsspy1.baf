@@ -1,0 +1,94 @@
+IF
+  Global("TSSpy1Active","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpy1Active","LOCALS",1)
+    Deactivate(Myself)
+END
+
+IF
+  !GlobalGT("LathanPlot","GLOBAL",7)
+  Dead("Kretor")
+THEN
+  RESPONSE #100
+    SetGlobal("LathanPlot","GLOBAL",8)
+END
+
+IF
+  Global("LathanPlot","GLOBAL",2)
+  Global("KretorThief","GLOBAL",5)
+  Global("KretorGoof","LOCALS",0)
+  !Dead("Kretor")
+THEN
+  RESPONSE #100
+    SetGlobal("KretorThief","GLOBAL",0)
+    SetGlobal("KretorGoof","LOCALS",1)
+END
+
+IF
+  Global("KretorGoof","LOCALS",1)
+  !Global("LathanPlot","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("KretorThief","GLOBAL",5)
+    SetGlobal("KretorGoof","LOCALS",2)
+END
+
+IF
+  Global("TSPlot","GLOBAL",0)
+  Global("LathanPlot","GLOBAL",8)
+  !GlobalTimerNotExpired("TSPlotTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot","GLOBAL",1)
+    SetGlobalTimer("TSPlotTimer","GLOBAL",TWO_DAYS)
+END
+
+IF
+  Global("TSPlot","GLOBAL",1)
+  Global("PGFailed","GLOBAL",0)
+  See(Player1)
+  !See("Joster")
+  !GlobalTimerNotExpired("TSPlotTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot","GLOBAL",2)
+    ActionOverride("ShThLt02",StartDialog("TSLath01",Player1))
+END
+
+IF
+  Global("TSPlot","GLOBAL",3)
+  Global("PGFailed","GLOBAL",0)
+  !GlobalTimerNotExpired("TSPlotTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot","GLOBAL",4)
+    SetGlobalTimer("TSPlotTimer","GLOBAL",TWO_DAYS)
+    CreateCreature("TSNarlen",[620.420],5)
+END
+
+IF
+  Global("TSPlot","GLOBAL",4)
+  Global("PGFailed","GLOBAL",0)
+  See(Player1)
+  !See("Joster")
+  !GlobalTimerNotExpired("TSPlotTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("TSPlot","GLOBAL",5)
+    ActionOverride("ShThLt02",StartDialog("TSLath01",Player1))
+END
+
+IF
+  False()
+  Global("TSPlot","GLOBAL",7)
+  Global("PGFailed","GLOBAL",0)
+  See(Player1)
+  !See("Joster")
+  !GlobalTimerNotExpired("TSPlotTimer","GLOBAL")
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+

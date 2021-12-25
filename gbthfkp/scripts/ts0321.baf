@@ -1,0 +1,10 @@
+IF
+  OnCreation()
+  Global("TSReveal0321","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSReveal0321","GLOBAL",1)
+    SetAreaRestFlag(1)
+    Explore()
+END
+

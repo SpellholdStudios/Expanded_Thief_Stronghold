@@ -1,0 +1,48 @@
+// TSLATH01 translation file
+@1   = ~Good news Boss!  It looks as if we are to receive reinforcements any day now!  We'll still be a bit short on manpower, but the extra thieves should help out a lot.~
+@2   = ~Excellent!  I can hear the gold pouring in already.  Any word on who they are?~
+@3   = ~As long as they know their business.  I don't have time to break in raw recruits.  Do you know who they are?~
+@4   = ~Just what I need.  More surly low-lifes, lounging around my guild.  I don't suppose you know who these fools are?~
+@5   = ~A band of fellows from our Baldur's Gate chapter up north, lead by a man named Narlen Darkwalk and a woman, Black Lily.  About ten or twelve all told, possibly more, mostly...~
+@6   = ~Narlen Darkwalk?  Black Lily...?~
+@7   = ~Sure.  Do you know them?~
+@8   = ~I do indeed!  Narlen and I go way back.  Good thieves, both he and Lily.  I'm sure the rest are top notch.  I wonder why they left the Gate?~
+@9   = ~Oh yes.  I know that cant speaking idiot.  I owe him him one.  Working for me now, eh?  I'll be glad to have that one under my heel.  Why is he coming here?~
+@10  = ~Well, as you know, the recent... difficulties... have left our ranks decimated.  Shadow Masters from all over are sending what men they can to increase our numbers.  We can't lose Athkatla, not after what happened in Waterdeep.~
+@11  = ~Not sure if it will be enough, but every little bit counts.  Even if most of the thieves we get are dregs from the other guilds.~
+@12  = ~Narlen and Lily aren't dregs.  Don't worry.  They'll be a welcome addition and I'm sure the others will pull their weight.  How much longer until they get here?~
+@13  = ~Hmmph.  We'll see.  When are they due to arrive?~
+@14  = ~From what I've been told, they left some time ago...  so... mmmm... lessee... seven plus eight, carry the one... just a sec... lemme take off this shoe...~
+@15  = ~Hello!~
+@16  = ~They should be here in a day or two!~
+@17  = ~Just let me know when they get here.~
+@18  = ~Will do Boss!  You can count on me!~
+@19  = ~Narlen Darkwalk and Black Lily Come to Athkatla
+
+Lathan has informed me that reinforcements from the Baldur's Gate Guild branch are to arrive within the next day or two.  The rogues are lead by none other than Narlen Darkwalk and Black Lily.  I wonder why they have left the Gate?~
+@20  = ~Aye, Boss.  There you are!  Something's come up!  You may want to deal with it as soon as possible.~
+@21  = ~Seems there's a new Captain of the Guard here in the docks and believe it or not, he's waging war on our guild!  I suppose with the recent troubles we've been having, he or one of his superiors, has decided that this would be the perfect time to strike against us.~
+@22  = ~Now you don't have to go it alone, unless you wish.  I have some of our guild's best assassins on hand to aid in the assault.~
+@23  = ~You'll have to raid the Guard House here in the docks and wipe out the garrison.  It's especially important that the Captain is killed in this operation.  He can't be reasoned with or bribed, so this is the only way.~
+@24  = ~Now this is the important part: do you want help with this?  Or do you think you can take it alone?  I'd take the help if I were you, but it's your call.~
+@25  = ~Yes.  I'll accept the reinforcements.  I could use the help.~
+@26  = ~No, there's no need.  I'll take care of this fool myself.~
+@27  = ~Good and good!  I only wish I could take part in the assault!  Just exit the guild through the front door.  Your rogues will be waiting outside.  Speak to one of them and they'll follow you to the Guard House.~
+@28  = ~The Guard House itself is in the north-central section of the Docks, two buildings east of the Temple of Oghma.  The place is crawling with guards, and Captain himself will likely be well protected.~
+@29  = ~Very well.  We really can't afford to lose more thieves anyway.  You've always pulled through on your own before.~
+@30  = ~The Guard House is in the north-central section of the Docks, east of the Temple of Oghma.  The place is crawling with guards, and Captain himself will likely be well defended.~
+@31  = ~Don't delay your assault on the garrison for too long, Boss.  If you don't put an end to this Captain soon, we may have to shut down the guild!~
+@32  = ~Don't delay your assault on the garrison for too long, Boss.  If you don't put an end to this Captain soon, we may have to shut down the guild!  The assassins ourtside are awaiting your command.~
+@33  = ~Also don't forget to the rogues in front of the guild.  They're spoiling for a fight and will follow you to the barracks.~
+@34  = ~Great job Boss!  We heard all about your success!  That will teach them not to mess with our guild!  I doubt we'll have any more trouble from the guards again after this nasty business.~
+@35  = ~I reckon things should return back to normal around here soon.~
+@36  = ~I'll let you know if anything else comes up that requires your attention.~
+@37  = ~I'm sorry, I can only speak to <CHARNAME>.  I hope you understand.~
+@38  = ~Don't delay your assault on the garrison too long, Boss.  If this keeps up we may have to shut down the guild!  The assassins ourtside are awaiting your command.~
+@39  = ~The Assault on the Guard House.
+
+Apparently there is a new sheriff in town and he's called me out.  The newly installed Captain of the Guard here in the Docks, has vowed to see me hanging from a gibbet.  He is apparently a very unreasonable fellow and refuses to be paid off.  That won't do at all.  I have no choice but to kill him before he gets to me. He can be found in the barracks just north of my guild hall and east of the local temple.  I have enlisted some of my best assassins to aid me in this task.  I must talk to them before the attack.  They are waiting for me just outside the guild, near the front door.~
+@40  = ~Don't delay your assault on the garrison too long, Boss.  If this keeps up we may have to shut down the guild!~
+@41  = ~The Assault on the Guard House.
+
+Apparently there is a new sheriff in town and he's called me out.  The newly installed Captain of the Guard here in the Docks, has vowed to see me hanging from a gibbet.  He is apparently a very unreasonable fellow and refuses to be paid off.  That won't do at all.  I have no choice but to kill him before he gets to me. He can be found in the barracks just north of my guild hall and east of the local temple.~

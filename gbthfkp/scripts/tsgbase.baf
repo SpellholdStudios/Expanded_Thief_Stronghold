@@ -1,0 +1,41 @@
+IF
+  HPPercentLT(Myself,100)
+  HasItem("POTN52",Myself)
+  !GlobalTimerNotExpired("UseItem1","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("UseItem1","LOCALS",12)
+    DisplayStringHead(Myself,@1034) // How about a little help, eh?
+    DisplayString(Myself,46150) // quaffs a potion
+    UseItem("POTN52",Myself)
+END
+
+IF
+  HPPercentLT(Myself,100)
+  !HasItem("POTN52",Myself)
+  Global("FreedKamuzu","GLOBAL",4)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    CreateItem("POTN52",1,0,0)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !AreaCheck("AR0300")
+  !Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    Attack(LastSeenBy(Myself))
+END
+

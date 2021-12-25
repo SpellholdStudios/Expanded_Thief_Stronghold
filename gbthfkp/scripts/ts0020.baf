@@ -1,0 +1,32 @@
+IF
+  Global("TS5Spawn0020","GLOBAL",0)
+  Global("TSPlot","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Spawn0020","GLOBAL",1)
+    CreateCreature("TS5Grd",[233.385],1)
+    CreateCreature("TS5Grd",[274.364],1)
+    CreateCreature("TS5Grd",[395.269],1)
+    CreateCreature("TS5Grd",[425.253],1)
+    CreateCreature("TS5Grd",[594.408],1)
+    CreateCreature("TS5Grd",[552.440],1)
+    CreateCreature("TS5Grd",[447.527],1)
+    CreateCreature("TS5Grd",[360.380],1)
+    CreateCreature("TS5Grd",[460.426],1)
+    CreateCreature("TS5Grd",[512.302],1)
+    CreateCreature("TS5Grd",[588.345],1)
+    CreateCreature("TS5Grd",[585.266],1)
+END
+
+IF
+  Delay(10)
+  Global("TS5Spawn0020","GLOBAL",1)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Spawn0020","GLOBAL",2)
+    TriggerActivation("Tran0332",TRUE)
+    TriggerActivation("Tran0333",TRUE)
+END
+
+

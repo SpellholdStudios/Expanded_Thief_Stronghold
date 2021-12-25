@@ -1,0 +1,56 @@
+IF
+  HasItem("Potn52",Myself) // Potion of Extra Healing
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    UseItem("Potn52",Myself) // Potion of Extra Healing
+    SetGlobalTimer("Busy","LOCALS",8)
+END
+
+IF
+  HasItem("Potn42",Myself) // Potion of Regeneration 
+  !CombatCounter(0)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    UseItem("Potn42",Myself) // Potion of Regeneration 
+    SetGlobalTimer("Busy","LOCALS",8)
+END
+
+IF
+  RandomNum(10,1)
+  See([0.0.0.0.4])
+  HasItem("Potn10",Myself) // Potion of Invisibility
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    UseItem("Potn10",Myself) // Potion of Invisibility
+    SetGlobalTimer("Busy","LOCALS",8)
+END
+
+IF
+  HasItem("Potn14",Myself) // Oil of Speed
+  See([0.0.0.0.4])
+  !StateCheck(Myself,STATE_HASTED)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    UseItem("Potn14",Myself) // Oil of Speed
+    SetGlobalTimer("Busy","LOCALS",8)
+END
+
+IF
+  RandomNum(10,2)
+  HaveSpell(ASSASSIN_POISON)
+  See([0.0.0.0.4])
+  !GlobalTimerNotExpired("PoisonWeapon","LOCALS")
+THEN
+  RESPONSE #100
+    Spell(Myself,ASSASSIN_POISON)
+    SetGlobalTimer("PoisonWeapon","LOCALS",18)
+    Attack(LastSeenBy(Myself))
+END
+
+

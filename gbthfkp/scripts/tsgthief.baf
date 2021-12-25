@@ -1,0 +1,365 @@
+// reset jail check
+IF
+  Global("PGThievesLeave","GLOBAL",0)
+  !Global("TSJailCheck","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",0)
+END
+
+// init jail check
+IF
+  Global("PGThievesLeave","GLOBAL",1)
+  Global("TSJailCheck","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",1)
+END
+
+// Hanz jail check
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Hanz",Myself)
+  Global("HanzThief","GLOBAL",0) // unassigned
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Hanz",Myself)
+  Global("HanzThief","GLOBAL",1) // easy
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #10
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("HanzThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Hanz",Myself)
+  Global("HanzThief","GLOBAL",2) // moderate
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #20
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("HanzThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Hanz",Myself)
+  Global("HanzThief","GLOBAL",3) // dangerous
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #30
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("HanzThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Hanz",Myself)
+  Global("HanzThief","GLOBAL",4) // extreme
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #40
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("HanzThief","GLOBAL",5) // oops
+END
+
+// Kretor jail check
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Kretor",Myself)
+  Global("KretorThief","GLOBAL",0) // unassigned
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Kretor",Myself)
+  Global("KretorThief","GLOBAL",1) // easy
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #10
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("KretorThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Kretor",Myself)
+  Global("KretorThief","GLOBAL",2) // moderate
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #20
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("KretorThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Kretor",Myself)
+  Global("KretorThief","GLOBAL",3) // dangerous
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #30
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("KretorThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Kretor",Myself)
+  Global("KretorThief","GLOBAL",4) // extreme
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #40
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("KretorThief","GLOBAL",5) // oops
+END
+
+// Milph (aka Goshan) jail check
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Milph",Myself)
+  Global("MilphThief","GLOBAL",0) // unassigned
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Milph",Myself)
+  Global("MilphThief","GLOBAL",1) // easy
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #10
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MilphThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Milph",Myself)
+  Global("MilphThief","GLOBAL",2) // moderate
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #20
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MilphThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Milph",Myself)
+  Global("MilphThief","GLOBAL",3) // dangerous
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #30
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MilphThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Milph",Myself)
+  Global("MilphThief","GLOBAL",4) // extreme
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #40
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MilphThief","GLOBAL",5) // oops
+END
+
+// Morsa jail check
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Morsa",Myself)
+  Global("MorsaThief","GLOBAL",0) // unassigned
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Morsa",Myself)
+  Global("MorsaThief","GLOBAL",1) // easy
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #10
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MorsaThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Morsa",Myself)
+  Global("MorsaThief","GLOBAL",2) // moderate
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #20
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MorsaThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Morsa",Myself)
+  Global("MorsaThief","GLOBAL",3) // dangerous
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #30
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MorsaThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Morsa",Myself)
+  Global("MorsaThief","GLOBAL",4) // extreme
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #40
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("MorsaThief","GLOBAL",5) // oops
+END
+
+// Varia jail check
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Varia",Myself)
+  Global("VariaThief","GLOBAL",0) // unassigned
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Varia",Myself)
+  Global("VariaThief","GLOBAL",1) // easy
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #10
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("VariaThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Varia",Myself)
+  Global("VariaThief","GLOBAL",2) // moderate
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #20
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("VariaThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Varia",Myself)
+  Global("VariaThief","GLOBAL",3) // dangerous
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #30
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("VariaThief","GLOBAL",5) // oops
+END
+
+IF
+  Global("TSJailCheck","LOCALS",1)
+  Name("Varia",Myself)
+  Global("VariaThief","GLOBAL",4) // extreme
+THEN
+  RESPONSE #100
+    SetGlobal("TSJailCheck","LOCALS",2)
+  RESPONSE #40
+    SetGlobal("TSJailCheck","LOCALS",2)
+    SetGlobal("VariaThief","GLOBAL",5) // oops
+END
+
+// going back home
+IF
+  Name("Hanz",Myself)
+  Global("HanzThief","GLOBAL",5)
+  !AreaCheck("AR1005")
+THEN
+  RESPONSE #100
+    SetGlobal("HanzIsBack","GLOBAL",0)
+    SetGlobal("HanzRescue","GLOBAL",0)
+    EscapeArea()
+END
+
+IF
+  Name("Kretor",Myself)
+  Global("KretorThief","GLOBAL",5)
+  !AreaCheck("AR1005")
+THEN
+  RESPONSE #100
+    SetGlobal("KretorIsBack","GLOBAL",0)
+    SetGlobal("KretorRescue","GLOBAL",0)
+    EscapeArea()
+END
+
+IF
+  Name("Milph",Myself)
+  Global("MilphThief","GLOBAL",5)
+  !AreaCheck("AR1005")
+THEN
+  RESPONSE #100
+    SetGlobal("MilphIsBack","GLOBAL",0)
+    SetGlobal("MilphRescue","GLOBAL",0)
+    EscapeArea()
+END
+
+IF
+  Name("Morsa",Myself)
+  Global("MorsaThief","GLOBAL",5)
+  !AreaCheck("AR1005")
+THEN
+  RESPONSE #100
+    SetGlobal("MorsaIsBack","GLOBAL",0)
+    SetGlobal("MorsaRescue","GLOBAL",0)
+    EscapeArea()
+END
+
+IF
+  Name("Varia",Myself)
+  Global("VariaThief","GLOBAL",5)
+  !AreaCheck("AR1005")
+THEN
+  RESPONSE #100
+    SetGlobal("VariaIsBack","GLOBAL",0)
+    SetGlobal("VariaRescue","GLOBAL",0)
+    EscapeArea()
+END
+
+

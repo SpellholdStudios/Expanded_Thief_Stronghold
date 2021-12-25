@@ -1,0 +1,23 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewObject(Player1,INSTANT)
+    ActionOverride("TSNarlen",EscapeAreaMove("TS0010",1105,842,3))
+    FadeToColor([30.0],0)
+    Wait(4)
+    DayNight(MIDNIGHT)
+    ActionOverride(Player1,LeaveAreaLUA("TS0010","",[1157.870],3))
+    ActionOverride(Player2,LeaveAreaLUA("TS0010","",[1190.852],3))
+    ActionOverride(Player3,LeaveAreaLUA("TS0010","",[1166.908],3))
+    ActionOverride(Player4,LeaveAreaLUA("TS0010","",[1204.899],3))
+    ActionOverride(Player5,LeaveAreaLUA("TS0010","",[1096.930],3))
+    ActionOverride(Player6,LeaveAreaLUA("TS0010","",[1232.791],3))
+    ActionOverride(Player1,Wait(2))
+    ActionOverride(Player1,MultiPlayerSync())
+    ActionOverride(Player1,FadeFromColor([30.0],0))
+    ActionOverride(Player1,EndCutSceneMode())
+END
+
+

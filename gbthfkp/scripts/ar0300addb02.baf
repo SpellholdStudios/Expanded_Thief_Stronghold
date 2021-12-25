@@ -1,0 +1,11 @@
+IF
+  Global("TSPlot","GLOBAL",6)
+  Global("TSGuardDoors","AR0300",0)
+THEN
+  RESPONSE #100
+    CreateCreature("TSSpy2",[3000.2650],0)
+    CreateCreature("TSSpy2",[3425.1200],0)
+    SetGlobal("TSGuardDoors","AR0300",1)
+END
+
+

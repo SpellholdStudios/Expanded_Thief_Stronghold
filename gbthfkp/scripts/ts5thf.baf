@@ -1,0 +1,343 @@
+IF
+  !Specifics(Myself,5)
+  Global("TS5Move","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ChangeSpecifics(Myself,5)
+END
+
+IF
+  Global("TS5Move","GLOBAL",1)
+  Global("TS5Move1","LOCALS",0)
+  Name("TS5Thf1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",1)
+    EscapeAreaMove("AR0300",3439,1269,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",1)
+  Global("TS5Move1","LOCALS",0)
+  Name("TS5Thf2",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",1)
+    EscapeAreaMove("AR0300",3390,1275,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",1)
+  Global("TS5Move1","LOCALS",0)
+  Name("TS5Thf3",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",1)
+    EscapeAreaMove("AR0300",3517,1273,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",1)
+  Global("TS5Move1","LOCALS",0)
+  Name("TS5Thf4",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",1)
+    EscapeAreaMove("AR0300",3548,1220,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",1)
+  Global("TS5Move1","LOCALS",0)
+  Name("TS5Thf5",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",1)
+    EscapeAreaMove("AR0300",3325,1198,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",1)
+  Global("TS5Move1","LOCALS",0)
+  Name("TS5Thf6",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",1)
+    EscapeAreaMove("AR0300",3473,1312,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",2)
+  Global("TS5Move1","LOCALS",1)
+  Name("TS5Thf1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",2)
+    EscapeAreaMove("AR0332",291,438,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",2)
+  Global("TS5Move1","LOCALS",1)
+  Name("TS5Thf2",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",2)
+    EscapeAreaMove("AR0332",206,463,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",2)
+  Global("TS5Move1","LOCALS",1)
+  Name("TS5Thf3",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",2)
+    EscapeAreaMove("AR0332",292,568,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",2)
+  Global("TS5Move1","LOCALS",1)
+  Name("TS5Thf4",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",2)
+    EscapeAreaMove("AR0332",347,542,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",2)
+  Global("TS5Move1","LOCALS",1)
+  Name("TS5Thf5",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",2)
+    EscapeAreaMove("AR0332",169,481,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",2)
+  Global("TS5Move1","LOCALS",1)
+  Name("TS5Thf6",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TS5Move1","LOCALS",2)
+    EscapeAreaMove("AR0332",335,490,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",3)
+  Global("TS5Move1","LOCALS",2)
+  Name("TS5Thf1",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",3)
+    EscapeAreaMove("TS0020",291,438,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",3)
+  Global("TS5Move1","LOCALS",2)
+  Name("TS5Thf2",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",3)
+    EscapeAreaMove("TS0020",206,463,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",3)
+  Global("TS5Move1","LOCALS",2)
+  Name("TS5Thf3",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",3)
+    EscapeAreaMove("TS0020",292,568,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",3)
+  Global("TS5Move1","LOCALS",2)
+  Name("TS5Thf4",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",3)
+    EscapeAreaMove("TS0020",347,542,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",3)
+  Global("TS5Move1","LOCALS",2)
+  Name("TS5Thf5",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",3)
+    EscapeAreaMove("TS0020",169,481,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",3)
+  Global("TS5Move1","LOCALS",2)
+  Name("TS5Thf6",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",3)
+    EscapeAreaMove("TS0020",335,490,9)
+END
+
+IF
+  Global("TS5Move","GLOBAL",4)
+  Global("TS5Move1","LOCALS",3)
+  Name("TS5Thf1",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",4)
+    EscapeAreaMove("AR0333",536,255,1)
+END
+
+IF
+  Global("TS5Move","GLOBAL",4)
+  Global("TS5Move1","LOCALS",3)
+  Name("TS5Thf2",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",4)
+    EscapeAreaMove("AR0333",633,308,1)
+END
+
+IF
+  Global("TS5Move","GLOBAL",4)
+  Global("TS5Move1","LOCALS",3)
+  Name("TS5Thf3",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",4)
+    EscapeAreaMove("AR0333",597,325,1)
+END
+
+IF
+  Global("TS5Move","GLOBAL",4)
+  Global("TS5Move1","LOCALS",3)
+  Name("TS5Thf4",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",4)
+    EscapeAreaMove("AR0333",559,220,1)
+END
+
+IF
+  Global("TS5Move","GLOBAL",4)
+  Global("TS5Move1","LOCALS",3)
+  Name("TS5Thf5",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",4)
+    EscapeAreaMove("AR0333",564,313,1)
+END
+
+IF
+  Global("TS5Move","GLOBAL",4)
+  Global("TS5Move1","LOCALS",3)
+  Name("TS5Thf6",Myself)
+THEN
+  RESPONSE #100
+    MoveToPointNoInterrupt([617.257])
+    SetGlobal("TS5Move1","LOCALS",4)
+    EscapeAreaMove("AR0333",508,302,1)
+END
+
+IF
+  Dead("TS5Bad")
+  !AreaCheck("AR0313")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("TS5Move","GLOBAL",5)
+  Name("TS5Thf1",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0313",427,379,3)
+END
+
+IF
+  Dead("TS5Bad")
+  !AreaCheck("AR0313")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("TS5Move","GLOBAL",5)
+  Name("TS5Thf2",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0313",475,409,4)
+END
+
+IF
+  Dead("TS5Bad")
+  !AreaCheck("AR0313")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("TS5Move","GLOBAL",5)
+  Name("TS5Thf3",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0313",522,442,4)
+END
+
+IF
+  Dead("TS5Bad")
+  !AreaCheck("AR0313")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("TS5Move","GLOBAL",5)
+  Name("TS5Thf4",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0313",524,485,7)
+END
+
+IF
+  Dead("TS5Bad")
+  !AreaCheck("AR0313")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("TS5Move","GLOBAL",5)
+  Name("TS5Thf5",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0313",487,512,8)
+END
+
+IF
+  Dead("TS5Bad")
+  !AreaCheck("AR0313")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  Global("TS5Move","GLOBAL",5)
+  Name("TS5Thf6",Myself)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0313",444,544,8)
+END
+
+IF
+  Dead("TS5Bad")
+  !Detect([ENEMY])
+  CombatCounter(0)
+  !Global("TS5Move","GLOBAL",5)
+THEN
+  RESPONSE #100
+    StartDialogueNoSet(Player1)
+END
+
+

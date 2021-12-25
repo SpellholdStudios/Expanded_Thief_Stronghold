@@ -1,0 +1,225 @@
+IF
+  Global("Prep","LOCALS",0)
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("Prep","LOCALS",1)
+    ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+    ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    DisplayString(Myself,36936) // A contingency spell has been triggered
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
+END
+
+IF
+  StateCheck(Myself,STATE_SILENCED)
+  GlobalLT("Vocalize","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("Vocalize","LOCALS",1)
+    SpellNoDec(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+  CheckStatLT(Myself,2,STONESKINS)
+  GlobalLT("StoneSkin","LOCALS",1)
+  Global("Prep","LOCALS",1)
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("StoneSkin","LOCALS",1)
+    SpellNoDec(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+  See([PC])
+  OR(2)
+    CheckStatGT(LastSeenBy(Myself),10,RESISTMAGIC)
+    Class(LastSeenBy(Myself),LONG_BOW)
+  GlobalLT("PierceMagic","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("PierceMagic","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_PIERCE_MAGIC)
+END
+
+IF
+  RandomNum(10,1)
+  OR(2)
+    See(SecondNearestEnemyOfType([0.0.0.LONG_BOW]))
+    See(SecondNearestEnemyOfType([0.0.0.CLERIC_ALL]))
+  !StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+  !HasItem("Amul21",LastSeenBy(Myself)) // Amulet of Power
+  GlobalLT("PWSilence","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("PWSilence","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_POWER_WORD_SILENCE)
+END
+
+IF
+  OR(3)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+    See(MostDamagedOf(Myself))
+  HPLT(LastSeenBy(Myself),60)
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  GlobalLT("PWStun","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("PWStun","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+END
+
+IF
+  RandomNum(10,1)
+  OR(2)
+    See([0.0.0.0.5])
+    See(TenthNearestEnemyOf(Myself))
+  GlobalLT("RemoveMagic","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("RemoveMagic","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  GlobalLT("Malison","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("Malison","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_GREATER_MALISON)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  GlobalLT("Emotion","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("Emotion","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_EMOTION_HOPELESSNESS)
+END
+
+IF
+  See([GOODCUTOFF.0.0.0.0.SUMMONED])
+  GlobalLT("DeathSpell","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("DeathSpell","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+IF
+  RandomNum(3,1)
+  OR(2)
+    See([0.0.0.0.5])
+    See(ThirdNearestEnemyOf(Myself))
+  !StateCheck(Myself,STATE_MIRRORIMAGE)
+  GlobalLT("MirrorImage","LOCALS",2)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("MirrorImage","LOCALS",1)
+    SpellNoDec(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(ThirdNearestEnemyOf(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  GlobalLT("ChainLightning","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("ChainLightning","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_CHAIN_LIGHTNING)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(TenthNearestEnemyOf(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  GlobalLT("LightningBolt","LOCALS",2)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("LightningBolt","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(ThirdNearestEnemyOf(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  GlobalLT("MagicMissile","LOCALS",4)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("MagicMissile","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(FourthNearestEnemyOf(Myself))
+  !CheckStatGT(LastSeenBy(Myself),50,RESISTMAGIC)
+  GlobalLT("Scorcher","LOCALS",1)
+  !GlobalTimerNotExpired("Busy","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("Scorcher","LOCALS",1)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+END
+
+IF
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  GlobalLT("PhanBlade","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("Busy","LOCALS",6)
+    IncrementGlobal("PhanBlade","LOCALS",1)
+    SpellNoDec(Myself,WIZARD_PHANTOM_BLADE)
+END
+
+

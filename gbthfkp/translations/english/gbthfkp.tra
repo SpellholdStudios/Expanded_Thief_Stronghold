@@ -1,0 +1,122 @@
+// GB's Expanded Thief Stronghold, American English
+/* Install Messages */
+@1  = "This component requires the Throne of Bhaal expansion."
+@2  = "Expanded Thief Stronghold"
+@3  = "Enhanced Random Encounters (w/Kensai Ryu, ToB req.)"
+@4  = "GB Scripts (player character scripts)"
+@5  = "Disable the 'Improved Mae'Var' component (restore game default files)"
+
+/* Files w/Strings */
+@100  = "Scratchy"
+@101  = "Cpt. Sterling"
+@102  = "Lt. Betta"
+@103  = "<CHARNAME>'s Strongbox Key"
+@104  = "This is the key to the strongbox in your office on the second floor of the guild.  This key is the ONLY means of opening your safe.  It would be wise to keep it secure."
+@105  = "Sword of Olidammara +4"
+@106  = "Sword of Olidammara +4
+It is believed that Olidammara, the Laughing Rogue himself, gave this blade to one of his favored mortal thieves.  Since then, it has been used many times, in many places by countless rogues, rapscallions, and scoundrels.  A fickle blade, ownership of this sword can be considered but temporary at best.  It seems... easy... to misplace somehow and even resists being scabbarded, of course, this could just be your imagination.  How it came to Faerun is anyone's guess, though you hope to hold on to it for a little while at least.
+
+STATISTICS:
+
+Equipped Ability: +1 to backstab multiplier.
+Combat Ability: 15% chance of causing confusion with each hit (1 turn duration, no save).
+THAC0:  +4 bonus
+Damage:  1D6 +4
+Damage type piercing
+Weight: 2
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type:  1-handed
+Requires: 3 Strength
+Usable By: Thieves"
+@107  = "Cat's Claw"
+@108  = "Cat's Claw
+The history of this powerful dagger eludes all attempts at divination.  Even the most potent spell conjures forth only the image of a mouse, small and grey.  What relationship the image and this weapon may share remains a mystery to you.
+
+STATISTICS:
+
+Equipped Ability: Sets Two Weapon Fighting Style Proficiency to 2, grants an extra attack per round.
+THAC0: +3 bonus
+Damage:  1D4 +3
+Damage type:  piercing
+Weight: 0
+Speed Factor: 0
+Proficiency Type: Dagger
+Type:  1-handed
+Require: 3 Strength
+Usable By: Thieves"
+@109  = "Kamuzu's Potions"
+@110  = "Black Lily's Jewel Fence"
+@111  = "Myriza"
+@112  = "Keltar"
+@113  = "Genja"
+@114  = "Gelt Foldum"
+@115  = "Issa Kealn"
+@116  = "Hawrath"
+@117  = "Gruuk the Hairy"
+@118  = "Old Yeller"
+@119  = "Off wit ye now!  I've got counting to do. " [BLACKL02]
+@120  = "'Twill be the darkest day ye never seen before I don't have what ye need. " [BLACKL01]
+@121  = "Ouch! " [BLACKL03]
+@122  = "Uh...ungh! " [BLACKL04]
+@123  = "Help me!  Help me please!"
+@124  = #6745 // Short Sword.
+@125  = #6747 // Short Sword Description.
+@126  = #6343 // Dagger.
+@127  = #6720 // Dagger Description.
+@128  = "GB Fighter:"
+@129  = "GB Mage:"
+@130  = "GB Cleric:"
+@131  = "GB Cleric/Mage:"
+@132  = "This script is suitable for fighters, paladins, rangers and thieves."
+@133  = "This script is suitable for magic-users (single and multi-classed) and bards, but not sorcerers."
+@134  = "This script is suitable for clerics and druids."
+@135  = "This script is suitable for the cleric/magic-user multi classed character."
+@136  = "Briney Grog"
+@137  = "Stout Lager"
+@138  = "Black Sun Ale"
+@139  = "Red Dragon Firewater"
+@140  = "Old Winyards"
+@141  = "Bert"
+@142  = "Tom"
+@143  = "Bill Huggins"
+@144  = "Jancie"
+@145  = "Here ye go lad."
+@146  = "Oooh!  My poor aching feet!"
+/* Script Strings */
+@1000 = "To accomplish your task, Mae'Var must die.  There's no going back now."
+@1001 = "Narlen Darkwalk and his rogues have placed treasure in your strongbox."
+@1002 = "You'll pay for that!"
+@1003 = "I'm new in town. Could you give me directions to your apartment?"
+@1004 = "How about I give my fist directions to your face?"
+@1005 = "Haven't I seen you someplace before?"
+@1006 = "Yeah, that's why I don't go there anymore."
+@1007 = "So, wanna go back to my place?"
+@1008 = "Well, I don't know. Will two people fit under a rock?"
+@1009 = "Your place or mine?"
+@1010 = "Both. You go to yours and I'll go to mine."
+@1011 = "Hey, baby, what's your sign?"
+@1012 = "Do not Enter."
+@1013 = "How do you like your eggs in the morning?"
+@1014 = "Unfertilized!"
+@1015 = "I know how to please a woman."
+@1016 = "Then please leave me alone."
+@1017 = "I want to give myself to you."
+@1018 = "Sorry, I don't accept cheap gifts."
+@1019 = "I can tell that you want me."
+@1020 = "Ohhhh. You're so right. I want you to leave."
+@1021 = "If I could see you naked, I'd die happy."
+@1022 = "Yeah, but if I saw you naked, I'd probably die laughing."
+@1031 = "Hey baby. How about we hook up after your shift?"
+@1024 = "Sorry, I don't date outside my species..."
+@1025 = "Your body is like a temple."
+@1026 = "Sorry, there are no services today."
+@1027 = "I'd go through anything for you."
+@1028 = "Good! Let's start with your head through the nearest wall."
+@1029 = "I would go to the end of the world for you."
+@1030 = "Yes, but would you stay there?"
+@1023 = "Hey chickie, how 'bout you and I hitting the hot spots?"
+@1032 = "Hmmm? You know, you are so pitiful, it's kind of cute."
+@1033 = "Really?"
+@1034 = "How about a little help, eh?"
+

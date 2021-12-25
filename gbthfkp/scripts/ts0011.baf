@@ -1,0 +1,33 @@
+IF
+  OnCreation()
+  Global("TSNarlenBadGuys2","GLOBAL",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    FadeToColor([30.0],0)
+    SetGlobal("TSNarlenBadGuys2","GLOBAL",1)
+    MoveViewObject(Player1,INSTANT)
+    CreateCreature("TSNBad1",[774.809],3)
+    CreateCreature("Orc03",[907.944],4) // Orc Priest
+    CreateCreature("Orc04",[513.753],13) // Orc Mage
+    CreateCreature("Orc02",[616.895],4) // Orc Archer
+    CreateCreature("Orc02",[819.963],5) // Orc Archer
+    CreateCreature("Orc02",[798.1114],4) // Orc Archer
+    CreateCreature("Orc02",[460.1003],4) // Orc Archer
+    CreateCreature("Orc06",[386.1104],14) // Orog
+    CreateCreature("Orc05",[333.1053],14) // Orog
+    CreateCreature("Orc06",[641.937],2) // Orog
+    CreateCreature("Orc05",[735.990],2) // Orog
+    CreateCreature("TSBlackL",[1324.501],4)
+    CreateCreature("TSSmugB",[1244.478],3)
+    CreateCreature("TSSmugM",[1368.541],3)
+    CreateCreature("TSSmugF",[1296.559],3)
+    CreateCreature("TSSmugB",[1225.522],3)
+    CreateCreature("TSSmugM",[1258.532],3)
+    CreateCreature("TSSmugF",[1192.366],3)
+    CreateCreature("TSSmugF",[1403.613],3)
+    FadeFromColor([30.0],0)
+    EndCutSceneMode()
+END
+
+

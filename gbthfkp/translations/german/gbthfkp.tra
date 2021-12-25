@@ -1,0 +1,115 @@
+@1    = ~Diese Komponenten benoetigen die 'Thron des Bhaal' Erweiterung.~ 
+@2    = ~Erweiterte Diebesgilde~
+@3    = ~Erweiterte Zufallsbegegnungen (von Kensai Ryu, TdB benoetigt)~ 
+@4    = ~GB Skripte (Skripte fuer Spielercharaktere)~
+@5    = ~'Verbesserten Mae'Var' deaktivieren (stellt Originaldateien wieder her)~ 
+@100  = ~Kratzi~
+@101  = ~Hauptmann Sterling~
+@102  = ~Leutnant Betta~ 
+@103  = ~<CHARNAME>s Safeschlüssel~
+@104  = ~Dies ist der Schlüssel für Euren Safe im Büro im ersten Stock der Diebesgilde. Dieser Schlüssel stellt die EINZIGE Möglichkeit dar, Euren Safe zu öffnen. Es erscheint ratsam, ihn gut aufzubewahren.~ 
+@105  = ~Schwert von Olidammara +4~
+@106  = ~Schwert von Olidammara +4
+Es wird erzählt, dass Olidammra, der lachende Dieb selbst, diese Klinge einem seiner sterblichen Lieblingsdiebe übergab. Seit dieser Zeit wurde sie viele Male und an vielen Orten von zahllosen Dieben, Halunken und Schurken benutzt. Es ist eine unbeständige Klinge, da ihr Besitz immer nur kurze Zeit währt. Sie scheint... leicht... verloren zu gehen und widersteht sogar dem Versuch, sie in die Scheide zu stecken, aber das könnte auch nur Eurer Vorstellung entspringen. Auf welche Weise diese Waffe nach Faerûn kam, ist unbekannt, doch hofft Ihr, sie wenigstens eine Weile behalten zu können.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: +1 auf den Schadensfaktor für hinterhältigen Angriff. Bei jedem Treffer wird zu 5% Konfusion beim Gegner verursacht (1 Phase Dauer, kein Rettungswurf).
+
+Schaden: 1W6 +4 (Stich)
+ETW0: -4
+Gewicht: 2
+Initiativefaktor: 0
+Fertigkeit: Kurzschwert
+Typ: 1-händig
+
+Kann nur von Dieben verwendet werden~
+@107  = ~Katzenklaue~ 
+@108  = ~Katzenklaue
+Die Geschichte dieses mächtigen Dolches entzieht sich allen Versuchen der Weißsagung. Selbst der vielversprechendste Zauber beschwört nur das Bild einer einfachen Maus. In welcher Beziehung dieses Bild und die Waffe stehen, bleibt Euch verborgen.
+
+SPEZIFISCHE EIGENSCHAFTEN:
+
+Besondere Fähigkeiten: Der Träger erhält genau zwei Fertigkeitspunkte im Kampf mit zwei Waffen und außerdem einen zusätzlichen Angriff.
+
+Schaden: 1W4 +3 (Stich)
+ETW0: -3
+Gewicht: 0
+Initiativefaktor: 0
+Fertigkeit: Dolch
+Typ: 1-händig
+
+Kann nur von Dieben verwendet werden~
+@109  = ~Kamuzus Tränke~ 
+@110  = ~Black Lilys Juwelenhandel~
+@111  = ~Myriza~
+@112  = ~Keltar~
+@113  = ~Genja~ 
+@114  = ~Gelt Foldum~
+@115  = ~Issa Kealn~ 
+@116  = ~Hawrath~ 
+@117  = ~Gruuk der Behaarte~
+@118  = ~Alter Yeller~ 
+@119  = ~Jetzt aber fort mit Euch! Ich muss Berechnungen anstellen.~ [BLACKL02]
+@120  = ~ Dies wird der dunkelste Tag, den Ihr je gesehen habt, bevor ich nicht kriege, was Ihr braucht!~ [BLACKL01]
+@121  = ~Autsch!~ [BLACKL03]
+@122  = ~Ah...aargh!~ [BLACKL04]
+@123  = ~Helft mir!  Bitte, helft mir!~
+@124  = ~#6745~
+@125  = ~#6747~
+@126  = ~#6343~
+@127  = ~#6720~
+@128  = ~GB Kämpfer:~
+@129  = ~GB Magier:~
+@130  = ~GB Kleriker:~
+@131  = ~GB Kleriker/Magier:~
+@132  = ~Dieses Skript ist gedacht für Kämpfer, Paladin, Waldläufer und Dieb.~
+@133  = ~Dieses Skript ist gedacht für Magier (ein- oder mehrklassig) und Barden, aber nicht für Hexenmeister.~
+@134  = ~Dieses Skript ist gedacht für Kleriker und Druiden.~
+@135  = ~Dieses Skript ist gedacht für mehrklassige Kleriker/Magier.~
+@136  = ~Briney Grog~
+@137  = ~Stout Lager~
+@138  = ~Schwarze Sonne  Ale~
+@139  = ~Rotdrachen Feuerwasser~
+@140  = ~Alter Winyards~
+@141  = ~Bert~
+@142  = ~Tom~
+@143  = ~Bill Huggins~
+@144  = ~Jancie~
+@145  = ~Bitte sehr, guter Mann.~
+@146  = ~Oooh!  Mein armer, schmerzender Fuss!~
+@1000 = ~Um Eure Aufgabe zu erfüllen, muss Mae'Var sterben. Es gibt kein Zurück mehr.~
+@1001 = ~Narlen Dunkelmarsch und seine Diebe haben Gold in Eurem Safe hinterlegt.~
+@1002 = ~Dafür wirst du bezahlen!~
+@1003 = ~Ich bin neu in der Stadt. Könntet Ihr mir den Weg zu Eurer Wohnung beschreiben?~
+@1004 = ~Wie wärs wenn meine Faust euch den Weg beschreibt?~
+@1005 = ~Kennen wir uns?~
+@1006 = ~Ja, das ist der Grund warum ich dort nicht mehr hingehe.~
+@1007 = ~Also, wollen wir zurück zu meinem Platz?~
+@1008 = ~Also, ich weiß nicht. Passen den zwei Leute unter einen Stein?~
+@1009 = ~Zu dir oder zu mir?~
+@1010 = ~Beides. Du gehst zu dir und ich gehe zu mir.~
+@1011 = ~Hey Süße, gibst du mir ein Zeichen?~
+@1012 = ~Betreten verboten.~
+@1013 = ~Wie magst du deine Frühstückseier?~
+@1014 = ~Unbefruchtet!~
+@1015 = ~Ich weiß was Frauen wollen.~
+@1016 = ~Dann lass mich bitte allein.~
+@1017 = ~Ich will mich euch hingeben.~
+@1018 = ~Entschuldigt, aber ich nehme keine billigen Geschenke an.~
+@1019 = ~Ich weiß das du mich willst~
+@1020 = ~Ohhhh. Ihr habt so Recht. Ich werde Euch nun verlassen.~
+@1021 = ~Ich würde vor Glück sterben, würde ich Euch nackt sehen können.~
+@1022 = ~Ja, aber wenn Ich euch nackt sehen würde, würde ich vor lachen sterben.~
+@1031 = ~Hey baby. Wie wäre es wenn wir uns irgendwo hin verdrücken, wo nicht soviel los ist?~
+@1024 = ~Verzeiht, aber gehe nicht mit anderen Spezien aus...~
+@1025 = ~Dein Körper ist wie ein Tempel.~
+@1026 = ~Verzeiht, wir haben heute geschlossen.~
+@1027 = ~Ich würde alles für Euch tun.~
+@1028 = ~Gut! Schlag deinen Kopf gegen die erstbeste Mauer.~
+@1029 = ~Ich würde bis ans ende der Welt für Euch gehen.~
+@1030 = ~Ja, was machst du dann noch hier?~
+@1023 = ~Hey Tussi, wir könnten uns doch ein wenig die Zeit vertreiben?~
+@1032 = ~Hmmm? Ihr seid so mitleiderregend, ich finde das irgendwie süß~
+@1033 = ~Wirklich?~
+@1034 = ~Wie wärs mit ein wenig Hilfe, eh?~

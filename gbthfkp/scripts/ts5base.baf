@@ -1,0 +1,83 @@
+IF
+  !Specifics(Myself,4)
+  Allegiance(Myself,EVILCUTOFF)
+THEN
+  RESPONSE #100
+    ChangeSpecifics(Myself,4)
+END
+
+IF
+  Specifics(Myself,5)
+  OR(2)
+    See([0.0.0.0.4])
+    See([EVILCUTOFF])
+  StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Specifics(Myself,5)
+  OR(2)
+    See([0.0.0.0.4])
+    See([EVILCUTOFF])
+  Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Specifics(Myself,5)
+  OR(2)
+    See([0.0.0.0.4])
+    See([EVILCUTOFF])
+  !Range(LastSeenBy(Myself),8)
+  !StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    EquipMostDamagingMelee()
+    Attack(LastSeenBy(Myself))
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    See([0.0.0.0.5])
+    See(NearestEnemyOf(Myself))
+  !Range(LastSeenBy(Myself),8)
+  !StateCheck(Myself,STATE_INVISIBLE)
+THEN
+  RESPONSE #100
+    EquipRanged()
+    Attack(LastSeenBy(Myself))
+END
+
+

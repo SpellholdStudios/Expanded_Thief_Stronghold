@@ -1,0 +1,21 @@
+@38 = ~Yo... <CHARNAME>, podría Yo...~ 
+@39 = ~¿Sí? ¿Qué es Kamuzu?.~
+@40 = ~¡Basta!  ¡Fuera de aquí maloliente!.~ 
+@41 = ~Yo... Yo pensé que podía dejar este lugar y no mirar atrás, pero... ¡Yo todavía soy un Ladrón de las Sombras!  Tengo talentos, soy alquimista. ¡Os debo la vida! ¿me dejáis ir con vos?.~
+@42 = ~¡Claro! Bienvenido de vuelta a las filas de los Ladrones de las Sombras.~ 
+@43 = ~¿¡Qué!?  ¿y teneros oliendo mal por todos lados?  Yo no lo creo.  ¡Idos y estaos feliz que no os lanzo de nuevo al pozo!.~
+@44 = ~¡Gracias! ¡Gracias mi <LADYLORD>!  ¡No os arrepentiréis, os lo prometo!  Por favor, venid y hablad conmigo en el tercer piso cuando terminéis aquí.~
+@45 = ~Kamuzu... ¿el Hacedor de Pociones?
+
+Parece que el viejo, Kamuzu, es un gran alquimista.  Tan talentoso que  Mae'Var lo dejó vivo todo este tiempo.  Pidió trabajar para mí y yo acepté.  Si le necesito lo encontraré en el tercer piso de la cofradía.  ¿Qué será lo que puede hacer?.~ 
+@46 = ~¡No!  ¡por favor no!, ¡¡¡Debo irme!!!.~
+@47 = ~Sí... sí Claro... ¡Adiós!  (Kamuzu se va corriendo.)~ 
+@48 = ~Saludos <CHARNAME>.  Siempre os estaré agradecido por lo que hacéis por mí.  Estoy listo para comenzar a trabajar. Os haré pociones útiles para ladrones, aunque los ingredientes son caros.~
+@49 = ~Sí, a ver qué es lo que podéis hacer.~
+@50 = ~¡Un placer!  ¡Es encantador trabajar como hombre libre otra vez!.~ 
+@51 = ~Saludos otra vez mi <LADYLORD>.  ¿Queréis más pociones?.~
+@52 = ~Sí, a ver qué es lo que podéis hacer.~ 
+@53 = ~No, ahora no, Kamuzu. Tranquilo.~
+@54 = ~Siempre para serviros, mi <LADYLORD>...~
+@55 = ~Estaré aquí si me necesitáis... ahora regresare a la jardinería...~
+@56 = ~Saludos, <GABBER>.  ¿está <PRO_LADYLORD> <CHARNAME> aquí?.~ 

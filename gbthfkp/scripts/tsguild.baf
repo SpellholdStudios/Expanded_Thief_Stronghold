@@ -1,0 +1,671 @@
+IF
+  AreaCheck("AR1005")
+  !Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
+  AreaCheck("AR1005")
+  !Global("TSScared","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSScared","LOCALS",0)
+END
+
+IF
+  Heard([GOODCUTOFF],33)
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Global("TSScared","LOCALS",0)
+THEN
+  RESPONSE #100
+    GlobalShout(33)
+    SetGlobal("TSScared","LOCALS",1)
+    SetGlobalTimer("TSGuildScared","LOCALS",60)
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Global("TSScared","LOCALS",0)
+THEN
+  RESPONSE #100
+    GlobalShout(33)
+    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    SetGlobal("TSScared","LOCALS",1)
+    SetGlobalTimer("TSGuildScared","LOCALS",60)
+END
+
+IF
+  False()
+  AreaCheck("AR0322")
+  OpenState("Door01",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors221","GLOBAL")
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors221","GLOBAL",12)
+    MoveToObject("Door01")
+    SmallWait(3)
+    OpenDoor("Door01")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0322")
+  OpenState("Door02",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors222","GLOBAL")
+  RandomNum(2,2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors222","GLOBAL",12)
+    MoveToObject("Door02")
+    SmallWait(3)
+    OpenDoor("Door02")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0323")
+  OpenState("Door01",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors231","GLOBAL")
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors231","GLOBAL",12)
+    MoveToObject("Door01")
+    SmallWait(3)
+    OpenDoor("Door01")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  !Heard([GOODCUTOFF],31)
+  AreaCheck("AR0323")
+  OpenState("Door02",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors232","GLOBAL")
+  RandomNum(3,2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors232","GLOBAL",12)
+    MoveToObject("Door02")
+    SmallWait(3)
+    OpenDoor("Door02")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0323")
+  OpenState("Door03",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors233","GLOBAL")
+  RandomNum(3,3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors233","GLOBAL",12)
+    MoveToObject("Door03")
+    SmallWait(3)
+    OpenDoor("Door03")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0324")
+  OpenState("Door01",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors241","GLOBAL")
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors241","GLOBAL",12)
+    MoveToObject("Door01")
+    SmallWait(3)
+    OpenDoor("Door01")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0324")
+  OpenState("Door02",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors242","GLOBAL")
+  RandomNum(4,2)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors242","GLOBAL",12)
+    MoveToObject("Door02")
+    SmallWait(3)
+    OpenDoor("Door02")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0324")
+  OpenState("Door03",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors243","GLOBAL")
+  RandomNum(4,3)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors243","GLOBAL",12)
+    MoveToObject("Door03")
+    SmallWait(3)
+    OpenDoor("Door03")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  False()
+  AreaCheck("AR0324")
+  OpenState("Door04",FALSE)
+  !GlobalTimerNotExpired("TSGuildDoors244","GLOBAL")
+  RandomNum(4,4)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    GlobalShout(31)
+    SetGlobalTimer("TSGuildDoors244","GLOBAL",12)
+    MoveToObject("Door04")
+    SmallWait(3)
+    OpenDoor("Door04")
+    SetGlobalTimer("HomePosition","LOCALS",3)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("ShThLt01",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([725.325])
+    Face(2)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("ShThLt02",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([560.300])
+    Face(0)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("ShThStor",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([440.580])
+    Face(2)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("TSNarlen",Myself)
+  AreaCheck("AR0323")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([790.650])
+    Face(4)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("TSBlackL",Myself)
+  AreaCheck("AR0323")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([837.512])
+    Face(1)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("MaeGuy01",Myself)
+  AreaCheck("AR0324")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([700.650])
+    Face(6)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("Milph",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([950.450])
+    Face(6)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("Hanz",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([700.500])
+    Face(14)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("Kretor",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([830.420])
+    Face(2)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("Morsa",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([1050.350])
+    Face(10)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("Varia",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([800.600])
+    Face(9)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("Joster",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([691.292])
+    Face(2)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("TSHadji",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([800.200])
+    Face(10)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("TSWench1",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([580.635])
+    Face(3)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  OR(2)
+    Global("TSScared","LOCALS",1)
+    !GlobalTimerNotExpired("HomePosition","LOCALS")
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  Name("ShThDr01",Myself)
+  AreaCheck("AR0322")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    MoveToPointNoInterrupt([325.495])
+    Face(2)
+    SetGlobal("TSScared","LOCALS",0)
+    SetGlobalTimer("HomePosition","LOCALS",ONE_DAY)
+END
+
+IF
+  Global("TSScared","LOCALS",1)
+  !GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  !Name("ShThLt01",Myself)
+  !Name("ShThLt02",Myself)
+  !Name("ShThStor",Myself)
+  !Name("ShThDr01",Myself)
+  !Name("Hanz",Myself)
+  !Name("Kretor",Myself)
+  !Name("Milph",Myself)
+  !Name("Morsa",Myself)
+  !Name("Varia",Myself)
+  !Name("Joster",Myself)
+  !Name("MaeGuy01",Myself)
+  !Name("TSNarlen",Myself)
+  !Name("TSBlackL",Myself)
+  !Name("TSHadji",Myself)
+  !Name("TSWench1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("TSScared","LOCALS",0)
+END
+
+IF
+  Global("TSScared","LOCALS",1)
+  GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  RandomNum(10,10)
+  See([PC])
+  Gender(Myself,MALE)
+THEN
+  RESPONSE #100
+    PlaySound("BDHIGG03")
+END
+
+IF
+  Global("TSScared","LOCALS",1)
+  GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  RandomNum(10,10)
+  See([PC])
+  Gender(Myself,FEMALE)
+THEN
+  RESPONSE #100
+    PlaySound("PEASF209")
+END
+
+IF
+  Global("TSScared","LOCALS",1)
+  GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  RandomNum(40,1)
+  See([PC])
+  Gender(Myself,MALE)
+THEN
+  RESPONSE #100
+    PlaySound("BDHIGG03")
+    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    RandomWalkContinuous()
+  RESPONSE #100
+    GlobalShout(33)
+    PlaySound("BDHIGG03")
+    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    RandomWalkContinuous()
+END
+
+IF
+  Global("TSScared","LOCALS",1)
+  GlobalTimerNotExpired("TSGuildScared","LOCALS")
+  RandomNum(40,1)
+  See([PC])
+  Gender(Myself,FEMALE)
+THEN
+  RESPONSE #100
+    PlaySound("PEASF209")
+    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    RandomWalkContinuous()
+  RESPONSE #100
+    GlobalShout(33)
+    PlaySound("PEASF209")
+    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    RandomWalkContinuous()
+END
+
+IF
+  Global("TSScared","LOCALS",1)
+  GlobalTimerNotExpired("TSGuildScared","LOCALS")
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  !Allegiance(Myself,GOODBUTBLUE)
+  !AreaCheck("AR1005")
+  !Name("TSWench1",Myself)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,GOODBUTBLUE)
+END
+
+IF
+  Name("ShThLt01",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",725,325,0)
+END
+
+IF
+  Name("ShThLt02",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",560,300,0)
+END
+
+IF
+  Name("ShThStor",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",440,580,2)
+END
+
+IF
+  Name("TSNarlen",Myself)
+  !AreaCheck("AR0323")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0323",790,650,4)
+END
+
+IF
+  Name("TSBlackL",Myself)
+  !AreaCheck("AR0323")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0323",837,512,1)
+END
+
+IF
+  Name("MaeGuy01",Myself)
+  !AreaCheck("AR0324")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0324",700,650,6)
+END
+
+IF
+  Name("Hanz",Myself)
+  !AreaCheck("AR0322")
+  !AreaCheck("AR1005")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",700,500,14)
+END
+
+IF
+  Name("Varia",Myself)
+  !AreaCheck("AR0322")
+  !AreaCheck("AR1005")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",800,600,9)
+END
+
+IF
+  Name("Kretor",Myself)
+  !AreaCheck("AR0322")
+  !AreaCheck("AR1005")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",830,420,2)
+END
+
+IF
+  Name("Milph",Myself)
+  !AreaCheck("AR0322")
+  !AreaCheck("AR1005")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",950,450,6)
+END
+
+IF
+  Name("Morsa",Myself)
+  !AreaCheck("AR0322")
+  !AreaCheck("AR1005")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",1050,350,10)
+END
+
+IF
+  Name("Joster",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",691,292,2)
+END
+
+IF
+  Name("TSHadji",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",800,200,9)
+END
+
+IF
+  Name("TSWench1",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",580,635,3)
+END
+
+IF
+  Name("ShThDr01",Myself)
+  !AreaCheck("AR0322")
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    EscapeAreaMove("AR0322",325,495,2)
+END
+

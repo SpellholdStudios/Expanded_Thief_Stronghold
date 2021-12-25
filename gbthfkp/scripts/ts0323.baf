@@ -1,0 +1,85 @@
+IF
+  OnCreation()
+  Global("TSReveal0323","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSReveal0323","GLOBAL",1)
+    SetAreaRestFlag(1)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+    OpenDoor("Door03")
+    Explore()
+END
+
+IF
+  !GlobalTimerNotExpired("TSGuildDoors23","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("TSGuildDoors23","GLOBAL",ONE_DAY)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+    OpenDoor("Door03")
+END
+
+IF
+  Global("TSSpwanSmugF","GLOBAL",3)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugF","GLOBAL",0)
+    CreateCreature("TSSmugF",[1016.344],2)
+    CreateCreature("TSSmugF",[646.560],9)
+    CreateCreature("TSSmugF",[388.789],10)
+END
+
+IF
+  Global("TSSpwanSmugF","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugF","GLOBAL",0)
+    CreateCreature("TSSmugF",[1016.344],11)
+    CreateCreature("TSSmugF",[646.560],9)
+END
+
+IF
+  Global("TSSpwanSmugF","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugF","GLOBAL",0)
+    CreateCreature("TSSmugF",[1016.344],11)
+END
+
+IF
+  Global("TSSpwanSmugM","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugM","GLOBAL",0)
+    CreateCreature("TSSmugM",[645.656],8)
+    CreateCreature("TSSmugM",[422.540],4)
+END
+
+IF
+  Global("TSSpwanSmugM","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugM","GLOBAL",0)
+    CreateCreature("TSSmugM",[645.656],8)
+END
+
+IF
+  Global("TSSpwanSmugB","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugB","GLOBAL",0)
+    CreateCreature("TSSmugB",[293.624],15)
+    CreateCreature("TSSmugB",[513.787],6)
+END
+
+IF
+  Global("TSSpwanSmugB","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("TSSpwanSmugB","GLOBAL",0)
+    CreateCreature("TSSmugB",[293.624],15)
+END
+
+

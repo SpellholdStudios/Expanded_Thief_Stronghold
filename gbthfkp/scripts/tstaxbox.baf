@@ -1,0 +1,43 @@
+IF
+  GlobalGT("TSSmuggle","GLOBAL",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC41",1,0,0) // Star Sapphire
+    CreateItem("MISC07",250,0,0) // Gold Piece
+    CreateItem("RNDTRE04",0,0,0) // No such index
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC42",1,0,0) // Diamond
+    CreateItem("MISC07",250,0,0) // Gold Piece
+    CreateItem("RNDTRE04",0,0,0) // No such index
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC43",1,0,0) // Emerald
+    CreateItem("MISC07",250,0,0) // Gold Piece
+    CreateItem("RNDTRE04",0,0,0) // No such index
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC44",1,0,0) // King's Tears
+    CreateItem("MISC07",250,0,0) // Gold Piece
+    CreateItem("RNDTRE04",0,0,0) // No such index
+    CreateItem("RNDTRE04",0,0,0) // No such index
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC45",1,0,0) // Rogue Stone
+    CreateItem("MISC07",250,0,0) // Gold Piece
+    CreateItem("RNDTRE04",0,0,0) // No such index
+    CreateItem("RNDMAG02",0,0,0)
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC07",250,0,0) // Gold Piece
+    CreateItem("RndTre03",0,0,0) // No such index
+    CreateItem("RndTre04",0,0,0) // No such index
+    CreateItem("RndTre05",0,0,0) // No such index
+  RESPONSE #100
+    IncrementGlobal("TSSmuggle","GLOBAL",-1)
+    CreateItem("MISC07",750,0,0) // Gold Piece
+    CreateItem("RndTre05",0,0,0) // No such index
+END
+
+

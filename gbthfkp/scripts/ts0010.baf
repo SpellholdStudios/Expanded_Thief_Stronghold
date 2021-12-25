@@ -1,0 +1,20 @@
+IF
+  OnCreation()
+  Global("TSNarlenBadGuys1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TSNarlenBadGuys1","GLOBAL",1)
+    MoveViewObject(Player1,INSTANT)
+    CreateCreature("TSNDoor",[437.332],0)
+    CreateCreature("Orc03",[397.291],0) // Orc Priest
+    CreateCreature("Orc04",[552.290],0) // Orc Mage
+    CreateCreature("Orc02",[334.330],0) // Orc Archer
+    CreateCreature("Orc02",[374.342],0) // Orc Archer
+    CreateCreature("Orc01",[353.369],0) // Orc
+    CreateCreature("Orc01",[351.432],0) // Orc
+    CreateCreature("Orc06",[200.600],0) // Orog
+    CreateCreature("Orc05",[200.625],0) // Orog
+    CreateCreature("WyvBab01",[225.650],0) // Baby Wyvern
+END
+
+
