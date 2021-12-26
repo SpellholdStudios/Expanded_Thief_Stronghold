@@ -4,7 +4,7 @@ IF
   Global("PGFailed","GLOBAL",0)
 THEN
   RESPONSE #100
-    DisplayString(Player1,@1001)
+    DisplayString(Player1,@1001) // ~Narlen Darkwalk and his rogues have placed treasure in your strongbox.~
     SetGlobalTimer("TSSmugglerTimer","GLOBAL",FIVE_DAYS)
     IncrementGlobal("TSSmuggle","GLOBAL",1)
     Wait(120)

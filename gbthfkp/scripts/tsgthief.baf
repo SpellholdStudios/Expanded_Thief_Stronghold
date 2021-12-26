@@ -361,5 +361,3 @@ THEN
     SetGlobal("VariaRescue","GLOBAL",0)
     EscapeArea()
 END
-
-

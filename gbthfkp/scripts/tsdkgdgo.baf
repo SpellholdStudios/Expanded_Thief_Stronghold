@@ -15,4 +15,3 @@ THEN
     SetGlobal("TSDeactive","LOCALS",0)
     Activate(Myself)
 END
-

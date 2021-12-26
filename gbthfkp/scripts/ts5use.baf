@@ -4,7 +4,7 @@ IF
   !GlobalTimerNotExpired("Busy","LOCALS")
 THEN
   RESPONSE #100
-    UseItem("Potn52",Myself) // Potion of Extra Healing
+    UseItem("Potn52",Myself)
     SetGlobalTimer("Busy","LOCALS",8)
 END
 
@@ -14,7 +14,7 @@ IF
   !GlobalTimerNotExpired("Busy","LOCALS")
 THEN
   RESPONSE #100
-    UseItem("Potn42",Myself) // Potion of Regeneration 
+    UseItem("Potn42",Myself)
     SetGlobalTimer("Busy","LOCALS",8)
 END
 
@@ -26,7 +26,7 @@ IF
   !GlobalTimerNotExpired("Busy","LOCALS")
 THEN
   RESPONSE #100
-    UseItem("Potn10",Myself) // Potion of Invisibility
+    UseItem("Potn10",Myself)
     SetGlobalTimer("Busy","LOCALS",8)
 END
 
@@ -37,7 +37,7 @@ IF
   !GlobalTimerNotExpired("Busy","LOCALS")
 THEN
   RESPONSE #100
-    UseItem("Potn14",Myself) // Oil of Speed
+    UseItem("Potn14",Myself)
     SetGlobalTimer("Busy","LOCALS",8)
 END
 
@@ -52,5 +52,3 @@ THEN
     SetGlobalTimer("PoisonWeapon","LOCALS",18)
     Attack(LastSeenBy(Myself))
 END
-
-

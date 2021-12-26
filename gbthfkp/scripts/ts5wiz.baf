@@ -9,7 +9,7 @@ THEN
     ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
     ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
     ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
-    DisplayString(Myself,36936) // A contingency spell has been triggered
+    DisplayString(Myself,36936) // ~A contingency spell has been triggered~
     ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_WEAPONS)
 END
 
@@ -221,5 +221,3 @@ THEN
     IncrementGlobal("PhanBlade","LOCALS",1)
     SpellNoDec(Myself,WIZARD_PHANTOM_BLADE)
 END
-
-

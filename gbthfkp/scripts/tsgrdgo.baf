@@ -20,5 +20,3 @@ THEN
   RESPONSE #100
     Deactivate(Myself)
 END
-
-

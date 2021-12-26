@@ -193,5 +193,3 @@ THEN
     IncrementGlobal("PhanBlade","LOCALS",1)
     SpellNoDec(Myself,WIZARD_PHANTOM_BLADE)
 END
-
-

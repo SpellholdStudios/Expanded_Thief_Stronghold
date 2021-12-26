@@ -6,8 +6,8 @@ THEN
 END
 
 IF
-	Global("PGFailed","GLOBAL",1)
+  Global("PGFailed","GLOBAL",1)
 THEN
-	RESPONSE #100
-		EscapeArea()
+  RESPONSE #100
+    EscapeArea()
 END

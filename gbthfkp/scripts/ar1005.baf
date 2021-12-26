@@ -84,5 +84,3 @@ THEN
     SetGlobal("TSVariaJail","GLOBAL",1)
     Continue()
 END
-
-

@@ -44,5 +44,3 @@ THEN
     SetGlobalTimer("Busy","LOCALS",8)
     Spell(Myself,4213)
 END
-
-

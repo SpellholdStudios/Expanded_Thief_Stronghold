@@ -19,7 +19,7 @@ THEN
     SetGlobal("TSCloseDoors0301","GLOBAL",1)
     TriggerActivation("Tran0300",FALSE)
     TriggerActivation("Tran0301",FALSE)
-    DisplayStringHead(Player1,@1000)
+    DisplayStringHead(Player1,@1000) // ~To accomplish your task, Mae'Var must die. There's no going back now.~
 END
 
 IF
@@ -31,5 +31,3 @@ THEN
     TriggerActivation("Tran0300",TRUE)
     TriggerActivation("Tran0301",TRUE)
 END
-
-

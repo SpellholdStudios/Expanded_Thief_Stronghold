@@ -339,5 +339,3 @@ THEN
   RESPONSE #100
     StartDialogueNoSet(Player1)
 END
-
-

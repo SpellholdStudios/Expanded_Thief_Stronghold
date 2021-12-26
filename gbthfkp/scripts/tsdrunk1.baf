@@ -1,4 +1,5 @@
-// guild stuff
+// gGuild stuff
+// -----------
 IF
   Global("PGFailed","GLOBAL",1)
   !Global("TSGActive","LOCALS",0)
@@ -24,7 +25,8 @@ THEN
     EscapeArea()
 END
 
-// facing
+// Facing
+// ------
 IF
   !GlobalTimerNotExpired("TSDrunkFace","LOCALS")
   Name("TSDrunk1",Myself)
@@ -52,7 +54,8 @@ THEN
     Face(6)
 END
 
-// set global active
+// Set GLOBAL active
+// -----------------
 IF
   !Dead("TSDrunk1")
   !Global("TSDrunkFlirter","GLOBAL",1)
@@ -80,7 +83,8 @@ THEN
     SetGlobal("TSDrunkFlirter","GLOBAL",3)
 END
 
-// reset local active
+// Reset LOCALS active
+// -------------------
 IF
   !GlobalTimerNotExpired("TSDrunkCheck","LOCALS")
 THEN
@@ -89,7 +93,8 @@ THEN
     SetGlobal("TSDrunkFActive","LOCALS",0)
 END
 
-// initiate
+// Initialize
+// ----------
 IF
   Global("TSDrunkFActive","LOCALS",0)
   Global("TSDrunkFlirter","GLOBAL",1)
@@ -117,7 +122,8 @@ THEN
     SetGlobal("TSDrunkFActive","LOCALS",1)
 END
 
-// flirting
+// Flirting
+// --------
 IF
   Delay(10)
   See("TSWench1")
@@ -128,96 +134,96 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1003)
+    DisplayStringHead("TSDrunk1",@1003) // ~I'm new in town. Could you give me directions to your apartment?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1004)
+    DisplayStringHead("TSWench1",@1004) // ~How about I give my fist directions to your face?~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1005)
+    DisplayStringHead("TSDrunk1",@1005) // ~Haven't I seen you someplace before?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1006)
+    DisplayStringHead("TSWench1",@1006) // ~Yeah, that's why I don't go there anymore.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1007)
+    DisplayStringHead("TSDrunk1",@1007) // ~So, wanna go back to my place?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1008)
+    DisplayStringHead("TSWench1",@1008) // ~Well, I don't know. Will two people fit under a rock?~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1009)
+    DisplayStringHead("TSDrunk1",@1009) // ~Your place or mine?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1010)
+    DisplayStringHead("TSWench1",@1010) // ~Both. You go to yours and I'll go to mine.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1011)
+    DisplayStringHead("TSDrunk1",@1011) // ~Hey, baby, what's your sign?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1012)
+    DisplayStringHead("TSWench1",@1012) // ~Do not Enter.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1013)
+    DisplayStringHead("TSDrunk1",@1013) // ~How do you like your eggs in the morning?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1014)
+    DisplayStringHead("TSWench1",@1014) // ~Unfertilized!~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1015)
+    DisplayStringHead("TSDrunk1",@1015) // ~I know how to please a woman.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1016)
+    DisplayStringHead("TSWench1",@1016) // ~Then please leave me alone.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1017)
+    DisplayStringHead("TSDrunk1",@1017) // ~I want to give myself to you.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1018)
+    DisplayStringHead("TSWench1",@1018) // ~Sorry, I don't accept cheap gifts.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1019)
+    DisplayStringHead("TSDrunk1",@1019) // ~I can tell that you want me.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1020)
+    DisplayStringHead("TSWench1",@1020) // ~Ohhhh. You're so right. I want you to leave.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1021)
+    DisplayStringHead("TSDrunk1",@1021) // ~If I could see you naked, I'd die happy.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1022)
+    DisplayStringHead("TSWench1",@1022) // ~Yeah, but if I saw you naked, I'd probably die laughing.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1023)
+    DisplayStringHead("TSDrunk1",@1023) // ~Hey chickie, how 'bout you and I hitting the hot spots?~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1024)
+    DisplayStringHead("TSWench1",@1024) // ~Sorry, I don't date outside my species...~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1025)
+    DisplayStringHead("TSDrunk1",@1025) // ~Your body is like a temple.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1026)
+    DisplayStringHead("TSWench1",@1026) // ~Sorry, there are no services today.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1027)
+    DisplayStringHead("TSDrunk1",@1027) // ~I'd go through anything for you.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1028)
+    DisplayStringHead("TSWench1",@1028) // ~Good! Let's start with your head through the nearest wall.~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1029)
+    DisplayStringHead("TSDrunk1",@1029) // ~I would go to the end of the world for you.~
     Wait(1)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1030)
+    DisplayStringHead("TSWench1",@1030) // ~Yes, but would you stay there?~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
-    DisplayStringHead("TSDrunk1",@1031)
+    DisplayStringHead("TSDrunk1",@1031) // ~Hey baby. How about we hook up after your shift?~
     Wait(3)
     ActionOverride("TSwench1",FaceObject("TSDrunk1"))
-    DisplayStringHead("TSWench1",@1032)
+    DisplayStringHead("TSWench1",@1032) // ~Hmmm? You know, you are so pitiful, it's kind of cute.~
     Wait(3)
-    DisplayStringHead("TSDrunk1",@1033)
+    DisplayStringHead("TSDrunk1",@1033) // ~Really?~
   RESPONSE #100
     SetGlobalTimer("TSDrunkFlirt","LOCALS",120)
     DisplayStringHead("TSDrunk2",@1003)
@@ -403,4 +409,3 @@ THEN
     Wait(3)
     DisplayStringHead("TSDrunk3",@1033)
 END
-

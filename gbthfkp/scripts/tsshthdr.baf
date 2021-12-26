@@ -10,4 +10,3 @@ THEN
     SetGlobal("TSGTalk1","LOCALS",1)
     StartDialogueNoSet(Player1)
 END
-

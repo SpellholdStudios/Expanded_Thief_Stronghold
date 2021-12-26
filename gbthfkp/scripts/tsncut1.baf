@@ -19,5 +19,3 @@ THEN
     ActionOverride(Player1,FadeFromColor([30.0],0))
     ActionOverride(Player1,EndCutSceneMode())
 END
-
-

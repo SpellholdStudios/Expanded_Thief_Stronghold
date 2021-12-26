@@ -32,7 +32,7 @@ IF
 THEN
   RESPONSE #100
     GlobalShout(33)
-    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    DisplayStringHead(Myself,61349) // ~Run! The Boss is on a rampage!~
     SetGlobal("TSScared","LOCALS",1)
     SetGlobalTimer("TSGuildScared","LOCALS",60)
 END
@@ -485,12 +485,12 @@ IF
 THEN
   RESPONSE #100
     PlaySound("BDHIGG03")
-    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    DisplayStringHead(Myself,61349) // ~Run! The Boss is on a rampage!~
     RandomWalkContinuous()
   RESPONSE #100
     GlobalShout(33)
     PlaySound("BDHIGG03")
-    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    DisplayStringHead(Myself,61349)
     RandomWalkContinuous()
 END
 
@@ -503,12 +503,12 @@ IF
 THEN
   RESPONSE #100
     PlaySound("PEASF209")
-    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    DisplayStringHead(Myself,61349) // ~Run! The Boss is on a rampage!~
     RandomWalkContinuous()
   RESPONSE #100
     GlobalShout(33)
     PlaySound("PEASF209")
-    DisplayStringHead(Myself,61349) // Run!  The Boss is on a rampage!!
+    DisplayStringHead(Myself,61349)
     RandomWalkContinuous()
 END
 
@@ -668,4 +668,3 @@ THEN
   RESPONSE #100
     EscapeAreaMove("AR0322",325,495,2)
 END
-

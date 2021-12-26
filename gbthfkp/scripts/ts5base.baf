@@ -79,5 +79,3 @@ THEN
     EquipRanged()
     Attack(LastSeenBy(Myself))
 END
-
-

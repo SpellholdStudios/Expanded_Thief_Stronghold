@@ -28,5 +28,3 @@ THEN
     TriggerActivation("Tran0332",TRUE)
     TriggerActivation("Tran0333",TRUE)
 END
-
-

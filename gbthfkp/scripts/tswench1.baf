@@ -45,7 +45,7 @@ THEN
     Wait(1)
     MoveToPoint([500.830])
     Face(10)
-    DisplayStringHead(Myself,@145)
+    DisplayStringHead(Myself,@1035) // ~Here ye go lad.~
     Wait(3)
     MoveToPoint([325.700])
     RandomWalk()
@@ -53,7 +53,7 @@ THEN
   RESPONSE #10
     MoveToPoint([580.635])
     Face(6)
-    DisplayStringHead(Myself,@146)
+    DisplayStringHead(Myself,@1036) // ~Oooh!  My poor aching feet!~
     Wait(6)
     RandomWalk()
     Wait(60)
@@ -69,9 +69,8 @@ THEN
   RESPONSE #10
     MoveToPoint([580.635])
     Face(6)
-    DisplayStringHead(Myself,@146)
+    DisplayStringHead(Myself,@1036)
     Wait(6)
     RandomWalk()
     Wait(60)
 END
-

@@ -5,8 +5,8 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("UseItem1","LOCALS",12)
-    DisplayStringHead(Myself,@1034) // How about a little help, eh?
-    DisplayString(Myself,46150) // quaffs a potion
+    DisplayStringHead(Myself,@1034) // ~How about a little help, eh?~
+    DisplayString(Myself,46150)     // ~*quaffs a potion*~
     UseItem("POTN52",Myself)
 END
 
@@ -38,4 +38,3 @@ THEN
     EquipRanged()
     Attack(LastSeenBy(Myself))
 END
-
