@@ -1,2 +1,2 @@
-@1  = ~Einen guten Tag wünsche ich. Ihr werdet verstehen, dass ich nicht mit Euch sprechen werde. Ich kann über Geschäfte nur mit dem Gildenmeister reden, mit <CHARNAME>.~ 
-@18 = ~Guten Tag auch. Ihr versteht sicher, dass ich mich weigere, mit Euch zu sprechen. Über Geschäfte rede ich nur mit dem neuen Gildenmeister.~ [LATHAN08]
+@1  = ~Ich wünsche Euch einen guten Tag. Ihr habt sicher Verständnis dafür, dass ich es ablehne, mit Euch zu sprechen. Über Geschäfte kann Ich nur mit dem neuen Gildenmeister reden, mit <CHARNAME>.~ [LATHAN08] // almost the same as #34145
+@18 = ~Guten Tag auch. Ihr versteht sicher, dass ich mich weigere, mit Euch zu sprechen. Über Geschäfte rede ich nur mit dem neuen Gildenmeister.~ [LATHAN07]

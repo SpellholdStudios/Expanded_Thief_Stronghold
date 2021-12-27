@@ -36,6 +36,9 @@
 
 ##### Version 3.0.0 &nbsp;(, 2021)
 
+- Commented code as much as possible.
+- Included BWP Fixpack fixes: Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
+- Removed useless tra files.
 - Lower cased files.
 
 ## 

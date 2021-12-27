@@ -1,2 +1,2 @@
-@1  = ~Buen día tengáis. ¿Entenderéis si me rehúso a hablar con vos? Sólo puedo discutir de negocios con el maestro gremial <CHARNAME>. ~ [LATHAN08] 
-@18 = ~Hola <CHARNAME>, debería hablaros sobre el estado actual de los asuntos del gremio. Va a pasar algo que creo que requiere de vuestra atención. ~ [LATHAN07]
+@1  = ~Buenos días. Espero que no os sorprendra que no hable con vos. Sólo hablaré de negocios con <CHARNAME>, el nuevo maestre de la cofradia.~ [LATHAN08] ~Buenos días. Espero que no os sorprendra que no hable con vos. Sólo hablaré de negocios con <CHARNAME>, la nueve maestre de la cofradia.~ [LATHAN08] // almost the same as #34145
+@18 = ~Hola <CHARNAME>, debería hablaros sobre el estado actual de los asuntos de la cofradia. Va a pasar algo que creo que requiere de vuestra atención.~ [LATHAN07]
