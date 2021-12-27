@@ -1,5 +1,4 @@
 IF
-  OnCreation()
   Global("TSReveal0323","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -81,5 +80,3 @@ THEN
     SetGlobal("TSSpwanSmugB","GLOBAL",0)
     CreateCreature("TSSmugB",[293.624],15)
 END
-
-
