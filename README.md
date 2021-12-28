@@ -152,8 +152,6 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="versions" id="versions"></a>Version History
 
-## <a name="versions" id="versions"></a>Versions History
-
 ##### Version 3.0.0 &nbsp;(December , 2021)
 
 - Added *gbthfkp.ini* metadata file (including dynamic installation order syntax and global `LABELS`) to support AL|EN's "Project Infinity"
@@ -175,7 +173,7 @@ In addition to the methods above for removing individual components, you can com
 - Included BWP Fixpack fixes: Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
 - Modernized area patching with homemade `GW_ALTER_AREA_ENTRANCE` and `GW_ALTER_AREA_REGION` WeiDU functions. 
 - <ins>Sword of Olidammara +4</ins> (ts5loot1.itm):
-    - Fixes wrong effects probability (15 %, was 5%).
+    - Fixed wrong effects probability (15 %, was 5%).
     - Fixed wrong portrait icon (Confused, was Charmed).
 - Hard-coded general items names and descriptions whenever relevant.
 - Moved installation messages from *gwthfkp.tra* file *setup.tra* file for more comfortable readability.
@@ -183,7 +181,7 @@ In addition to the methods above for removing individual components, you can com
 - Proofread English strrefs (Gwendolyne).
 - Added French translation (by JohnBob).
 - Added Italian translation (by ilot).
-- Moved useless files into new :file_folder: "*legacy*" folder.
+- Moved useless files into new :file_folder: "*legacy*" folder, and removed :file_folder: "*backup*" folder.
 - Lower cased files.
 - Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Added OggDec to v1.9.7 and added sox v14.4.1 for mac.
