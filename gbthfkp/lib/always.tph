@@ -1,0 +1,102 @@
+/* ============================================ *
+ *                                              *
+ *                 ALWAYS BLOCK                 *
+ *                                              *
+ * ============================================ */
+
+// Concept borrowed from DavidW's Immutability and encapsulation in mod design ( https://github.com/Gibberlings3/immutable )
+
+/* =================================================================== *
+ *  This code only runs once, even if you install lots of components.  *
+ * =================================================================== */
+
+ACTION_IF !VARIABLE_IS_SET is_ee BEGIN // Always block must run only once per install!
+
+	SILENT
+
+	/* ------------------------------------------------------------------------------- *
+	 *    Determines which game is installed and if the game is an Enhanced Edition    *
+	 * ------------------------------------------------------------------------------- */
+
+	OUTER_SET is_tob   = (GAME_IS ~bgt tob~) ? 1 : 0     // based on vanilla ToB engine
+	OUTER_SET is_bg2ee = (GAME_IS "bg2ee") ? 1 : 0       // b2gee
+	OUTER_SET is_eet   = (GAME_IS "eet") ? 1 : 0         // eet
+	OUTER_SET is_ee    = (GAME_IS ~bg2ee eet~) ? 1 : 0   // EE game
+	OUTER_SET is_trilo = (GAME_IS ~bgt eet~) ? 1 : 0     // bgt or eet game
+
+
+	/* ------------------------------------------------------- *
+	 *    Sets default variables if they're not set already    *
+	 * ------------------------------------------------------- */
+
+	// Variable used to properly install specific EE games ressources
+	ACTION_IF (is_ee) BEGIN
+		OUTER_SPRINT ee_file "_ee"
+	END ELSE BEGIN
+		OUTER_SPRINT ee_file ""
+	END
+
+	// Required because of non-standard BACKUP path
+	OUTER_TEXT_SPRINT MOD_FOLDER "gwthfkp"
+
+	// Sets variables for the external locations
+	OUTER_TEXT_SPRINT ext_lang_loc EVAL "weidu_external/lang/%MOD_FOLDER%"
+	OUTER_TEXT_SPRINT gw_tra_loc   EVAL "%MOD_FOLDER%/lang"
+
+
+	/* ---------------------------------- *
+	 *    Creates the external folders    *
+	 * ---------------------------------- */
+
+	ACTION_FOR_EACH folder IN ~weidu_external~ ~weidu_external/lang~ ~%ext_lang_loc%~ BEGIN
+		ACTION_IF (NOT DIRECTORY_EXISTS ~%folder%~) BEGIN
+			MKDIR ~%folder%~
+		END
+	END
+
+
+	/* -------------------------------------------- *
+	 *    Loads in any shared function libraries    *
+	 * -------------------------------------------- */
+
+	// Loads macros and functions library dealing with tooltip appending, specific EE items descriptions, and more...
+	INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~
+	// Loads macros and functions library dealing with area patching
+	INCLUDE ~%MOD_FOLDER%/lib/gw_are_functions.tpa~
+
+
+	/* -------------------------- *
+	 *    Creates a blank file    *
+	 * -------------------------- */
+
+	<<<<<<<< .../gwthfkp-inlined/blank
+
+>>>>>>>>
+
+
+	/* -------------------------------------------- *
+	 *    Convert strings to UTF-8 for BG2EE/EET    *
+	 * -------------------------------------------- */
+
+		ACTION_IF is_ee BEGIN  // Do conversions (EE only)
+		
+			ACTION_DEFINE_ARRAY gb#noconvert BEGIN setup END
+			ACTION_DEFINE_ARRAY gb#reload BEGIN gwthfkp END
+			LAF HANDLE_CHARSETS 
+				INT_VAR infer_charsets  = 1
+				STR_VAR tra_path        = EVAL ~%MOD_FOLDER%/lang~
+				        out_path        = EVAL ~%ext_lang_loc%~
+				        iconv_path      = EVAL ~%MOD_FOLDER%/lang/iconv~
+				        noconvert_array = gb#noconvert
+				        reload_array    = gb#reload
+			END
+			OUTER_TEXT_SPRINT gw_tra_loc EVAL "%ext_lang_loc%"
+
+		END
+
+	END // of ACTION_IF (!FILE_EXISTS "%marker_name%")
+
+	// TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version)
+	LOAD_TRA "%gw_tra_loc%/%LANGUAGE%/setup.tra" "%gw_tra_loc%/%LANGUAGE%/gwthfkp.tra"
+
+END	// of ACTION_IF !VARIABLE_IS_SET is_ee BEGIN

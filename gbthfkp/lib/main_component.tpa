@@ -8,14 +8,11 @@
 PRINT @21  // ~Installing portraits and sound sets...~
 SILENT
 
-// Loads macros and functions library dealing area patching
-INCLUDE ~%MOD_FOLDER%/lib/gw_are_functions.tpa~
-
 /* ======================== *
  *  Installing audio files  *
  * ======================== */
 
-ACTION_IF NOT (GAME_IS ~bgt eet~) BEGIN
+ACTION_IF NOT (is_trilo) BEGIN
 	ACTION_IF (DIRECTORY_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
 		LAF HANDLE_AUDIO
 			STR_VAR audio_path  = EVAL ~MOD_FOLDER/audio/%LANGUAGE%~
@@ -31,7 +28,7 @@ ACTION_IF NOT (GAME_IS ~bgt eet~) BEGIN
 	END
 END
 
-COPY ~gbthfkp/portraits~ ~override~
+COPY ~gbthfkp/portraits%ee_file%~ ~override~
 
 
 /* ====================== *
@@ -41,10 +38,21 @@ COPY ~gbthfkp/portraits~ ~override~
 PRINT @22  // ~Installing dialogues...~
 SILENT
 
+// Handling journal entries for EE games
+// -------------------------------------
+ADD_JOURNAL @45     USING ~%gw_tra_loc%/%LANGUAGE%/tskamuzu.tra~ // Kamuzu... The Potion Maker?
+ADD_JOURNAL @19     USING ~%gw_tra_loc%/%LANGUAGE%/tslath01.tra~ // Narlen Darkwalk and Black Lily come to Athkatla
+ADD_JOURNAL @39 @41 USING ~%gw_tra_loc%/%LANGUAGE%/tslath01.tra~ // The Assault on the Guard House
+ADD_JOURNAL @7      USING ~%gw_tra_loc%/%LANGUAGE%/tsnarlen.tra~ // Rescue Black Lily and the Baldur's Gate rogues
+ADD_JOURNAL @9      USING ~%gw_tra_loc%/%LANGUAGE%/tsnarlen.tra~ // Narlan Darkwalk - A Blasted Fellow!
+ADD_JOURNAL @20     USING ~%gw_tra_loc%/%LANGUAGE%/tsnarlen.tra~ // The Baldur's Gate rogues
+
 // Pick Pockets
+//-------------
 COMPILE ~gbthfkp/dialogs/tspick01.d~
 
 // Guild
+//------
 COMPILE  ~gbthfkp/dialogs/tsgt01.d~
 COMPILE  ~gbthfkp/dialogs/tsgt02.d~
 COMPILE  ~gbthfkp/dialogs/tsgt03.d~
@@ -60,10 +68,10 @@ COMPILE  ~gbthfkp/dialogs/tslath01.d~
 COMPILE  ~gbthfkp/dialogs/tsdrunk1.d~
 COMPILE  ~gbthfkp/dialogs/tswench1.d~
 COMPILE  ~gbthfkp/dialogs/tsama1.d~
-
-//COMPILE  ~gbthfkp/dialogs/lt01minsctran.d~
+//         ~gbthfkp/dialogs/lt01minsctran.d~
 
 // Narlen Darkwalk
+// ---------------
 COMPILE  ~gbthfkp/dialogs/tsnarlen.d~
 COMPILE  ~gbthfkp/dialogs/tsblackl.d~
 COMPILE  ~gbthfkp/dialogs/tsnbad1.d~
@@ -72,6 +80,7 @@ COMPILE  ~gbthfkp/dialogs/tssmugf.d~
 COMPILE  ~gbthfkp/dialogs/tssmugm.d~
 
 // Guard House Assault
+// -------------------
 COMPILE  ~gbthfkp/dialogs/ts5bad.d~
 COMPILE  ~gbthfkp/dialogs/ts5thf.d~
 
@@ -131,7 +140,7 @@ EXTEND_BOTTOM ~ar0800.bcs~ ~gbthfkp/scripts/ar0800addb01.baf~
 EXTEND_BOTTOM ~ar0900.bcs~ ~gbthfkp/scripts/ar0900addb01.baf~
 EXTEND_BOTTOM ~ar1000.bcs~ ~gbthfkp/scripts/ar1000addb01.baf~
 
-// Narlen
+// Narlen Darkwalk
 EXTEND_BOTTOM ~baldur.bcs~ ~gbthfkp/scripts/balduraddb01.baf~
 
 // Guard House Assault
@@ -168,7 +177,6 @@ COPY ~gbthfkp/creatures/tspick1.cre~ ~override~ // Nobleman
      ~gbthfkp/creatures/tspick7.cre~ ~override~ // Peasant
      ~gbthfkp/creatures/tspick8.cre~ ~override~ // id.
  
-
 /* ----------------- *
  *  Narlen Darkwalk  *
  * ----------------- */
@@ -506,7 +514,7 @@ COPY ~gbthfkp/stores/tsblackl.sto~ ~override~
 // Cat's Claw
 COPY ~gbthfkp/items/tsnloot1.itm~ ~override~
 	SAY NAME2 @303
-	SAY DESC  @304
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@304" END
 
 /* --------------------- *
  *  Guard House Assault  *
@@ -515,7 +523,7 @@ COPY ~gbthfkp/items/tsnloot1.itm~ ~override~
 // Sword of Olidammara +4
 COPY ~gbthfkp/items/ts5loot1.itm~ ~override~
 	SAY NAME2 @305
-	SAY DESC @306
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@306" END
 
 
 /* ====================== *

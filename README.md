@@ -5,7 +5,7 @@
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT&color=dodgerblue)
 
-<div align="center"><h1></a>Expanded Thief Stronghold (WIO)</h1>
+<div align="center"><h1></a>Expanded Thief Stronghold (WIP)</h1>
 
 <h3>A mod hosted at Spellhold Studios for Baldur's Gate II: ToB<h3>
 
@@ -48,9 +48,8 @@
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added `ADD_JOURNAL` entries.
     - Removed items usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
-    - 
     - Provided accurate sized NPC portraits for EE games.
-- 
+- Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones).
 - Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.
 - Script files: removed *OnCreation()* action from blocks that have a `LOCALS/GLOBAL` associated with them.
 - Spells installation: removed useless `SAY NAME2` patches
@@ -105,16 +104,16 @@
 - White Agnus’ added a BGT and language check, so no English wav-files.
 - Removed GBTfkp.bat.
 - Updated Read Me.
-- Updated WeiDU installer to vv210.
+- Updated WeiDU installer to v210.
 
 ## 
 
 ##### Version 2.15 &nbsp;(November 23, 2008) - by Leomar
 
-- Taimon's area crash fix: GBThfKp.tp2 http://kerzenburg.nightisforum.de/showpost.php?p=894401&postcount=206
+- GBThfKp.tp2: <a href="http://kerzenburg.nightisforum.de/showpost.php?p=894401&postcount=206">Taimon's area crash fix</a>.
 - Zeroed effects offset in TSPick1.cre, TSPick2.cre, TSPick3.cre, TSPick4.cre, TSPick5.cre, TSPick6.cre, TSPick7.cre and TSPick8.cre.
-- Added VERSION flag.
-- Updated WeiDU installer to vv208.
+- Added `VERSION` flag.
+- Updated WeiDU installer to v208.
 
 ## 
 
@@ -145,7 +144,7 @@
 ##### Version 2.11 &nbsp;(July 23, 2006)
 
 - Tweaked the stores, added some new dialogue.
-- Extensive mod & .tp file optimization.
+- Extensive mod and .tp2 file optimization.
 - In this version you must be a thief to get the guild. I didn't like the way I patched Renal's dialogue previously. So if you still want the guild and your character isn't a thief, you will have to use the NotThief custom PC script in the GBThfKp/_debug directory (at least for now).
 - Mae'var and his goons will not attempt to move toward invisible characters if they can no longer see anyone. Feel free to cheese them for an easy win, if you are into that sort of thing.
 
@@ -159,7 +158,7 @@
 
 ##### Version 2.9 &nbsp;(July 20, 2006)
 
-- - Disabled the "Random Encounters" and the "Remove Improved Mae'Var" components. The random encounters may return, but right now I find them to be too annoyingly frequent. As for Mae'var, I like his "improvedness" and feel the component to remove him is unneeded.
+- Disabled the "Random Encounters" and the "Remove Improved Mae'Var" components. The random encounters may return, but right now I find them to be too annoyingly frequent. As for Mae'var, I like his "improveness" and feel the component to remove him is unneeded.
 - Also some minor tweakage and buglet fixes:
   - fixed a problem with the area outside of the orc being flagged as a random encounter (no save) area.
   - tweaked a few lines of dialogue.
@@ -185,7 +184,7 @@
 
 - Fixed minor compatibility issue with the Kelsey mod.
 - Made note that Renal will offer the guild to any class, not just thieves.
-- Very minor and long over-due fixes to this file. It's still ugly though. :)
+- Very minor and long over-due fixes to this file. It's still ugly though.
 
 ## 
 

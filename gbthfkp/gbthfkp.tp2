@@ -1,11 +1,19 @@
 // GBThfKp - Expanded Thief Stronghold
 // Gebhard Blucher <g_blucher@yahoo.com>
 
-// Header
-BACKUP  ~GBThfKp/_backup~
+BACKUP  ~weidu_external/backup/gbthfkp~
 AUTHOR  ~g_blucher@yahoo.com~
 
 VERSION ~v2.20~
+
+ALWAYS
+
+	INCLUDE ~gbthfkp/lib/always.tph~
+
+END
+
+
+AUTO_TRA ~%gw_tra_loc%/%s~
 
 
 ///////////////////////////////////////
@@ -14,20 +22,20 @@ VERSION ~v2.20~
 
 LANGUAGE ~English~
          ~english~
-         ~gbthfkp/translations/english/setup.tra~
-         ~gbthfkp/translations/english/gbthfkp.tra~
+         ~gbthfkp/lang/english/setup.tra~
+         ~gbthfkp/lang/english/gbthfkp.tra~
 LANGUAGE ~deutsch (Uebersetzung von Dyara)~
          ~german~
-         ~gbthfkp/translations/german/setup.tra~
-         ~gbthfkp/translations/german/gbthfkp.tra~
+         ~gbthfkp/lang/german/setup.tra~
+         ~gbthfkp/lang/german/gbthfkp.tra~
 LANGUAGE ~Espanol (traduccion por Dufroise y Immortality)~
          ~spanish~
-         ~gbthfkp/translations/spanish/setup.tra~
-         ~gbthfkp/translations/spanish/gbthfkp.tra~
+         ~gbthfkp/lang/spanish/setup.tra~
+         ~gbthfkp/lang/spanish/gbthfkp.tra~
 LANGUAGE ~Russian (translation by Aerie.ru and prowler)~
          ~russian~
-         ~gbthfkp/translations/russian/setup.tra~
-         ~gbthfkp/translations/russian/gbthfkp.tra~
+         ~gbthfkp/lang/russian/setup.tra~
+         ~gbthfkp/lang/russian/gbthfkp.tra~
 
 
 /* ============================================= *
