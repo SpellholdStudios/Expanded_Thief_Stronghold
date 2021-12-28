@@ -1,4 +1,3 @@
 // SHTHLT02 translation file
-@1   = ~Bien le bonjour. Tu comprendras si je refuse de te parler ? Je ne peux parler affaires qu'avec <CHARNAME>, le nouveau maÃ®tre de la guilde.~ [LATHAN08] ~Bien le bonjour. Tu comprendras si je refuse de te parler ? Je ne peux parler affaires qu'avec <CHARNAME>, la nouvelle maÃ®tresse de la guilde.~ [LATHAN08] // almost the same as #34145
+@1   = ~Bien le bonjour. Tu comprendras si je refuse de te parler ? Je ne peux parler affaires qu'avec <CHARNAME>, le nouveau maître de la guilde.~ [LATHAN08] ~Bien le bonjour. Tu comprendras si je refuse de te parler ? Je ne peux parler affaires qu'avec <CHARNAME>, la nouvelle maîtresse de la guilde.~ [LATHAN08] // almost the same as #34145
 @18  = ~Bonjour, <CHARNAME>. Je dois te parler des affaires de la guilde. Quelque chose s'est produit qui requiert ton attention.~ [LATHAN07]
-

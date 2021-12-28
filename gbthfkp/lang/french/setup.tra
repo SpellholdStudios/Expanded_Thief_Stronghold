@@ -6,7 +6,7 @@
 /*@1  = ~Ce composant necessite l'extension Throne of Bhaal.~
 @3  = ~Amelioration des rencontres aleatoires (w/Kensai Ryu, ToB requis.)~
 @4  = ~GB Scripts (scripts pour le joueur)~
-@5  = ~Desactiver le composant Â« Improved Mae'Var Â» (restaurer les fichiers par defaut).~*/
+@5  = ~Desactiver le composant « Improved Mae'Var » (restaurer les fichiers par defaut).~*/
 
 @21 = ~Installation des portraits et des sons...~
 @22 = ~Installation des dialogues...~
@@ -14,7 +14,6 @@
 @24 = ~Installation des creatures...~
 @25 = ~Installation des objets...~
 @26 = ~Installation des cartes...~
-@1    = ~Â¡ToB no esta instalado! Instale la expansion Throne of Bhaal antes de instalar Amistad de Valygar Corthala.~
 
 
 /* =============== *

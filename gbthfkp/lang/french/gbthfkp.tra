@@ -7,11 +7,11 @@
  * =========== */
 
 // Black Lily sound set
-@101 = ~Dehors maintenant! J'ai des comptes Ã  faire.~ [BLACKL02] // same as #4799 but with another sound clip
-@102 = ~Le jour oÃ¹ je n'aurai pas ce que vous dÃ©sirez sera le jour le plus sombre de votre vie.~ [BLACKL01] // same as #4798 but with another sound clip
+@101 = ~Dehors maintenant! J'ai des comptes à faire.~ [BLACKL02] // same as #4799 but with another sound clip
+@102 = ~Le jour où je n'aurai pas ce que vous désirez sera le jour le plus sombre de votre vie.~ [BLACKL01] // same as #4798 but with another sound clip
 @103 = ~Ouch !~ [BLACKL03]
 @104 = ~Uh... Ungh !~ [BLACKL04]
-@105 = ~Aidez-moi ! Aidez-moi, s'il vous plaÃ®t !~
+@105 = ~Aidez-moi ! Aidez-moi, s'il vous plaît !~
 
 @106 = ~Gruuk le Poilu~
 @107 = ~Le vieux Yeller~
@@ -35,11 +35,11 @@
  *  Stores  *
  * ======== */
 @201 = ~Les potions de Kamuzu~
-@202 = ~Les bijoux volÃ©s de Lis Noir~ 
+@202 = ~Les bijoux volés de Lis Noir~ 
 
 @211 = ~Le Grog de Briney~
-@212 = ~BiÃ¨re lÃ©gÃ¨re~
-@213 = ~BiÃ¨re du soleil noir~
+@212 = ~Bière légère~
+@213 = ~Bière du soleil noir~
 @214 = ~Eau de feu du dragon rouge~
 @215 = ~Anciens vignobles~
 
@@ -47,51 +47,51 @@
 /* ======= *
  *  Items  *
  * ======= */
-@301 = ~ClÃ© du coffre de <CHARNAME>~
-@302 = ~C'est la clÃ© du coffre de votre bureau au deuxiÃ¨me Ã©tage de la guilde. Cette clÃ© est L'UNIQUE moyen de l'ouvrir. Il serait sage de la conserver en sÃ©curitÃ©.~
+@301 = ~Clé du coffre de <CHARNAME>~
+@302 = ~C'est la clé du coffre de votre bureau au deuxième étage de la guilde. Cette clé est L'UNIQUE moyen de l'ouvrir. Il serait sage de la conserver en sécurité.~
 
 @303 = ~Griffe du Chat~
 @304 = ~La Griffe du Chat
-L'histoire de cette puissante dague Ã©chappe Ã  toute tentative d'identification.  MÃªme le sort le plus puissant ne laisse apparaÃ®tre que l'image d'une petite souris grise.  La connexion entre l'image et la dague demeure un mystÃ¨re.
+L'histoire de cette puissante dague échappe à toute tentative d'identification.  Même le sort le plus puissant ne laisse apparaître que l'image d'une petite souris grise.  La connexion entre l'image et la dague demeure un mystère.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ©s de combat :
-- Fixe Ã  deux points la compÃ©tences en combat Ã  deux armes
-- 1 attaque supplÃ©mentaire par round
+Capacités de combat :
+- Fixe à deux points la compétences en combat à deux armes
+- 1 attaque supplémentaire par round
 
 TAC0 : +3
-DÃ©gÃ¢ts : 1d4+3
-Type de dÃ©gÃ¢ts : Perforant
+Dégâts : 1d4+3
+Type de dégâts : Perforant
 Facteur de vitesse : 0
-Type de compÃ©tence : dague
-Type : arme Ã  une main
-NÃ©cessite : 3 en Force
+Type de compétence : dague
+Type : arme à une main
+Nécessite : 3 en Force
 
 Poids : 0
 
 Utilisable par :
  Voleur~
 
-@305 = ~Ã‰pÃ©e d'Olidammara +4~
-@306 = ~l'Ã‰pÃ©e d'Olidammara +4
-La lÃ©gende raconte qu'Olidammara, le Voleur Souriant lui-mÃªme, a donnÃ© cette lame Ã  son voleur prÃ©fÃ©rÃ© parmis les mortel. Depuis lors, elle a Ã©tÃ© utilisÃ©e de nombreuses fois, en de nombreux endroits, par d'innombrables voleurs, scÃ©lÃ©rats et crapules.  Une lame volage, dÃ©tenir cette Ã©pÃ©e est au mieux temporaire. Elle semble... facile... Ã  Ã©garer d'une maniÃ¨re ou d'une autre et rechigne mÃªme Ã  Ãªtre rengainÃ©e, bien sÃ»r, c'est peut Ãªtre votre imagination.  Personne ne sait comment elle est arrivÃ©e Ã  FÃ©Ã©rune, mais vous espÃ©rez pouvoir la conserver un certain temps.
+@305 = ~Épée d'Olidammara +4~
+@306 = ~l'Épée d'Olidammara +4
+La légende raconte qu'Olidammara, le Voleur Souriant lui-même, a donné cette lame à son voleur préféré parmis les mortel. Depuis lors, elle a été utilisée de nombreuses fois, en de nombreux endroits, par d'innombrables voleurs, scélérats et crapules.  Une lame volage, détenir cette épée est au mieux temporaire. Elle semble... facile... à égarer d'une manière ou d'une autre et rechigne même à être rengainée, bien sûr, c'est peut être votre imagination.  Personne ne sait comment elle est arrivée à Féérune, mais vous espérez pouvoir la conserver un certain temps.
 
-PARAMÃˆTRES :
+PARAMÈTRES :
 
-CapacitÃ© d'Ã©quipement :
+Capacité d'équipement :
 - +1 au multiplicateur d'attaque sournoise
 
-CapacitÃ© de combat :
-- 15% de chance de rendre la cible confuse pendant un tour Ã  chaque coup portÃ© (sans jet de sauvegarde)
+Capacité de combat :
+- 15% de chance de rendre la cible confuse pendant un tour à chaque coup porté (sans jet de sauvegarde)
 
 TAC0 : +4
-DÃ©gÃ¢ts : 1d6+4
-Type de dÃ©gÃ¢ts : Perforant
+Dégâts : 1d6+4
+Type de dégâts : Perforant
 Facteur de vitesse : 0
-Type de compÃ©tence: Ã©pÃ©e courte
-Type : arme Ã  une main
-NÃ©cessite : 3 en Force
+Type de compétence: épée courte
+Type : arme à une main
+Nécessite : 3 en Force
 
 Poids : 2
 
@@ -111,44 +111,44 @@ Utilisable par :
  * ========= */
 
 /* Unused
-@1000 = ~Pour terminer votre tÃ¢che, Mae'Var doit mourir.  Vous ne pouvez plus faire marche arriÃ¨re maintenant.~
-@1002 = ~Vous allez payer pour Ã§a !~
+@1000 = ~Pour terminer votre tâche, Mae'Var doit mourir.  Vous ne pouvez plus faire marche arrière maintenant.~
+@1002 = ~Vous allez payer pour ça !~
 */
 
 // balduraddb01.baf
-@1001 = ~Narlen Marchombre et ses voleurs ont dÃ©posÃ© leur butin dans votre coffre.~
+@1001 = ~Narlen Marchombre et ses voleurs ont déposé leur butin dans votre coffre.~
 
 // tsdrunk1.baf
-@1003 = ~Je suis nouveau en ville. Pourriez-vous me montrer le chemin jusqu'Ã  votre appartement ?~
-@1004 = ~Et si je te montrais plutÃ´t mon poing dans la figure ?~
-@1005 = ~Je ne vous ai pas dÃ©jÃ  rencontrÃ© quelque part ?~
-@1006 = ~Oui, c'est pour Ã§a que je n'y retourne plus.~
+@1003 = ~Je suis nouveau en ville. Pourriez-vous me montrer le chemin jusqu'à votre appartement ?~
+@1004 = ~Et si je te montrais plutôt mon poing dans la figure ?~
+@1005 = ~Je ne vous ai pas déjà rencontré quelque part ?~
+@1006 = ~Oui, c'est pour ça que je n'y retourne plus.~
 @1007 = ~Alors, vous voulez aller chez moi ?~
 @1008 = ~Eh bien, je ne sais pas. Deux personnes peuvent-elles tenir sous un rocher ?~
 @1009 = ~Votre appartement ou le mien ?~
 @1010 = ~Les deux. Tu vas chez toi et je vais chez moi.~
-@1011 = ~HÃ©, bÃ©bÃ©, quel est votre signe astrologique ?~
+@1011 = ~Hé, bébé, quel est votre signe astrologique ?~
 @1012 = ~Ne pas Entrer.~
-@1013 = ~Comment aimez-vous vos Å“ufs le matin ?~
-@1014 = ~Non fÃ©condÃ©s !~
+@1013 = ~Comment aimez-vous vos œufs le matin ?~
+@1014 = ~Non fécondés !~
 @1015 = ~Je sais comment plaire aux femmes.~
 @1016 = ~Alors, merci de me laisser tranquille.~
-@1017 = ~Je veux Ãªtre a vous entiÃ¨rement.~
-@1018 = ~DÃ©solÃ©, je n'ai pas envie d'un minable.~ ~DÃ©solÃ©, je n'ai pas envie d'une minable.~
+@1017 = ~Je veux être a vous entièrement.~
+@1018 = ~Désolé, je n'ai pas envie d'un minable.~ ~Désolé, je n'ai pas envie d'une minable.~
 @1019 = ~Je vois bien que je vous plais.~
-@1020 = ~Ohhhh. Tu as raison. Tu me plairais beaucoup si tu n'Ã©tais pas lÃ .~
+@1020 = ~Ohhhh. Tu as raison. Tu me plairais beaucoup si tu n'étais pas là.~
 @1021 = ~Si je pouvais vous voir nue, je mourrais heureux.~
 @1022 = ~Ouais, mais si je te voyais nue, je mourrais sans doute de rire.~
-@1023 = ~HÃ© poulette, Ã§a vous dirait qu'on passe aux choses sÃ©rieuses, vous et moi ?~
-@1024 = ~DÃ©solÃ©, je ne sors qu'avec ceux de mon espÃ¨ce...~ ~DÃ©solÃ©, je ne sors qu'avec celles de mon espÃ¨ce...~
-@1025 = ~Votre corps est une Å“uvre d'art.~
-@1026 = ~DÃ©solÃ©, il n'y a pas de visite aujourd'hui.~
+@1023 = ~Hé poulette, ça vous dirait qu'on passe aux choses sérieuses, vous et moi ?~
+@1024 = ~Désolé, je ne sors qu'avec ceux de mon espèce...~ ~Désolé, je ne sors qu'avec celles de mon espèce...~
+@1025 = ~Votre corps est une œuvre d'art.~
+@1026 = ~Désolé, il n'y a pas de visite aujourd'hui.~
 @1027 = ~Je franchirais tous les obstacles pour vous.~
-@1028 = ~Super ! Commence par franchir ce mur avec ta tÃªte.~
+@1028 = ~Super ! Commence par franchir ce mur avec ta tête.~
 @1029 = ~J'irais jusqu'au bout du monde pour vous.~
 @1030 = ~Oui, mais y resteras-tu ?~
-@1031 = ~Hey bÃ©bÃ©. Que diriez-vous de sortir aprÃ¨s votre travail ?~
-@1032 = ~Hmmm ? Tu es tellement pitoyable, c'est plutÃ´t mignon.~
+@1031 = ~Hey bébé. Que diriez-vous de sortir après votre travail ?~
+@1032 = ~Hmmm ? Tu es tellement pitoyable, c'est plutôt mignon.~
 @1033 = ~Vraiment ?~
 
 // tsgbase.baf
@@ -156,7 +156,7 @@ Utilisable par :
 
 // tswench1.baf
 // ------------
-@1035 = ~Et voilÃ , mon ami.~ ~Et voilÃ , mon amie.~
+@1035 = ~Et voilà, mon ami.~ ~Et voilà, mon amie.~
 @1036 = ~Oooh ! Mes pauvres pieds me font mal !~
 
 /* Unused
@@ -165,10 +165,10 @@ Utilisable par :
 @129 = ~GB Mage :~
 @130 = ~GB Clerc :~
 @131 = ~GB Clerc/Mage :~
-@132 = ~Ce script est appropriÃ© pour les guerriers, paladins, rÃ´deurs et voleurs.~
-@133 = ~Ce script est appropriÃ© pour les utilisateurs de magie (mono et multi-classÃ©s) ainsi que les bardes, mais pas pour les sorciers.~
-@134 = ~Ce script est appropriÃ© pour les clercs et les druides.~
-@135 = ~Ce script est appropriÃ© pour les clercs/mages multi-classÃ©s.~
+@132 = ~Ce script est approprié pour les guerriers, paladins, rôdeurs et voleurs.~
+@133 = ~Ce script est approprié pour les utilisateurs de magie (mono et multi-classés) ainsi que les bardes, mais pas pour les sorciers.~
+@134 = ~Ce script est approprié pour les clercs et les druides.~
+@135 = ~Ce script est approprié pour les clercs/mages multi-classés.~
 */
 
 
