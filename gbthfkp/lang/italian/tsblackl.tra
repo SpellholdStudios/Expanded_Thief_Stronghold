@@ -1,0 +1,28 @@
+// TSBLACKL translation file
+@1   = ~Ti ringrazio <CHARNAME>, per averci liberato! Credo che stessero per mangiarci! Dov'è Narlen, io...? Oh caro. (sigh)~ [BLACKL01]
+@2   = ~Io... ci sarà tempo dopo per il lutto. Noi seppelliremo i caduti e ti incontreremo alla sede della tua gilda, <CHARNAME>.~
+@3   = ~Andiamo ladri. Usciamo!~
+@4   = ~Sparisci! Devo uccidere!~ [BLACKL02]
+@5   = ~Salute <CHARNAME>! È una bella gilda quella che hai qui. Narlen ed io faremo funzionare bene questo posto, con il sapere del nord e la laboriosità!~
+@6   = ~Narlen e i ragazzi gestiranno il lavoro sul campo e io ti servirò come tua contabile e ricettatrice. Non ci saranno ammanchi dalle casse della gilda finché sarò in servizio, te l'assicuro!~
+@7   = ~Oh, non pesterò i piiedi a Rattel! Lui ed io abbiamo avuto un colloquio. Come ricettatrice, mi occupo esclusivamente di gemme e gioielli, adesso. Ho acquirenti in tutta la Costa della Spada, da Calimsham a Waterdeep.~
+@8   = ~Otterrò il massimo dell'oro per tutti gli oggetti che mi porterai. Tieni a mente, comunque, che una volta che avrò venduto l'oggetto, sarà andato per sempre! I miei acquirenti richiedono segretezza e massima discrezione.~
+@9   = ~Ora, c'è qualcos'altro di cui hai bisogno prima che inizi?~
+@10  = ~No Black Lily, e benvenuta alla gilda.~
+@11  = ~Voglio sapere... Perché tu e Narlen siete stati mandati qui? Sono sorpreso di vedere così tanti ladri di alto rango di Baldur's Gate inviati ad Athkatla.~
+@12  = ~Ti ringrazio <CHARNAME>. Vedo che ci sono alcune cose di cui devo già occuparmi! Se vuoi scusarmi...~
+@13  = ~Bene... tu ricordi il vecchio Ravenscar, no?~
+@14  = ~Naturalmente. Diciamo che Ravenscar non ha mai perdonato Narlen per averlo affrontato e averti difeso quando ti voleva morto.~
+@15  = ~Ravenscar ce l'ha avuta con Narlen fin da allora e, che resti tra me e te, oserei dire che gli avrebbe già organizzato un qualche 'incidente' se non avesse avuto questa opportunità per tenere Narlen fuori dai piedi.~
+@16  = ~Il resto dei ladri erano troppo fedeli a Narlen per restare a Baldur's Gate o, in alcuni casi, volevano solo  viaggiare. Athkatla è il cuore dei Ladri Tenebrosi e ci sono molte opportunità, qui, per un ladro audace.~
+@17  = ~Per quanto mi riguarda, beh, ho le mie ragioni. Diciamo solo che volevo un po' di cambiamento. Inoltre riconosco una cosa buona quando la vedo. Immagino che lavorare per te si rivelerà molto gratificante.~
+@18  = ~Ora, se vuoi scusarmi, <CHARNAME>. Ho bisogno di sistemarmi. Vedo che ci sono alcune cose di cui devo già occuparmi!~
+@19  = ~Salute <CHARNAME>! È una bella gilda quella che hai qui. Noi faremo funzionare bene questo posto, con il sapere del nord e la laboriosità!~
+@20  = ~È una vergogna per Narlen, veramente una vergogna. È un peccato anche che così tanti della nostra compagnia siano stati uccisi lungo la strada. Se fossero vivi, saremmo stati in grado di aumentare sostanzialmente i profitti di questa gilda. In ogni caso, sono sicura che ci troveremo bene nella gerarchia già in vigore. Io, comunque, ti servirò come tua contabile e ricettatrice. Non ci saranno ammanchi dalle casse della gilda finché sarò in servizio, te l'assicuro!~
+@21  = ~Sparisci! Ho dei conti da fare.~ [BLACKL02] // same as #4799 but with another sound clip = same as @101 in gbthfkp2.tra
+@22  = ~Stiamo perdendo oro, di ora in ora, <CHARNAME>. Paga Renal, e facci tornare al lavoro!~
+@23  = ~'Giorno a te <CHARNAME>. I libri sono tutti in ordine. Renderò onesti questi ladri... nei loro rapporti con te, naturalmente. Hai qualche gingillo da ricettare per me, per caso?~
+@24  = ~Sì. Ho bisogno di te per sbarazzarmi in fretta di questi oggetti. Scottano troppo per tenerli.~
+@25  = ~No, non in questo momento.~
+@26  = ~Davvero? Bene allora, vediamo cos'hai. Non preoccuparti, <CHARNAME>, ti farò un buon prezzo per loro, puoi starne certo!~
+@27  = ~Sarò qui quando vorrai.~

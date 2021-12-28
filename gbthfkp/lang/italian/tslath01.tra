@@ -1,0 +1,48 @@
+// TSLATH01 translation file
+@1   = ~Buone notizie Capo! Sembra che riceveremo a breve dei rinforzi! Siamo sempre un po' a corto di manodopera, ma dei ladri aggiuntivi dovrebbero aiutare parecchio.~
+@2   = ~Eccellente! Sento già piovere l'oro. Sai qualcosa su chi sono?~
+@3   = ~Spero conoscano bene il loro mestiere, non ho tempo per istruire nuove reclute. Sai chi sono?~
+@4   = ~Solo il necessario. Altri inutili forme di vita che bighellonano intorno alla mia gilda. Immagino che tu non conosca chi sono questi imbecilli?~
+@5   = ~Un gruppo di membri della nostra sede a nord di Baldur's Gate, guidati da un uomo di nome Narlen Darkwalk e una donna, Black Lily. Circa dieci o dodici in tutto, forse di più...~
+@6   = ~Narlen Darkwalk? Black Lily...?~
+@7   = ~Certo. Li conosci?~
+@8   = ~Sì infatti! Narlen ed io ci conosciamo. Buoni ladri, sia lui che Lily. Sono sicuro che anche gli altri sono tra i migliori. Mi chiedo perché abbiano lasciato Gate?~
+@9   = ~Oh sì. Conosco quell'idiota dalla parlantina gergale. Ho un conto con lui. Lavorerà per me adesso, eh? Sarò lieto di averlo sotto il mio tallone. Perché sta venendo qui?~
+@10  = ~Beh, come sai, le recenti... difficoltà... hanno decimato i nostri ranghi. I Signori delle Ombre di ogni dove stanno inviando tutti gli uomini che possono per incrementare i nostri numeri. Non possiamo perdere Athkatla, non dopo quello che è accaduto a Waterdeep.~
+@11  = ~Non si sa se sarà sufficiente, ma conta ogni piccolo sforzo. Anche se la maggior parte dei ladri che otteniamo dalle altre gilde sono feccia.~
+@12  = ~Narlen e Lily non sono feccia. Non preoccuparti. Saranno una gradita aggiunta e sono sicuro che anche gli altri faranno la loro parte. Quanto tempo ci vorrà perché arrivino?~
+@13  = ~Hmmph. Vedremo. Quando dovrebbero arrivare?~
+@14  = ~Da quello che mi è stato detto, sono partiti già da un po'... quindi... mmmm... allora... sette più otto, riporto uno... solo un secondo... fammi togliere questa scarpa...~
+@15  = ~Salve!~
+@16  = ~Dovrebbero essere qui in un giorno o due!~
+@17  = ~Basta che mi fai sapere quando arrivano qui.~
+@18  = ~Lo farò Capo! Puoi contare su di me!~
+@19  = ~Narlen Darkwalk e Black Lily arrivano ad Athkatla
+
+Lathan mi ha informato che i rinforzi dalla Gilda di Baldur's Gate arriveranno entro un giorno o due. I ladri sono guidati da niente di meno che Narlen Darkwalk e Black Lily. Mi chiedo perché abbiano lasciato Gate?~
+@20  = ~Ehi, Capo. Ci sei! È successo qualcosa! Potresti voler trattare questo problema il prima possibile.~
+@21  = ~Sembra che ci sia un nuovo Capitano della Guardia qui ai Moli e che tu ci creda o no, lui ha dichiarato guerra alla nostra gilda! Immagino che con i recenti problemi che abbiamo avuto, lui o uno dei suoi superiori, abbia deciso che questo è il momento perfetto per attaccarci.~
+@22  = ~Non c'è bisogno di andare da soli, a meno che non lo desideri. Ho alcuni dei migliori assassini della nostra gilda a disposizione per aiutarti nell'assalto.~
+@23  = ~Dovresti assaltare il Corpo di guardia qui nel Porto e spazzare via la guarnigione. È particolarmente importante che il Capitano venga ucciso in questa operazione. Lui non può essere convinto né corrotto, quindi questo è l'unico modo.~
+@24  = ~Ora questa è la parte più importante: vuoi aiuto? Oppure pensi di poterlo fare da solo? Prenderei l'aiuto, se fossi in te, ma è la tua sfida.~
+@25  = ~Sì. Accetterò i rinforzi. Potrei trovare utile l'aiuto.~
+@26  = ~No, non c'è bisogno. Mi occuperò io stesso di questo sciocco.~
+@27  = ~Va bene! Vorrei solo poter prendere parte all'assalto! Esci attraverso la porta d'ingresso della gilda. I tuoi ladri saranno in attesa lì fuori. Parla con uno di loro e ti seguiranno al Corpo di guardia.~
+@28  = ~Il Corpo di guardia stesso è nella parte centro-settentrionale dei Moli, due edifici ad est del Tempio di Oghma. Il posto è pieno di guardie, e il Capitano stesso sarà probabilmente ben protetto.~
+@29  = ~Molto bene. Non possiamo comunque permetterci di perdere altri ladri. Sei sempre andato avanti con le tue sole forze prima.~
+@30  = ~Il Corpo di guardia è nella parte centro-settentrionale dei Moli, due edifici ad est del Tempio di Oghma. Il posto è pieno di guardie, e il Capitano stesso sarà probabilmente ben protetto.~
+@31  = ~Non ritardare troppo il tuo assalto alla guarnigione, Capo. Se non la farai presto finita con questo Capitano, potremmo dover chiudere la gilda!~
+@32  = ~Non ritardare troppo il tuo assalto alla guarnigione, Capo. Se non la farai presto finita con questo Capitano, potremmo dover chiudere la gilda! Gli assassini all'esterno sono in attesa dei tuoi ordini.~
+@33  = ~Inoltre, non dimenticarti di quei ladri di fronte alla gilda. Non vedono l'ora di combattere e ti seguiranno alla caserma.~
+@34  = ~Ottimo lavoro Capo! Abbiamo sentito tutto del tuo successo! Questo gli insegnerà a non dar fastidio alla nostra gilda! Dubito che avremo ancora problemi con le guardie dopo questo brutto affare.~
+@35  = ~Penso che le cose torneranno presto alla normalità qui intorno.~
+@36  = ~Ti farò sapere se salta fuori qualcos'altro che richiede la tua attenzione.~
+@37  = ~Mi dispiace, posso parlare solo con <CHARNAME>. Spero che tu capisca.~
+@38  = ~Non ritardare troppo il tuo assalto alla guarnigione, Capo. Se continua così potremmo dover chiudere la gilda! Gli assassini all'esterno sono in attesa dei tuoi ordini.~
+@39  = ~L'Assalto al Corpo di guardia
+
+A quanto pare c'è un nuovo sceriffo in città e mi ha sfidato. Il Capitano della Guardia recentemente insediatosi qui ai Moli, ha promesso che mi farà penzolare da una forca. Evidentemente è una persona poco ragionevole e si rifiuta di essere pagato. Questo non va bene per niente. Non ho altra scelta che ucciderlo prima che arrivi a me. Lo si può trovare nella caserma, a nord della mia Gilda e ad est del tempio locale. Ho arruolato alcuni dei miei migliori assassini per aiutarmi in questo compito. Devo parlare con loro prima dell'attacco. Loro mi aspettano all'esterno della gilda, vicino alla porta d'ingresso.~
+@40  = ~Non ritardare troppo il tuo assalto alla guarnigione, Capo. Se continua così potremmo dover chiudere la gilda!~
+@41  = ~L'Assalto al Corpo di guardia
+
+A quanto pare c'è un nuovo sceriffo in città e mi ha sfidato. Il Capitano della Guardia recentemente insediatosi qui ai Moli, ha promesso che mi farà penzolare da una forca. Evidentemente è una persona poco ragionevole e si rifiuta di essere pagato. Questo non va bene per niente. Non ho altra scelta che ucciderlo prima che arrivi a me. Lo si può trovare nella caserma, a nord della mia Gilda e ad est del tempio locale.~

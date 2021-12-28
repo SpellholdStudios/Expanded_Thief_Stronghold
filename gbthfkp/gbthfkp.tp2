@@ -37,6 +37,16 @@ LANGUAGE ~Russian (translation by Aerie.ru and prowler)~
          ~gbthfkp/lang/russian/setup.tra~
          ~gbthfkp/lang/russian/gbthfkp.tra~
 
+LANGUAGE ~Francais (traduction : JohnBob)~
+         ~french~
+         ~gbthfkp/lang/french/setup.tra~
+         ~gbthfkp/lang/french/gbthfkp.tra~
+
+LANGUAGE ~Italiano (traduzione di ilot)~
+         ~italian~
+         ~gbthfkp/lang/italian/setup.tra~
+         ~gbthfkp/lang/italian/gbthfkp.tra~
+
 
 /* ============================================= *
  *  Expanded Thief Stronghold  (main component)  *

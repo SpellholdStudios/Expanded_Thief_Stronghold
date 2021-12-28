@@ -13,7 +13,7 @@ Baldur's Gate Trilogy and EET<h3>
 </div><br>
 
 
-**Author:** Gerard Blucher  
+**Author:** Gebhard Blucher  
 **Mod Forum:** <a href="">TODO</a><br><br>
 
 ## 
@@ -26,6 +26,10 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## 
 
+:page_facing_up: [Read the mod's readme](https://spellholdstudios.github.io/readmes/expanded_thief_stronghold-readme-english.html)
+
+:inbox_tray: [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/757-expanded-thief-stronghold)<br>
+
 ## 
 
 <div align="center">
@@ -37,6 +41,9 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## <a name="intro" id="intro"></a>Overview
 
+This mod adds some further quests to the thief stronghold in BG2 and imports Narlen Darkwalk and Black Lilly from the BG1 Shadow Thieves to Amn.
+
+I've heard quite a few people complaining about the Thief Stronghold in BG2: some said that it is either dull, too short, annoying, or all three. Well, I like it. Along with the Mage Stronghold, it's my favorite stronghold in the game. I do agree however, that it could use some spicing up. That's where this 'mod' comes in - it expands quite a bit on the original stronghold, fixes some existing bugs and has a lot of (I hope) cute touches.
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -147,16 +154,15 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="versions" id="versions"></a>Versions History
 
-##### Version 3.0.0 &nbsp;(, 2021)
+##### Version 3.0.0 &nbsp;(December , 2021)
 
 - Added *gbthfkp.ini* metadata file (including dynamic installation order syntax and global `LABELS`) to support AL|EN's "Project Infinity"
 - Replaced `AUTHOR` keyword with `SUPPORT`
 - Added Immutability concept.
-- 
-- 
+-- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
+ 
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
-- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
 - Added native BG2:EE and EET compatibility
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added `ADD_JOURNAL` entries.
@@ -165,9 +171,9 @@ In addition to the methods above for removing individual components, you can com
 - Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Kumuzu his PPE portrait.
 - Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.
 - Script files: removed *OnCreation()* action from blocks that have a `LOCALS/GLOBAL` associated with them.
-- Spells installation: removed useless `SAY NAME2` patches
+- Spells installation: removed useless `SAY NAME2` patches.
 - Included BWP Fixpack fixes: Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
-- Modernized area patching with homemade `GW_ALTER_AREA_ENTRANCE` and `GW_ALTER_AREA_REGION` WeiDU function. 
+- Modernized area patching with homemade `GW_ALTER_AREA_ENTRANCE` and `GW_ALTER_AREA_REGION` WeiDU functions. 
 - <ins>Sword of Olidammara +4</ins> (ts5loot1.itm):
     - Fixes wrong effects probability (15 %, was 5%).
     - Fixed wrong portrait icon (Confused, was Charmed).
@@ -175,7 +181,8 @@ In addition to the methods above for removing individual components, you can com
 - Moved installation messages from *gwthfkp.tra* file *setup.tra* file for more comfortable readability.
 - Added foreign languages WeiDU prompts when available.
 - Proofread English strrefs (Gwendolyne).
-- Added French translation (by ).
+- Added French translation (by JohnBob).
+- Added Italian translation (by ilot).
 - Moved useless files into new :file_folder: "*legacy*" folder.
 - Lower cased files.
 - Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
@@ -188,7 +195,7 @@ In addition to the methods above for removing individual components, you can com
  
 ##### Version 2.20 &nbsp;(April 1, 2010)
 
-- Wisp’s Unfinished Business compatibility fix.
+- Wisp's Unfinished Business compatibility fix.
 - Updated WeiDU installer to v215.
 
 ## 
@@ -214,7 +221,7 @@ In addition to the methods above for removing individual components, you can com
 
 ##### Version 2.16 &nbsp;(April 01, 2009) - by Leomar
 
-- White Agnus’ added a BGT and language check, so no English wav-files.
+- White Agnus added a BGT and language check, so no English wav-files.
 - Removed GBTfkp.bat.
 - Updated Read Me.
 - Updated WeiDU installer to v210.
@@ -237,7 +244,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## 
 
-##### Version 2.13 &nbsp;(July 26, 2006) - Some significant changes.
+##### Version 2.13 &nbsp;(July 26, 2006): Some significant changes.
 
 - After much deliberation and some discussion, I've decided to remove the "Improved Mae'Var" component of the mod completely. If you want him, it is still out there in Westly Weimer's Tactics mod (in pretty much the same form as when I sent him off to Wes). Increasing the difficulty of the game is not part of this mod.
 - Another change is that you may now enter the Dock Barracks before the assault on the guild house. I had originally cut that area off until the assault to prevent some possible exploits, but I've decided that it doesn't matter. Besides, as SixOfSpades told me, it's nice to go in there and talk to the guards when you aren't on the quest. This mod is about expanding the content of the game, not removing access to content (no matter how thin that content may be).
@@ -273,11 +280,11 @@ In addition to the methods above for removing individual components, you can com
 
 - Disabled the "Random Encounters" and the "Remove Improved Mae'Var" components. The random encounters may return, but right now I find them to be too annoyingly frequent. As for Mae'var, I like his "improveness" and feel the component to remove him is unneeded.
 - Also some minor tweakage and buglet fixes:
-  - fixed a problem with the area outside of the orc being flagged as a random encounter (no save) area.
-  - tweaked a few lines of dialogue.
-  - removed some extra gem, etc. bags from the stronghold.
-  - fixed the infamous "noblewoman 4" buglet.
-  - a few other, very minor, changes.
+  - Fixed a problem with the area outside of the orc being flagged as a random encounter (no save) area.
+  - Tweaked a few lines of dialogue.
+  - Removed some extra gem, etc. bags from the stronghold.
+  - Fixed the infamous "noblewoman 4" buglet.
+  - A few other, very minor, changes.
 
 ## 
 

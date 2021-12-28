@@ -1,0 +1,22 @@
+// MAEGUY01 translation file
+@38  = ~Je... <CHARNAME>, puis-je...~
+@39  = ~Oui ? Que se passe-t-il, Kamuzu ?~
+@40  = ~Assez ! Dégagez vieux fou, je ne supporte pas votre odeur !~
+@41  = ~Je... je pensais que je quitterais cet endroit sans regrets, mais... Je suis toujours un Voleur de l'ombre ! Et je ne suis pas inutile. Pensez-vous que Mae'var m'aurait gardé en vie si longtemps, si je n'avais aucun talent ? Je suis un alchimiste, je peux vous fabriquer de nombreuses potions, et je le ferais avec plaisir ! Je vous dois plus que ma vie ! M'accepteriez-vous à bord ?~
+@42  = ~Bien sûr ! Je vous souhaite un bon retour chez les Voleurs de l'ombre.~
+@43  = ~Pardon ? Vous sentez cette odeur ? Je ne crois pas. Dégagez, et estimez heureux que je ne vous remette pas au trou.~
+@44  = ~Merci ! Merci, Monseigneur ! Vous ne le regretterez pas, je vous le promets ! Si cela vous convient, rejoignez-moi au troisième étage quand vous aurez le temps.~ ~Merci ! Merci, Madame ! Vous ne le regretterez pas, je vous le promets ! Si cela vous convient, rejoignez-moi au troisième étage quand vous aurez le temps.~
+@45  = ~Kamuzu... le créateur de potions ?
+
+Il semble que le vieux Kamuzu soit un alchimiste de talent. Assez doué, en tout cas, pour que Mae'Var le garde en vie pendant tout ce temps. Il m'a demandé du travail et j'ai accepté son offre. Si j'ai besoin de ses services, je peux le trouver au troisième étage de la guilde. Je me demande ce qu'il peut fabriquer. Il faudra que je lui rende visite prochainement.~
+@46  = ~Non ! S'il vous plaît, non ! Je dois partir d'ici !~
+@47  = ~Oui... Oui, bien sûr... Au revoir ! (Kamuzu prend ses jambes à son cou.)~
+
+@48  = ~Salutations <CHARNAME>. Je vous serai toujours reconnaissant, pour ce que vous avez fait pour moi. Je suis prêt à commencer le travail,si vous le souhaitez ? Je peux vous fabriquer de nombreuses potions très utiles pour les voleurs, même si j'ai peur de vous annoncer le prix des ingrédients.~
+@49  = ~D'accord, voyons ce que vous pouvez faire.~
+@50  = ~Tout le plaisir est pour moi ! C'est bon de travailler à nouveau en homme libre !~
+@51  = ~Je vous salue à nouveau, Monseigneur. Désirez-vous que je prépare d'autres potions ?~ ~Je vous salue à nouveau, Madame. Désirez-vous que je prépare d'autres potions ?~
+@53  = ~Non, pas pour le moment, Kamuzu. Prenez du temps pour vous.~
+@54  = ~Toujours prêt à vous servir, Monseigneur...~ ~Toujours prêt à vous servir, Madame...~
+@55  = ~Vous êtes très généreux. Je serai là si vous avez besoin de moi. En attendant, Je vais retourner à mon jardin...~ ~Vous êtes très généreuse. Je serai là si vous avez besoin de moi. En attendant, Je vais retourner à mon jardin...~
+@56  = ~Bonjour à vous, <GABBER>. Monseigneur <CHARNAME> est-il dans les parages ?~ ~Bonjour à vous, <GABBER>. Dame <CHARNAME> est-elle dans les parages ?~

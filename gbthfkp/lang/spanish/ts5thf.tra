@@ -2,6 +2,7 @@
 @2  = ~Es tiempo. Id a la entrada y os veré ahí.~
 @3  = ~Ya os dejaré saber cuando esté listo. Esperad hasta que os avise.~
 @4  = ~¡Ya escuchasteis a <CHARNAME>! ¡Moveos!.~
+
 @5  = ~~
 @6  = ~Es tiempo. Id a la entrada y os veré ahí.~
 @7  = ~Esperamos vuestra orden <CHARNAME>.~
@@ -13,6 +14,7 @@
 @13 = ~¡Ya los tenemos, jefe!.~ ~¡Ya los tenemos, jefa!.~
 @14 = ~Quiero que vos y el resto os mováis ahí adelante. Limpiad esos pasadizos. No necesito que nos coja una emboscada: ¡moveos!.~
 @15 = ~¡Moveos, vagos!, ¡ya escuchasteis a <CHARNAME>!.~
+
 @16 = ~¡Perfecto, <CHARNAME>! Fue un placer servir bajo vuestro mando. Nos veremos en la taberna, ¿vale? ¡La primera ronda va a mi cuenta!.~
 @17 = ~Tal vez nos veamos ahí entonces. ¡Vámonos!.~
 @18 = ~Como queráis, sólo hablad con cualquiera de nosotros cuando estéis listo.~
@@ -26,10 +28,12 @@
 @26 = ~Ahora no. Tal vez, ¿otra vez?.~
 @27 = ~¡Aquí el Vino!.~
 @28 = ~Un placer. ¡Un vino de Arabellan para <CHARNAME> y que sea rápido!.~
+
 @29 = ~¡Buena elección, yo también tomaré eso!.~
 @30 = ~Aquí Thumb es el gran ladrón  (y digo, GRAN).~
 @31 = ~Bien, ¡venid a la barra <CHARNAME>, que le daré una buena a Thumb este <DAYNIGHT>!.~
 @32 = ~¡Cerveza oscura para este Ladrón de las Sombras! Y tened cuidado Thumb, que estáis sirviendo a <CHARNAME>!.~
+
 @33 = ~Claro. Estaré aquí si cambiáis de parecer.~
 @34 = ~Un placer <GABBER>. ¿Está <CHARNAME>?.~
 @35 = ~Ja ja ja! ¡hola, <GABBER>! ¡Hic! ¡Perdonad! ¿dónde está mi trago...? lo puse por aquí...~

@@ -1,0 +1,41 @@
+// TS5THF translation file
+@1   = ~Salute <CHARNAME>! È il momento? Renal ci ha inviato per aiutarti nel tuo assalto alla caserma. Siamo ai tuoi comandi fino a quando tutto questo non sarà concluso.~
+@2   = ~È il momento. Andate all'ingresso della caserma. Ci incontreremo là.~
+@3   = ~Ti farò sapere quando sono pronto. Rimani lì fino ad allora.~
+@4   = ~Avete sentito il <MANWOMAN>! All'assalto!~
+
+@5   = ~<NO TEXT>~
+@6   = ~È il momento. Andate all'ingresso della caserma. Ci incontreremo là.~
+@7   = ~Attendiamo i tuoi ordini <CHARNAME>.~
+@8   = ~Iniziate l'assalto! Ci incontreremo dentro una volta che avrò reso sicura quest'area.~
+@9   = ~Subito! All'assalto ladri! Muoversi! Muoversi!~
+@10  = ~Sembra che dovremo ripulire questo luogo una stanza alla volta, <SIRMAAM>. Sarà dura avanzare!~
+@11  = ~Infatti. Ora, muoviamoci! Abbattete gli eventuali superstiti e snidate i restanti dai loro buchi. Li tratteremo come agnelli al macello.~
+@12  = ~Sì <SIRMAAM>!~
+@13  = ~Li abbiamo messi alle corde, capo!~
+@14  = ~Non siate troppo spavaldi. Voglio che tu e il resto della tua banda avanziate. Ripulite i corridoi. Non voglio rimanere bloccato in un'imboscata. Ora muoviamoci!~
+@15  = ~Muovetevi lumaconi! Avete sentito <LADYLORD> <CHARNAME>!~
+
+@16  = ~Esecuzione perfetta <CHARNAME>! È stato un piacere lavorare per te. Incontriamoci al Dono del Mare, eh? Il primo giro lo offro io!~
+@17  = ~Penso che accetterò questa offerta. Ben fatto ladri! Usciamo!~
+@18  = ~Come desideri. Parla con uno di noi quando sei pronto.~
+@19  = ~Ah, <CHARNAME>! Eccoti! Abbiamo appena iniziato. Mi permetterai di offrirti un drink?~
+@20  = ~Sì, grazie. Vediamo... un po' di Vino Alurlyath dovrebbe andare bene.~
+@21  = ~Un ottimo suggerimento! Io prenderò un Vino Secco di Arabella per favore.~
+@22  = ~Sì certo. Birra Scura Amara, con sopra una ciliegina sarà perfetta!~
+@23  = ~Io proverò una Birra di Elminster, grazie. Mi chiedo se sia davvero una sua ricetta?~
+@24  = ~Un Idromele Infinito va sempre bene per me... e dì al Pollice che la voglio in un boccale PULITO questa volta!~
+@25  = ~Sì, vi ringrazio tanto. Una Birra Scura Ombra Buio se non ti spiace.~
+@26  = ~Non in questo momento. Grazie lo stesso. Forse più tardi?~
+@27  = ~Vino Alurlyath in arrivo!~
+@28  = ~Piacere mio. Pollice! Un Vino Secco di Arabella per il <MANWOMAN> e fa in fretta!~
+
+@29  = ~Una buona scelta! Lo prenderò anch'io! Muovi il tuo culo, Pollice. Abbiamo una  bevuta da fare!~
+@30  = ~Probabilmente no, cono0scendo quel mascalzone di Pollice. Lui è il più grande ladro qui (ed intendo dire GROSSO).~
+@31  = ~Bene vieni al bar mio <LADYLORD> e ti daremo il meglio del vecchio Pollice <DAYNIGHT>!~
+@32  = ~Birra Scura Ombra per un Ladro Tenebroso! Passo svelto Pollice! È <LADYLORD> <CHARNAME> che stai servendo!~
+
+@33  = ~Naturalmente. Sarò qui se cambierai idea.~
+@34  = ~È sempre un piacere <GABBER>. Si tratta di <CHARNAME>?~
+@35  = ~Ha ha ha! Perché saluti là, <GABBER>!  Hic!  'cusatemi! Ora dov'è il mio drink...?  L'ho messo qui da qualche parte...~
+@36  = ~Perdonatemi, ma prendo ordini solo da <CHARNAME>.~

@@ -1,0 +1,41 @@
+// TS5THF translation file
+@1   = ~Salutations, <CHARNAME> ! C'est l'heure ? Renal nous a envoyés pour t'assister dans ton attaque de la caserne. Nous sommes à tes ordres, pour cette mission.~
+@2   = ~C'est l'heure. Allez à l'entrée de la caserne. Je vous rejoins là-bas.~
+@3   = ~Je vous ferai savoir quand je serai prêt. Restez ici en attendant.~ ~Je vous ferai savoir quand je serai prête. Restez ici en attendant.~
+@4   = ~Vous avez entendu le chef ! En avant !~ ~Vous avez entendu la cheffe ! En avant !~
+
+@5   = ~<NO TEXT>~
+@6   = ~C'est l'heure. Allez à l'entrée de la caserne. Je vous rejoins là-bas.~
+@7   = ~Nous sommes à tes ordres, <CHARNAME>.~
+@8   = ~Commencez l'assaut ! Je vous rejoins à l'intérieur dès que j'ai sécurisé cette zone.~
+@9   = ~Tout de suite ! C'est parti, les canailles ! En avant ! En avant !~
+@10  = ~M'sieur, on dirait qu'on va devoir nettoyer cet endroit pièce par pièce. Ça va être brutal !~ ~M'dame, on dirait qu'on va devoir nettoyer cet endroit pièce par pièce. Ça va être brutal !~
+@11  = ~En effet. Maintenant, bougez-vous ! Éliminez les traînards et débusquez les autres. Nous les rassemblerons et les abattrons tous.~
+@12  = ~Oui, M'sieur !~ ~Oui, M'dame !~
+@13  = ~Ils sont à notre merci, chef !~ ~Ils sont à notre merci, cheffe !~
+@14  = ~Ne sois pas trop arrogant. Je veux que toi et ta bande continuez à avancer. Nettoyez ces corridors, je ne tiens pas à tomber dans une embuscade. Aller, on se remue !~
+@15  = ~Allez, les boulets ! Vous avez entendu Monsieur <CHARNAME> !~ ~Allez, les boulets ! Vous avez entendu Madame <CHARNAME> !~
+
+@16  = ~Un travail d'orfèvre, <CHARNAME> ! Ça a été un plaisir de combattre sous tes ordres. Tu nous rejoins à la Bonté marine, hein ? La première tournée est pour moi !~
+@17  = ~Je pourrais bien accepter cette invitation. Bien joué, compagnons ! votre mission est terminée !~
+@18  = ~Comme tu préfères. Parle à l'un d'entre nous quand tu es prêt.~ ~Comme tu préfères. Parle à l'un d'entre nous quand tu es prête.~
+@19  = ~Ah, <CHARNAME> ! Tu es là ! Nous venons juste de commencer. Permets-moi de t'offrir un verre ?~
+@20  = ~Oui, merci. Voyons voir... un vin alurlyath devrait convenir.~
+@21  = ~Une excellente proposition ! Je prendrai un vin sec arabellois, s'il te plaît.~
+@22  = ~Avec plaisir. Une bière noire amère avec de la mousse dessus fera des merveilles !~
+@23  = ~Je vais essayer la bière d'Elminster, merci. Je me demande si la recette est vraiment de lui ?~
+@24  = ~L'Hydromel passe toujours bien... Mais dis au Pouce que je le prendrai dans une choppe PROPRE cette fois-ci !~
+@25  = ~Oui, merci de ton offre. Une bière Ombrenoire, s'il te plaît.~
+@26  = ~Pas pour le moment, mais merci quand même. Peut-être plus tard ?~
+@27  = ~Et un vin alurlyath, un !~
+@28  = ~Avec plaisir. Le Pouce ! Un vin sec arabellois pour le patron et vite !~ ~Avec plaisir. Le Pouce ! Un vin sec arabellois pour la patronne et vite !~
+
+@29  = ~Un très bon choix ! C'est ce que j'allais commander ! Bouge tes fesse, Le Pouce. On a besoin d'un remontant !~
+@30  = ~Probablement pas, connaissant ce vaurien de Pouce. C'est le plus gros voleur par ici (et je dis bien le plus GROS).~
+@31  = ~Eh bien, accompagne moi au comptoir, Monseigneur, et nous allons donner au vieux Pouce du fil à retordre aujourd'hui !~ ~Eh bien, accompagne moi au comptoir, Milady, et nous allons donner au vieux Pouce du fil à retordre aujourd'hui !~
+@32  = ~Une bière Ombrenoire pour un Voleur de l'ombre ! Dépêche toi, Le Pouce ! C'est Monsieur <CHARNAME> que tu sers !~ ~Une bière Ombrenoire pour une Voleuse de l'ombre ! Dépêche toi, Le Pouce ! C'est Madame <CHARNAME> que tu sers !~
+
+@33  = ~Bien sûr. Je suis là si tu changes d'avis.~
+@34  = ~C'est toujours un plaisir, <GABBER>. Est-ce que <CHARNAME> est dans le coin ?~
+@35  = ~Ha ha ha ! Eh, bonjour à toi, <GABBER> ! Hic ! Excuse-moi ! Alors, où est mon verre... ? Je l'ai mis ici, quelque part...~
+@36  = ~Excuse-moi, mais je ne reçois mes ordres que de <CHARNAME> donne les ordres.~

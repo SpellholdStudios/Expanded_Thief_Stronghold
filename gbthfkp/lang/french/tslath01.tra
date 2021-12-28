@@ -1,0 +1,48 @@
+// TSLATH01 translation file
+@1   = ~Bonnes nouvelles, patron ! Renal vient de me prévenir, nous allons recevoir des renforts d'un moment à l'autre ! Nous serons toujours un peu juste en effectif, mais ces voleurs supplémentaires devraient nous être bien utiles.~ ~Bonnes nouvelles, patronne ! Renal vient de me prévenir, allons recevoir des renforts d'un moment à l'autre ! Nous serons toujours un peu juste en effectif, mais ces voleurs supplémentaires devraient nous être bien utiles.~
+@2   = ~Excellent ! Je peux déjà entendre le bruit de l'or qu'ils vont nous rapporter. Des indications sur leur identité ?~
+@3   = ~Tant qu'ils font bien leur boulot. Je n'ai pas le temps de former de jeunes recrues. Tu sais qui ils sont ?~
+@4   = ~Juste ce qu'il me fallait. Plus de petits voyous qui se la coulent douce dans ma guilde. Je suppose que tu ne sais pas qui sont ces bouffons ?~
+@5   = ~Un groupe venu du nord, des camarades de notre branche de la Porte de Baldur, dirigé par un homme et une femme nommés Narlen Marchombre et Lis Noir. Environ dix ou douze voleurs en tout, peut-être un peu plus...~
+@6   = ~Narlen Marchombre ? Lis Noir...?~
+@7   = ~Oui. Tu les connais ?~
+@8   = ~En effet ! Narlen et moi nous connaissons depuis longtemps. Ce sont des bons voleurs, Lily et lui. Je suis sûr que les autres ne seront pas en reste. Je me demande pourquoi ils ont quitté la Porte de Baldur ?~
+@9   = ~Oh oui. Je connais cette fripouille qui ne sait pas articuler normalement. Je lui en dois une. Il est sous mes ordres maintenant ? Bien, je serai satisfait de l'avoir sous mon contrôle. Que vient-il faire ici ?~ ~Oh oui. Je connais cette fripouille qui ne sait pas articuler normalement. Je lui en dois une. Il est sous mes ordres maintenant ? Bien, je serai satisfaite de l'avoir sous mon contrôle. Que vient-il faire ici ?~
+@10  = ~Eh bien, comme tu le sais, les récentes... complications... ont laissé nos rangs décimés. Les Maîtres de l'Ombre de toutes les villes nous envoient tout le personnel dont ils peuvent se séparer pour augmenter nos effectifs. Nous ne pouvons pas nous permettre de perdre Athkatla, pas après ce qui s'est passé à Eauprofonde.~
+@11  = ~Je ne sais pas si ça suffira, mais chaque petit effort compte. Même si la plupart des voleurs qui nous arrivent sont la lie des autres guildes.~
+@12  = ~Narlen et Lily sont plutôt doués. Ne t'inquiète pas. ICe seront des atouts et je suis sûr que leurs camarades feront leur part. Combien de temps encore avant leur arrivée ?~ ~Narlen et Lily sont plutôt doués. Ne t'inquiète pas. Ce seront des atouts et je suis sûre que leurs camarades feront leur part. Combien de temps encore avant leur arrivée ?~
+@13  = ~Hmmph. Nous verrons. Quand doivent-ils arriver ?~
+@14  = ~D'après ce qu'on m'a dit, ils sont en chemin depuis un certain temps... donc... mmmh... voyons voir... sept plus huit, et je retiens un... juste un instant... il faut que j'enlève ma chaussure...~
+@15  = ~Alors !~
+@16  = ~Ils devraient être là dans un jour ou deux !~
+@17  = ~Préviens-moi quand ils seront arrivés.~
+@18  = ~Pas de problème, patron ! Tu peux compter sur moi !~ ~Pas de problème, patronne ! Tu peux compter sur moi !~
+@19  = ~Narlen Marchombre et Lis Noir débarquent à Athkatla
+
+Lathan m'a informé que des renforts arrivaient de la Porte de Baldur, d'ici un jour ou deux. Les voleurs sont dirigés par nul autre que Narlen Marchombre et Lis Noir. Je me demande bien pourquoi ils ont quitté la Porte de Baldur ?~
+@20  = ~Salut, patron. Enfin, tu es là ! Il y a du nouveau ! Et tu devrais t'en occuper le plus vite possible.~ ~Salut, patronne. Enfin, tu es là ! Il y a du nouveau ! Et tu devrais t'en occuper le plus vite possible.~
+@21  = ~Apparemment, il y a un nouveau capitaine de garde sur les quais et crois-le ou non, il déclare la guerre à notre guilde ! Je suppose qu'avec nos récentes difficultés, lui ou l'un de ses supérieurs, a jugé que c'était l'occasion idéale de nous attaquer.~
+@22  = ~Mais, tu n'as pas à les affronter seul, sauf si tu le désires. J'ai plusieurs de nos meilleurs assassins prêts à donner l'assaut à tes cotés.~ ~Mais, tu n'as pas à les affronter seule, sauf si tu le désires. J'ai plusieurs de nos meilleurs assassins prêts à donner l'assaut à tes cotés.~
+@23  = ~Tu dois faire une descente à la caserne, qui ce trouve sur les quais, et éliminer la garnison. Il est nécessaire que le capitaine soit tué dans cette manœuvre. Il ne se laissera pas convaincre, et encore moins soudoyer, c'est donc notre seule option.~
+@24  = ~Maintenant, tu as un choix important à faire : veux-tu de l'aide ? Ou penses-tu pouvoir t'en occuper seul ? À ta place, j'accepterais les renforts, mais c'est à toi de décider.~ ~Maintenant, tu as un choix important à faire : veux-tu de l'aide ? Ou penses-tu pouvoir t'en occuper seule ? À ta place, j'accepterais les renforts, mais c'est à toi de décider.~
+@25  = ~Oui. Je vais accepter des hommes supplémentaires. Ils me seront d'une grande aide.~
+@26  = ~Non, ce ne sera pas nécessaire. Je vais m'occuper de cet inconscient moi-même.~
+@27  = ~Parfait ! J'aurais seulement souhaité pouvoir participer à cette mission ! Sors de la guilde par la porte de devant. Tes voleurs t'attendront dehors. Parle à l'un d'entre eux, et ils t'accompagneront à la caserne.~
+@28  = ~La caserne se trouve au nord de notre guilde, deux bâtiments plus à l'est que le temple d'Oghma. L'endroit fourmille de gardes, et le capitaine sera sûrement très bien défendu.~
+@29  = ~Très bien. Nous ne pouvons pas vraiment prendre le risque de perdre d'autres voleurs. Et tu t'en es toujours bien sorti par toi-même auparavant.~ ~Très bien. Nous ne pouvons pas vraiment prendre le risque de perdre d'autres voleurs. Et tu t'en es toujours bien sortie par toi-même auparavant.~
+@30  = ~La caserne se trouve au nord de notre guilde, deux bâtiments plus à l'est que le temple d'Oghma. L'endroit fourmille de gardes, et le capitaine sera sûrement très bien défendu.~
+@31  = ~Ne retarde pas trop ton assaut sur la garnison, patron. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde !~ ~Ne retarde pas trop ton assaut sur la garnison, patronne. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde !~
+@32  = ~Ne retarde pas trop ton assaut sur la garnison, patron. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde ! Tes assassins sont dehors et attendent tes ordres.~ ~Ne retarde pas trop ton assaut sur la garnison, patronne. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde ! Tes assassins sont dehors et attendent tes ordres.~
+@33  = ~Et n’oublie pas les voleurs devant la guilde. Ils sont impatients de se battre et t'accompagneront à la caserne.~
+@34  = ~Bon travail, patron ! Nous avons entendu le récit de votre succès ! Ça leur apprendra à ne pas se frotter à nous ! Je doute que nous ayons à nouveau des problèmes avec les gardes après cette déplaisante histoire.~ ~Bon travail, patronne ! Nous avons entendu le récit de votre succès ! Ça leur apprendra à ne pas se frotter à nous ! Je doute que nous ayons à nouveau des problèmes avec les gardes après cette déplaisante affaire.~
+@35  = ~Je pense que la situation devrait rapidement revenir à la normale.~
+@36  = ~Je te préviendrai s'il y a autre chose qui requiert ton attention.~
+@37  = ~Je suis désolé, je ne peux parler qu'à <CHARNAME>. J'espère que tu comprends.~
+@38  = ~Ne retarde pas trop ton assaut sur la garnison, patron. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde ! Tes assassins sont dehors et attendent tes ordres.~ ~Ne retarde pas trop ton assaut sur la garnison, patronne. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde ! Tes assassins sont dehors et attendent tes ordres.~
+@39  = ~A L'assaut de la Caserne
+
+Apparemment, il y a un nouveau shérif en ville, et il en a après moi. Le nouveau capitaine de la garnison des quais a juré de me faire pendre. Il est apparemment peu raisonnable et refuse d'être soudoyé. Ce n'est pas acceptable. Je n'ai pas d'autre choix que de l'abattre en premier. Il se trouve dans la caserne au nord de ma guilde et à l'est du temple d'Oghma. J'ai fait appel à certains de nos meilleurs assassins pour m'aider dans cette tâche. Je dois leur parler avant l'attaque. Ils m'attendent à l'extérieur de la guilde, près de la porte de devant.~
+@40  = ~Ne retarde pas trop ton assaut sur la garnison, patron. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde !~ ~Ne retarde pas trop ton assaut sur la garnison, patronne. Si tu ne t'occupes pas rapidement de ce capitaine, nous devrons peut-être fermer la guilde !~
+@41  = ~A L'assaut de la Caserne
+
+Apparemment, il y a un nouveau shérif en ville et il en a après moi. Le nouveau capitaine de la garnison des quais a juré de me faire pendre. Il est apparemment peu raisonnable et refuse d'être soudoyé. Ce n'est pas acceptable. Je n'ai pas d'autre choix que de l'abattre en premier. Il se trouve dans la caserne au nord de ma guilde et à l'est du temple d'Oghma.~

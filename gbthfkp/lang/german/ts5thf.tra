@@ -2,6 +2,7 @@
 @2  = ~Es geht los. Geht zum Eingang der Baracken. Ich werde Euch dort treffen.~
 @3  = ~Ich lasse Euch wissen, wenn ich fertig bin. Haltet Euch bis dahin bereit.~
 @4  = ~Ihr habt den Mann gehört! Bewegt euch!~ ~Ihr habt die Frau gehört! Bewegt euch!~
+
 @5  = ~<NO TEXT>~
 @6  = ~Es geht los. Geht zum Eingang der Baracken. Ich werde Euch dort treffen.~
 @7  = ~Wir erwarten Euren Befehl, <CHARNAME>.~
@@ -13,6 +14,7 @@
 @13 = ~Wir haben alle gefangen, Boss!~
 @14 = ~Werdet nicht zu keck. Ich will, dass Ihr und der Rest Eurer Truppe vorrückt. Untersucht diese Gänge. Ich möchte nicht in einen Hinterhalt geraten. Nun bewegt Euch!~
 @15 = ~Bewegt euch, ihr Faulenzer! Ihr habt Fürst <CHARNAME> gehört!~ ~Bewegt euch, ihr Faulenzer! Ihr habt Fürstin <CHARNAME> gehört!~
+
 @16 = ~Perfekt ausgeführt <CHARNAME>! Es war ein Vergnügen, unter Euch zu dienen. Trefft uns im Seeschatz, okay? Die erste Runde geht auf mich!~
 @17 = ~Ich nehme Euch beim Wort.  Gut gemacht, Diebe! Wegtreten!~
 @18 = ~Wie Ihr wollt. Sprecht zu irgendeinem von uns, wenn Ihr fertig seid.~
@@ -26,10 +28,12 @@
 @26 = ~Nicht jetzt. Dennoch danke schön. Vielleicht später?~
 @27 = ~Alurlyath-Wein ist unterwegs!~
 @28 = ~Mit Vergnügen. Daumen! Einen Arabeller Trockene Traube für den Herrn und macht schnell!~ ~Mit Vergnügen. Daumen! Einen Arabeller Trockene Traube für die Dame und macht schnell!~
+
 @29 = ~Eine gute Wahl! Das ist, was ich habe! Beweg deinen Hintern, Daumen. Wir haben was wegzutrinken!~
 @30 = ~wohl kaum, ich kenne den Halunken Daumen. Er ist der größte Dieb hier (und ich meine GROSS).~
 @31 = ~Nun, dann auf zur Bar, <LADYLORD> und wir machen dem alten Daumen die Hölle heiß!~
 @32 = ~Schattenbräu für einen Schattendieb! Macht schon, Daumen! Das ist der Fürst <CHARNAME>, den du bedienst!~ ~Schattenbräu für einen Schattendieb! Macht schon, Daumen! Das ist die Fürstin <CHARNAME>, die du bedienst!~
+
 @33 = ~natürlich. Ich bin hier, wenn Ihr Eure Meinung ändern solltet.~
 @34 = ~Immer ein Vergnügen, <GABBER>. Ist <CHARNAME> in der Nähe?~
 @35 = ~Ha ha ha! Hallo auch, <GABBER>! Hicks! 'tschuldigung! Wo's nur mein Bier...? Hat's doch eben noch... hicks...~

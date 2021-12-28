@@ -358,7 +358,7 @@ COPY_EXISTING ~shthstor.cre~    ~override~
 	WRITE_ASCII SCRIPT_RACE     ~None~ #8
 	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
 	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
-	WRITE_ASCII DIALOG          ~tsgS1~ #8
+	WRITE_ASCII DIALOG          ~tsgs1~ #8
 
 // Ama
 COPY_EXISTING ~shthass1.cre~ ~override/tsama1.cre~

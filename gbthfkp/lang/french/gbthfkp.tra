@@ -1,0 +1,182 @@
+/* ============================================================== *
+ *  GB's Expanded Thief Stronghold: miscellaneous strref entries  *
+ * ============================================================== */
+
+/* =========== *
+ *  Creatures  *
+ * =========== */
+
+// Black Lily sound set
+@101 = ~Dehors maintenant! J'ai des comptes à faire.~ [BLACKL02] // same as #4799 but with another sound clip
+@102 = ~Le jour où je n'aurai pas ce que vous désirez sera le jour le plus sombre de votre vie.~ [BLACKL01] // same as #4798 but with another sound clip
+@103 = ~Ouch !~ [BLACKL03]
+@104 = ~Uh... Ungh !~ [BLACKL04]
+@105 = ~Aidez-moi ! Aidez-moi, s'il vous plaît !~
+
+@106 = ~Gruuk le Poilu~
+@107 = ~Le vieux Yeller~
+@108 = ~Cpt. Sterling~
+@109 = ~Lt. Betta~
+
+@111 = ~Myriza~
+@112 = ~Keltar~
+@113 = ~Genja~
+@114 = ~Gelt Foldum~
+@115 = ~Issa Kealn~
+@116 = ~Hawrath~
+
+@121 = ~Bert~
+@122 = ~Tom~
+@123 = ~Bill Huggins~
+@124 = ~Jancie~
+
+
+/* ======== *
+ *  Stores  *
+ * ======== */
+@201 = ~Les potions de Kamuzu~
+@202 = ~Les bijoux volés de Lis Noir~ 
+
+@211 = ~Le Grog de Briney~
+@212 = ~Bière légère~
+@213 = ~Bière du soleil noir~
+@214 = ~Eau de feu du dragon rouge~
+@215 = ~Anciens vignobles~
+
+
+/* ======= *
+ *  Items  *
+ * ======= */
+@301 = ~Clé du coffre de <CHARNAME>~
+@302 = ~C'est la clé du coffre de votre bureau au deuxième étage de la guilde. Cette clé est L'UNIQUE moyen de l'ouvrir. Il serait sage de la conserver en sécurité.~
+
+@303 = ~Griffe du Chat~
+@304 = ~La Griffe du Chat
+L'histoire de cette puissante dague échappe à toute tentative d'identification.  Même le sort le plus puissant ne laisse apparaître que l'image d'une petite souris grise.  La connexion entre l'image et la dague demeure un mystère.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Fixe à deux points la compétences en combat à deux armes
+- 1 attaque supplémentaire par round
+
+TAC0 : +3
+Dégâts : 1d4+3
+Type de dégâts : Perforant
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à une main
+Nécessite : 3 en Force
+
+Poids : 0
+
+Utilisable par :
+ Voleur~
+
+@305 = ~Épée d'Olidammara +4~
+@306 = ~l'Épée d'Olidammara +4
+La légende raconte qu'Olidammara, le Voleur Souriant lui-même, a donné cette lame à son voleur préféré parmis les mortel. Depuis lors, elle a été utilisée de nombreuses fois, en de nombreux endroits, par d'innombrables voleurs, scélérats et crapules.  Une lame volage, détenir cette épée est au mieux temporaire. Elle semble... facile... à égarer d'une manière ou d'une autre et rechigne même à être rengainée, bien sûr, c'est peut être votre imagination.  Personne ne sait comment elle est arrivée à Féérune, mais vous espérez pouvoir la conserver un certain temps.
+
+PARAMÈTRES :
+
+Capacité d'équipement :
+- +1 au multiplicateur d'attaque sournoise
+
+Capacité de combat :
+- 15% de chance de rendre la cible confuse pendant un tour à chaque coup porté (sans jet de sauvegarde)
+
+TAC0 : +4
+Dégâts : 1d6+4
+Type de dégâts : Perforant
+Facteur de vitesse : 0
+Type de compétence: épée courte
+Type : arme à une main
+Nécessite : 3 en Force
+
+Poids : 2
+
+Utilisable par :
+ Voleur~
+
+/* USELESS as of v3.0.0 : hardcoded in itm.file
+@124 = #6745 // Short Sword.
+@125 = #6747 // Short Sword Description.
+@126 = #6343 // Dagger.
+@127 = #6720 // Dagger Description.
+*/
+
+
+/* ========= *
+ *  Scripts  *
+ * ========= */
+
+/* Unused
+@1000 = ~Pour terminer votre tâche, Mae'Var doit mourir.  Vous ne pouvez plus faire marche arrière maintenant.~
+@1002 = ~Vous allez payer pour ça !~
+*/
+
+// balduraddb01.baf
+@1001 = ~Narlen Marchombre et ses voleurs ont déposé leur butin dans votre coffre.~
+
+// tsdrunk1.baf
+@1003 = ~Je suis nouveau en ville. Pourriez-vous me montrer le chemin jusqu'à votre appartement ?~
+@1004 = ~Et si je te montrais plutôt mon poing dans la figure ?~
+@1005 = ~Je ne vous ai pas déjà rencontré quelque part ?~
+@1006 = ~Oui, c'est pour ça que je n'y retourne plus.~
+@1007 = ~Alors, vous voulez aller chez moi ?~
+@1008 = ~Eh bien, je ne sais pas. Deux personnes peuvent-elles tenir sous un rocher ?~
+@1009 = ~Votre appartement ou le mien ?~
+@1010 = ~Les deux. Tu vas chez toi et je vais chez moi.~
+@1011 = ~Hé, bébé, quel est votre signe astrologique ?~
+@1012 = ~Ne pas Entrer.~
+@1013 = ~Comment aimez-vous vos œufs le matin ?~
+@1014 = ~Non fécondés !~
+@1015 = ~Je sais comment plaire aux femmes.~
+@1016 = ~Alors, merci de me laisser tranquille.~
+@1017 = ~Je veux être a vous entièrement.~
+@1018 = ~Désolé, je n'ai pas envie d'un minable.~ ~Désolé, je n'ai pas envie d'une minable.~
+@1019 = ~Je vois bien que je vous plais.~
+@1020 = ~Ohhhh. Tu as raison. Tu me plairais beaucoup si tu n'étais pas là.~
+@1021 = ~Si je pouvais vous voir nue, je mourrais heureux.~
+@1022 = ~Ouais, mais si je te voyais nue, je mourrais sans doute de rire.~
+@1023 = ~Hé poulette, ça vous dirait qu'on passe aux choses sérieuses, vous et moi ?~
+@1024 = ~Désolé, je ne sors qu'avec ceux de mon espèce...~ ~Désolé, je ne sors qu'avec celles de mon espèce...~
+@1025 = ~Votre corps est une œuvre d'art.~
+@1026 = ~Désolé, il n'y a pas de visite aujourd'hui.~
+@1027 = ~Je franchirais tous les obstacles pour vous.~
+@1028 = ~Super ! Commence par franchir ce mur avec ta tête.~
+@1029 = ~J'irais jusqu'au bout du monde pour vous.~
+@1030 = ~Oui, mais y resteras-tu ?~
+@1031 = ~Hey bébé. Que diriez-vous de sortir après votre travail ?~
+@1032 = ~Hmmm ? Tu es tellement pitoyable, c'est plutôt mignon.~
+@1033 = ~Vraiment ?~
+
+// tsgbase.baf
+@1034 = ~Et pourquoi pas un peu d'aide, hein ?~
+
+// tswench1.baf
+// ------------
+@1035 = ~Et voilà, mon ami.~ ~Et voilà, mon amie.~
+@1036 = ~Oooh ! Mes pauvres pieds me font mal !~
+
+/* Unused
+@100 = ~Scratchy~
+@128 = ~GB Guerrier :~
+@129 = ~GB Mage :~
+@130 = ~GB Clerc :~
+@131 = ~GB Clerc/Mage :~
+@132 = ~Ce script est approprié pour les guerriers, paladins, rôdeurs et voleurs.~
+@133 = ~Ce script est approprié pour les utilisateurs de magie (mono et multi-classés) ainsi que les bardes, mais pas pour les sorciers.~
+@134 = ~Ce script est approprié pour les clercs et les druides.~
+@135 = ~Ce script est approprié pour les clercs/mages multi-classés.~
+*/
+
+
+/* ============================================================================================================= *
+ *  Usability flags                                                                                              *
+ * ------------------------------------------------------------------------------------------------------------- *
+ * Note for translators: you will find usability flags REGEXP expressions in other items mods (Rolles, Ruad...)  *
+ * ============================================================================================================= */
+@9001 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement+\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
+//@9001 = ~[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~

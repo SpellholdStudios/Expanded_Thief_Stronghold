@@ -1,0 +1,22 @@
+// MAEGUY01 translation file
+@38  = ~Io... <CHARNAME>, posso...~
+@39  = ~Sì? Che cosa c'è Kamuzu?~
+@40  = ~Basta! Vattene pezzente puzzolente!~
+@41  = ~Io... avevo pensato di lasciare questo posto e non tornare indietro, ma... io sono ancora un Ladro Tenebroso! Io non sono privo di talenti. Perché pensi che Mae'var mi abbia tenuto in vita così a lungo? Io sono un Alchimista, da commercio, e posso fare molte pozioni per te e lo farei volentieri! Ti devo la vita e molto di più! Mi assumeresti?~
+@42  = ~Certo! Ti riaccolgo con piacere nei ranghi dei Ladri Tenebrosi.~
+@43  = ~Cosa?! E appesteresti il posto? Penso di no. Vattene, e sii grato che non ti rinfili nella tua cella!~
+@44  = ~Grazie! Grazie mio <LADYLORD>! Non te ne pentirai, lo prometto! Per favore, vieni a parlare con me al terzo piano quando avrai finito qui.~
+@45  = ~Kamuzu... il Pozionista?
+
+Sembra che il vecchio Kamuzu sia un talentuoso alchimista. Talentuoso abbastanza, perlomeno, perché Mae'Var lo tenesse in vita per tutto questo tempo. Ha chiesto di lavorare per me e ho accettato la sua offerta. Dovrei avere bisogno dei suoi servizi, posso trovarlo al terzo piano della gilda. Mi chiedo che cosa possa fare? Dovrò fargli presto visita.~
+@46  = ~No! Per favore no! Devo andar via!!~
+@47  = ~Sì... sì certo... Arrivederci! (Kamuzu scappa via velocemente.)~
+
+@48  = ~Salute <CHARNAME>. Ti sarò sempre grato, per quello che hai fatto per me. Sono pronto ad iniziare a lavorare se vuoi? Posso fare molte pozioni, tutte molto utili in particolare per i ladri, anche se temo che le materie prime siano costose.~
+@49  = ~Sì, vediamo cosa puoi fare.~
+@50  = ~Piacere mio! È bello lavorare di nuovo come un uomo libero!~
+@51  = ~Salute di nuovo, mio <LADYLORD>. Vuoi che faccia altre pozioni per te?~
+@53  = ~No, non in questo momento Kamuzu. Tranquillo.~
+@54  = ~Sempre pronto a servirti, mio <LADYLORD>...~
+@55  = ~Sei molto gentile. Io sarò qui ogni volta che avrai bisogno di me. Mi limiterò a tornare al mio giardinaggio...~
+@56  = ~Una perla per te, <GABBER>. Di che si tratta <PRO_LADYLORD> <CHARNAME>?~
