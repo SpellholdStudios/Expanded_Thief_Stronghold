@@ -1,0 +1,10 @@
+/* ======================================================= *
+ *  GB's Expanded Thief Stronghold: Installation messages  *
+ * ======================================================= */
+
+@1  = ~This component requires the Throne of Bhaal expansion.~
+@2  = ~Expanded Thief Stronghold~
+@3  = ~Enhanced Random Encounters (w/Kensai Ryu, ToB req.)~
+@4  = ~GB Scripts (player character scripts)~
+@5  = ~Disable the 'Improved Mae'Var' component (restore game default files)~
+

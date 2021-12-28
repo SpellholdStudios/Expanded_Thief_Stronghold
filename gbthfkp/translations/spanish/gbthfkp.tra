@@ -1,95 +1,123 @@
-// GB's Expanded Thief Stronghold, Español
-/* Install Messages */
-@1  = ~Requiere el Trono de Bhaal.~
-@2  = ~Expanded Thief Stronghold (Fortaleza de Ladrones Expandida)~
-@3  = ~Mejorar encuentros aleatorios. (w/Kensai Ryu, ToB req.)~
-@4  = ~GB Scripts (scripts de jugadores)~
-@5  = ~Inhabilite el componente de ' Mae'Var mejorado '~
+/* ============================================================== *
+ *  GB's Expanded Thief Stronghold: miscellaneous strref entries  *
+ * ============================================================== */
 
-/* Files with Strings */
-@100  = ~Scratchy~
-@101  = ~Cpt. Sterling~
-@102  = ~Lt. Betta~
-@103  = ~Llave de la Caja fuerte de <CHARNAME>~
-@104  = ~Esta es la llave a la caja fuerte del segundo nivel de la cofradía.  SÓLO con esta llave abrís la caja. Debo mantenerla segura.~
-@105  = ~Espada de Olidammara +4~
-@106  = ~Espada de Olidammara +4
-Se cree que Olidammara, El ladrón sonriente, le dio esta espada a uno de sus discípulos.  Desde entonces ha sido usada por muchos.
+/* =========== *
+ *  Creatures  *
+ * =========== */
+
+// Black Lily sound set
+@101 = ~¡Fuera! ¡Ahora! Tengo que contar.~ [BLACKL02] // same as #4799 but with another sound clip
+@102 = ~Será el día más negro que habréis visto. No tengo lo que queréis.~ [BLACKL01] // same as #4798 but with another sound clip
+@103 = ~¡Ouch!~ [BLACKL03]
+@104 = ~Uh... ungh!~ [BLACKL04]
+@105 = ~¡Ayuda! ¡Ayuda por favor!~
+
+@106 = ~Gruuk el peludo~
+@107 = ~Viejo Gritón~
+@108 = ~Cpt. Sterling~
+@109 = ~Lt. Betta~
+
+@111 = ~Myriza~
+@112 = ~Keltar~
+@113 = ~Genja~
+@114 = ~Gelt Foldum~
+@115 = ~Issa Kealn~
+@116 = ~Hawrath~
+
+@121 = ~Bert~
+@122 = ~Tom~
+@123 = ~Bill Huggins~
+@124 = ~Jancie~
+
+
+/* ======== *
+ *  Stores  *
+ * ======== */
+@201 = ~Pociones de Kamuzu~
+@202 = ~Joya de Lirio Negro~
+
+@211 = ~Brebaje de Briney~
+@212 = ~Cerveza Amarga Negra~
+@213 = ~Cerveza Oscura~
+@214 = ~Red Dragon Firewater~
+@215 = ~Old Winyards~
+
+
+/* ======= *
+ *  Items  *
+ * ======= */
+@301 = ~Llave de la Caja fuerte de <CHARNAME>~
+@302 = ~Esta es la llave a la caja fuerte del segundo nivel de la cofradía. SÓLO con esta llave abrís la caja. Debo mantenerla segura.~
+
+@303 = ~Garra del Gato~
+@304 = ~Garra del Gato
+La historia de esta daga elude todos los intentos de adivinación. Incluso el más potente de los hechizos sólo invoca un ratón pequeño y gris. El por qué de esto es un misterio para vos.
 
 CARACTERÍSTICAS:
 
-Habilidad Equipada: +1 al apuñalamiento.
-Habilidad de Combate: 15% chance de causar confusión con cada golpe (1 turno de duración, sin tirada de salvación).
-THA0: Bonificador +4
-Daño:  1D6 +4
-Tipo de Daño: punzante
-Peso: 2
-Factor de Velocidad: 0
-Talento Marcial: Espada Corta
-Tipo: a una mano
-Requiere: 3 Fuerza
+Aptitudes de combate:
+ 1 ataque adicional por asalto
 
-Usable Por: Ladrones~
-@107  = ~Garra del Gato~
-@108  = ~Garra del Gato
-La historia de esta daga elude todos los intentos de adivinación.  Incluso el más potente de los hechizos sólo invoca un ratón pequeño y gris. El por qué de esto es un misterio para vos.
+Daño: 1D4 +3
+GACO: bonifición +3
+Tipo de daño: Perforante
+Factor de velocidad: 0
+Talento marcial: Daga
+Tipo: A una mano
+Requisitos: Fuerza 3
 
-CARACTERÍSTICAS:
-
-Habilidad Equipada: da un ataque extra por turno.
-THACO: Bonificador +3
-Daño:  1D4 +3
-Tipo de Daño: punzante
 Peso: 0
-Factor de Velocidad: 0
-Talento Marcial: Daga
-Tipo: a una mano
-Require: 3 Fuerza
 
-Usable por: Ladrones~
-@109  = ~Pociones de Kamuzu~
-@110  = ~Joya de Lirio Negro~
-@111  = ~Myriza~
-@112  = ~Keltar~
-@113  = ~Genja~
-@114  = ~Gelt Foldum~
-@115  = ~Issa Kealn~
-@116  = ~Hawrath~
-@117  = ~Gruuk el peludo~
-@118  = ~Viejo Gritón~
-@119  = ~¡Idos ahora! Tengo cuentas que hacer.~ [BLACKL02]
-@120  = ~Será el día más negro que habréis visto. No tengo lo que queréis.~ [BLACKL01]
-@121  = ~¡Ouch!~ [BLACKL03]
-@122  = ~Uh...ungh!~ [BLACKL04]
-@123  = ~¡Ayuda! ¡Ayuda por favor!~
-@124  = #6745 // Espada Corta.
-@125  = #6747 // Descripción de la Espada Corta.
-@126  = #6343 // Daga.
-@127  = #6720 // Descripción de la Daga.
-@128  = ~GB Guerrero:~
-@129  = ~GB Mago:~
-@130  = ~GB Clérigo:~
-@131  = ~GB Clérigo/Mago:~
-@132  = ~Este script sirve para Guerreros, Paladines, Exploradores y Ladrones.~
-@133  = ~Este script sirve para quienes usan magia (simple y multi-clase) y bardos, pero no hechiceros.~
-@134  = ~Este script sirve para Clérigos y Druidas.~
-@135  = ~Este script sirve para Clérigo/Magos multiclase.~
-@136  = ~Brebaje de Briney~
-@137  = ~Cerveza Amarga Negra~
-@138  = ~Cerveza Oscura~
-@139  = ~Red Dragon Firewater~
-@140  = ~Old Winyards~
-@141  = ~Bert~
-@142  = ~Tom~
-@143  = ~Bill Huggins~
-@144  = ~Jancie~
-@145  = ~Aquí vais joven.~
-@146  = ~¡Oooh! ¡Mi pobre y dolorido pie!~
+Permitido a:
+ Ladrón~
 
-/* Script Strings */
+@305 = ~Espada de Olidammara +4~
+@306 = ~Espada de Olidammara +4
+Se cree que Olidammara, El ladrón sonriente, le dio esta espada a uno de sus discípulos. Desde entonces ha sido usada por muchos.
+
+CARACTERÍSTICAS:
+
+Aptitudes poseidas:
+ Multiplicador al Apuñalamiento: +1
+
+Aptitudes de combate:
+ 15% chance de causar confusión con cada golpe (1 turno de duración, sin tirada de salvación).
+
+Daño: 1D6 +4
+GACO: bonifición +4
+Tipo de daño: Perforante
+Factor de velocidad: 0
+Talento marcial: Espada Corta
+Tipo: A una mano
+Requisitos: Fuerza 3
+
+Peso: 2
+
+Permitido a:
+ Ladrón~
+
+/* USELESS as of v3.0.0 : hardcoded in itm.file
+@124 = #6745 // Espada Corta.
+@125 = #6747 // Descripción de la Espada Corta.
+@126 = #6343 // Daga.
+@127 = #6720 // Descripción de la Daga.
+*/
+
+
+/* ========= *
+ *  Scripts  *
+ * ========= */
+
+/* Unused
 @1000 = ~Para completar vuestra tarea, Mae'Var debe morir. Ahora no hay vuelta atrás.~
-@1001 = ~Narlen Camino Oscuro y sus compañeros han puesto un tesoro en vuestra caja fuerte.~
 @1002 = ~¡Pagaréis por esto!~
+*/
+
+// balduraddb01.baf
+@1001 = ~Narlen Camino Oscuro y sus compañeros han puesto un tesoro en vuestra caja fuerte.~
+
+// tsdrunk1.baf
 @1003 = ~Soy nuevo en la ciudad. ¿podríais darme direcciones a vuestra habitación?.~
 @1004 = ~¿Qué pensáis, me han dado la dirección de mi puño a vuestro rostro?.~
 @1005 = ~¿No os he visto en algún otro lugar antes?.~
@@ -110,7 +138,7 @@ Usable por: Ladrones~
 @1020 = ~Ohhhh. Estáis tan en lo cierto. Quiero que os larguéis.~
 @1021 = ~Si pudiera veros desnudo, moriría feliz.~
 @1022 = ~Sí, pero si yo os viera desnudo, probablemente moriría de risa.~
-@1031 = ~Hey cariño. ¿cómo os acopláis luego de vuestro cambio?.~
+@1023 = ~Hey polluelo, ¿qué tal vos y yo en los lugares oscuros más populares?.~
 @1024 = ~Lo siento, pero no doy citas fuera de mi especie.~
 @1025 = ~Vuestro cuerpo es como un templo.~
 @1026 = ~Lo siento, no hay servicios hoy.~
@@ -118,8 +146,27 @@ Usable por: Ladrones~
 @1028 = ~¡Bien!, empecemos con vuestra cabeza luego con el muro más cercano.~
 @1029 = ~Iría hasta el fin del mundo por vos.~
 @1030 = ~Sí, pero ¿permaneceríais allí?.~
-@1023 = ~Hey polluelo, ¿qué tal vos y yo en los lugares oscuros más populares?.~
+@1031 = ~Hey cariño. ¿cómo os acopláis luego de vuestro cambio?.~
 @1032 = ~¿Hmmm? sabéis, vos sois tan lamentable, de una manera linda.~
 @1033 = ~¿En serio?.~
+
+// tsgbase.baf
 @1034 = ~¿qué tal un poco de ayuda, eh?.~
+
+// tswench1.baf
+// ------------
+@1035 = ~Aquí vais joven.~
+@1036 = ~¡Oooh! ¡Mi pobre y dolorido pie!~
+
+/* Unused
+@100 = ~Scratchy~
+@128 = ~GB Guerrero:~
+@129 = ~GB Mago:~
+@130 = ~GB Clérigo:~
+@131 = ~GB Clérigo/Mago:~
+@132 = ~Este script sirve para Guerreros, Paladines, Exploradores y Ladrones.~
+@133 = ~Este script sirve para quienes usan magia (simple y multi-clase) y bardos, pero no hechiceros.~
+@134 = ~Este script sirve para Clérigos y Druidas.~
+@135 = ~Este script sirve para Clérigo/Magos multiclase.~
+*/
 
