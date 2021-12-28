@@ -155,22 +155,23 @@ In addition to the methods above for removing individual components, you can com
 ##### Version 3.0.0 &nbsp;(December , 2021)
 
 - Added *gbthfkp.ini* metadata file (including dynamic installation order syntax and global `LABELS`) to support AL|EN's "Project Infinity"
-- Replaced `AUTHOR` keyword with `SUPPORT`
+- Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added `README` command.
 - Added Immutability concept.
--- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
- 
+- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
+- Added component `DESIGNATED` number and "*ts_expanded_thief_stronghold_main*" `LABEL`.
 - Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
 - Added native BG2:EE and EET compatibility
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added `ADD_JOURNAL` entries.
-    - Removed items usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
+    - Removed items' usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided accurate sized NPC portraits for EE games.
 - Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Kumuzu his PPE portrait.
 - Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.
 - Script files: removed *OnCreation()* action from blocks that have a `LOCALS/GLOBAL` associated with them.
 - Spells installation: removed useless `SAY NAME2` patches.
-- Included BWP Fixpack fixes: Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
+- Included BWP Fixpack Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
 - Modernized area patching with homemade `GW_ALTER_AREA_ENTRANCE` and `GW_ALTER_AREA_REGION` WeiDU functions. 
 - <ins>Sword of Olidammara +4</ins> (ts5loot1.itm):
     - Fixed wrong effects probability (15 %, was 5%).
@@ -181,6 +182,7 @@ In addition to the methods above for removing individual components, you can com
 - Proofread English strrefs (Gwendolyne).
 - Added French translation (by JohnBob).
 - Added Italian translation (by ilot).
+- Rewrote and renamed readme file to *expanded_thief_stronghold-readme-english.html*, then moved it into new :file_folder: "*readme*" folder.
 - Moved useless files into new :file_folder: "*legacy*" folder, and removed :file_folder: "*backup*" folder.
 - Lower cased files.
 - Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
@@ -200,7 +202,7 @@ In addition to the methods above for removing individual components, you can com
 
 ##### Version 2.19 &nbsp;(November 08, 2009) - by Leomar
 
-- Added Russian translation by Aerie.ru + prowler.
+- Added Russian translation by Aerie.ru and prowler.
 - Updated WeiDU installer to v211.
 
 ## 
