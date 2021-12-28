@@ -1,4 +1,4 @@
-// gGuild stuff
+// Guild stuff
 // -----------
 IF
   Global("PGFailed","GLOBAL",1)
