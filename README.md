@@ -174,7 +174,7 @@ In addition to the methods above for removing individual components, you can com
     - Added `ADD_JOURNAL` entries.
     - Removed items' usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided accurate sized NPC portraits for EE games.
-- Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Kumuzu his PPE portrait.
+- Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Mae'Var and Kumuzu their PPE portraits.
 - Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.
 - Script files: removed *OnCreation()* action from blocks that have a `LOCALS/GLOBAL` associated with them.
 - Spells installation: removed useless `SAY NAME2` patches.
