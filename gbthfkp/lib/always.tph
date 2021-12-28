@@ -37,7 +37,7 @@ ACTION_IF !VARIABLE_IS_SET is_ee BEGIN // Always block must run only once per in
 	END
 
 	// Required because of non-standard BACKUP path
-	OUTER_TEXT_SPRINT MOD_FOLDER "gwthfkp"
+	OUTER_TEXT_SPRINT MOD_FOLDER "gbthfkp"
 
 	// Sets variables for the external locations
 	OUTER_TEXT_SPRINT ext_lang_loc EVAL "weidu_external/lang/%MOD_FOLDER%"
@@ -81,7 +81,7 @@ ACTION_IF !VARIABLE_IS_SET is_ee BEGIN // Always block must run only once per in
 		ACTION_IF is_ee BEGIN  // Do conversions (EE only)
 		
 			ACTION_DEFINE_ARRAY gb#noconvert BEGIN setup END
-			ACTION_DEFINE_ARRAY gb#reload BEGIN gwthfkp END
+			ACTION_DEFINE_ARRAY gb#reload BEGIN gbthfkp END
 			LAF HANDLE_CHARSETS 
 				INT_VAR infer_charsets  = 1
 				STR_VAR tra_path        = EVAL ~%MOD_FOLDER%/lang~
@@ -93,8 +93,6 @@ ACTION_IF !VARIABLE_IS_SET is_ee BEGIN // Always block must run only once per in
 			OUTER_TEXT_SPRINT gw_tra_loc EVAL "%ext_lang_loc%"
 
 		END
-
-	END // of ACTION_IF (!FILE_EXISTS "%marker_name%")
 
 	// TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version)
 	LOAD_TRA "%gw_tra_loc%/%LANGUAGE%/setup.tra" "%gw_tra_loc%/%LANGUAGE%/gwthfkp.tra"

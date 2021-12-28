@@ -107,7 +107,7 @@ DEFINE_PATCH_FUNCTION ~GW_ALTER_AREA_REGION~
           activate_x            = "-1"
           activate_y            = "-1"
   STR_VAR region_name           = ""     // required, at 0x00, used to match region
-          new region_name       = "same" // changes region_name; "same" means no change
+          new_region_name       = "same" // changes region_name; "same" means no change
           destination_area      = "same" // changes destination area at 0x38; "same" means no change
           entrance_name         = "same" // changes entrance name at 0x40; "same" means no change
           door_key              = "same" // legacy

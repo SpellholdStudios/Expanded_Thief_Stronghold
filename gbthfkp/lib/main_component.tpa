@@ -15,15 +15,15 @@ SILENT
 ACTION_IF NOT (is_trilo) BEGIN
 	ACTION_IF (DIRECTORY_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
 		LAF HANDLE_AUDIO
-			STR_VAR audio_path  = EVAL ~MOD_FOLDER/audio/%LANGUAGE%~
-			        oggdec_path = ~MOD_FOLDER/audio~
-			        sox_path    = ~MOD_FOLDER/audio~
+			STR_VAR audio_path  = EVAL ~%MOD_FOLDER%/audio/%LANGUAGE%~
+			        oggdec_path = EVAL ~%MOD_FOLDER%/audio~
+			        sox_path    = EVAL ~%MOD_FOLDER%/audio~
 		END
 	END ELSE BEGIN
 		LAF HANDLE_AUDIO
-			STR_VAR audio_path  = ~MOD_FOLDER/audio/english~
-			        oggdec_path = ~MOD_FOLDER/audio~
-			        sox_path    = ~MOD_FOLDER/audio~
+			STR_VAR audio_path  = EVAL ~%MOD_FOLDER%/audio/english~
+			        oggdec_path = EVAL ~%MOD_FOLDER%/audio~
+			        sox_path    = EVAL ~%MOD_FOLDER%/audio~
 		END
 	END
 END

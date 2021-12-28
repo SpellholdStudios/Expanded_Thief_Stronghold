@@ -1,7 +1,7 @@
 ![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/Expanded_Thief_Stronghold?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/Expanded_Thief_Stronghold?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Russian%20%7C%20Spanish&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Russian%20%7C%20Spanish&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
 
@@ -41,9 +41,16 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## <a name="intro" id="intro"></a>Overview
 
-This mod adds some further quests to the thief stronghold in BG2 and imports Narlen Darkwalk and Black Lilly from the BG1 Shadow Thieves to Amn.
+This mod expands the thief stronghold to make it more interesting by adding new quests and importing Narlen Darkwalk and Black Lilly from the Baldur's Gate Shadow Thieves guild into Athkatla.
 
-I've heard quite a few people complaining about the Thief Stronghold in BG2: some said that it is either dull, too short, annoying, or all three. Well, I like it. Along with the Mage Stronghold, it's my favorite stronghold in the game. I do agree however, that it could use some spicing up. That's where this 'mod' comes in - it expands quite a bit on the original stronghold, fixes some existing bugs and has a lot of (I hope) cute touches.
+<details><summary><ins>Original note from Gebhard Blucher</ins></summary>
+<p>
+
+###### I've heard quite a few people complaining about the Thief Stronghold in BG2: some said that it is either dull, too short, annoying, or all three. Well, I like it. Along with the Mage Stronghold, it's my favorite stronghold in the game. I do agree however, that it could use some spicing up.
+
+###### That's where this mod comes in - it expands quite a bit on the original stronghold, fixes some existing bugs and has a lot of (I hope) cute touches.
+</p>
+</details><br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
