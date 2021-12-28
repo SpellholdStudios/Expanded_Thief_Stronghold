@@ -3,11 +3,12 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Russian%20%7C%20Spanish&color=limegreen)
 
-![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII:ToB%20%7C%20BGT&color=dodgerblue)
+![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
 
 <div align="center"><h1></a>Expanded Thief Stronghold (WIP)</h1>
 
-<h3>A mod hosted at Spellhold Studios for Baldur's Gate II: ToB<h3>
+<h3>A mod hosted at Spellhold Studios for Baldur's Gate II: ToB (original and EE games),<br>
+Baldur's Gate Trilogy and EET<h3>
 
 </div><br>
 
@@ -23,14 +24,126 @@
 ![Maintenance](https://img.shields.io/static/v1?label=maintained%3F&message=yes&color=greenlight&style=plastic)
 ![GitHub contributors](https://img.shields.io/github/contributors/GwendolyneFreddy/Expanded_Thief_Stronghold?color=blueviolet&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/GwendolyneFreddy/Expanded_Thief_Stronghold?size=30&padding=5&bots=true)](https://badges.pufler.dev)
 
+## 
+
+## 
+
+<div align="center">
+<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#credits">Credits and Acknowledgements</a> &#8226; <a href="#versions">Version History</a></br>
+</div>
 
 <hr>
 
 
+## <a name="intro" id="intro"></a>Overview
+
+<div align="right"><a href="#top">Back to top</a></div>
 
 
 <hr>
 
+
+## <a name="compat" id="compat"></a>Compatibility
+
+#### Games supported
+
+This mod is designed to work on the following Infinity Engine games:
+
+- Baldur's Gate II: Enhanced Edition (BG2EE).
+- The original Baldur's Gate II (BG2, or just SoA) with the Throne of Bhaal (ToB) expansion. **Make sure you have Throne of Bhaal patched to version 26498.** Check the ReadMe files related to your patch in your game folder and the <a href="http://www.bioware.com/games/throne_bhaal/support/patches/">BioWare</a> website if necessary.
+- The conversion projects based on ToB: <a href="http://www.shsforums.net/forum/261-bgt-weidu">Baldur's Gate Trilogy (BGT)</a> and <a href="https://github.com/Gibberlings3/EET/releases">Enhanced Edition Trilogy</a> (EET).
+
+## 
+
+#### Other Mods Compatibility
+
+
+## 
+
+#### Installation Order
+
+>Original game players are strongly recommended to download and install the latest version of the <a href="https://www.gibberlings3.net/mods/fixes/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
+
+Here is the recommended installation order:
+- Please install Expanded Thief Stronghold after TobEx, BG2 Fixpack, and EET.
+- Please install Expanded Thief Stronghold before EET_End, and any final "biffing" routines.
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+
+<hr>
+
+
+## <a name="installation" id="installation"></a>Installation
+
+#### Notes
+
+*If you've previously installed the mod, remove it before extracting the new version. To do this, run __`setup-gbthfkp.exe`__, un-install all previously installed components and delete the :file_folder: __gbthfkp__ folder.*
+
+*When installing or un-installing, __do not close the DOS window__ by clicking on the __X__ button! Instead, press the __Enter__ key whenever instructed to do so.*
+
+*__Disable any antivirus__ or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.*
+
+## 
+
+#### Enhanced Editions Note
+
+The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old save games. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
+
+## 
+
+#### Windows
+
+Expanded Thief Stronghold for Windows is distributed as an extractable compressed archive and includes a WeiDU installer.
+
+Extract the contents of the mod archive into the folder of the game you wish to modify (*the folder which contains the "CHITIN.KEY" file*), using <a href="https://www.7-zip.org/download.html">7zip</a>, <a href="https://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be a :file_folder: gbthfkp folder and a setup-gbthfkp.exe file in your game folder. To install, simply double-click **`setup-gbthfkp.exe`** and follow the instructions on screen.
+
+Run **`setup-gbthfkp.exe`** in your game folder to reinstall, un-install or otherwise change the components settings.
+
+## 
+
+#### Mac OS
+
+Expanded Thief Stronghold for Mac OS is distributed is distributed in the same compressed archive and includes a WeiDU installer.
+
+First, extract the files from the archive into your game directory. On successful extraction, there should be a :file_folder: gbthfkp folder, setup-gbthfkp and setup-gbthfkp.command files in your game folder. To install, simply double-click **`setup-gbthfkp.command`** and follow the instructions on screen.
+
+Run **`setup-gbthfkp.command`** in your game folder to reinstall, un-install or otherwise change the components settings.
+
+## 
+
+#### Linux
+
+Expanded Thief Stronghold for Linux is distributed in the same compressed archive and does not include a WeiDU installer.
+
+Extract the contents of the mod to the folder of the game you wish to modify.
+
+Download the latest version of WeiDU for Linux from <a href="https://github.com/WeiDUorg/weidu/releases">WeiDU.org</a> and copy weidu and weinstall to `/usr/bin`. Following that, open a terminal, **`cd`** to your game installation directory, run tolower and answer 'Y' to both queries. You can avoid running the second option (linux.ini) if you've already ran it once in the same directory. To save time, the archive is already tolowered, so there's no need to run the first option (lowercasing file names) either if you've extracted only this mod since the last time you lowercased file names. If you're unsure, running tolower and choosing both options is the safe bet.
+
+To install, run **`weinstall setup-gbthfkp`** in your game folder. Then run **`wine bgmain.exe`** (or **`wine baldur.exe`** for EE games) and start playing.
+
+## 
+
+#### Note for Complete Un-installation
+
+In addition to the methods above for removing individual components, you can completely un-install the mod using **`setup-gbthfkp --uninstall`** at the command line to remove all components without wading through prompts.</br>
+<div align="right"><a href="#top">Back to top</a></div>
+
+
+<hr>
+
+
+## <a name="credits" id="credits"></a>Credits and Acknowledgements
+
+
+
+<div align="right"><a href="#top">Back to top</a></div>
+
+
+<hr>
+
+
+## <a name="versions" id="versions"></a>Version History
 
 ## <a name="versions" id="versions"></a>Versions History
 
@@ -49,7 +162,7 @@
     - Added `ADD_JOURNAL` entries.
     - Removed items usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided accurate sized NPC portraits for EE games.
-- Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones).
+- Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Kumuzu his PPE portrait.
 - Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.
 - Script files: removed *OnCreation()* action from blocks that have a `LOCALS/GLOBAL` associated with them.
 - Spells installation: removed useless `SAY NAME2` patches
