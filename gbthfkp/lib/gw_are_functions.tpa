@@ -1,0 +1,190 @@
+/* ======================================================================================================================================================= *
+ *   v 1.0.0  (27/12/2021)                                                                    Source : https://github.com/GwendolyneFreddy/GW_IE-Modding   *
+ *                                                                                                                                                         *
+ *                G W _ A R E _ F U N C T I O N S    L I B R A R Y    b y    G w e n d o l y n e    ( a k a    F r e d d y _ G w e n d o )                 *
+ *                                                                                                                                                         *
+ *      M I S C E L L A N E O U S    F U N C T I O N S    &    M A C R O S    T O    M A K E    A R E    F I L E S    P A T C H  I N G    E A S I E R      *
+ *                                                                                                                                                         *
+ * ======================================================================================================================================================= */
+
+/* ============================================================================================================== *
+ * LIST of FUNCTIONS:                                                                                             *
+ * ------------------                                                                                             *
+ *  - FUNCTION GW_ALTER_AREA_ENTRANCE      : Patches area party entrance points.                   => line #  20  *
+ *                                           Modifie les points d'entrée dans une carte.                          *
+ *  - FUNCTION GW_ALTER_AREA_REGION        : Modifie les régions (area triggers) dans une carte.   => line #  68  *
+ *                                           Patches area triggers.                                               *
+ * ============================================================================================================== */
+
+/* =============================================================================================================== *
+ *  FUNCTION GW_ALTER_AREA_ENTRANCE: Modifie les points d'entrée dans une carte.                                   *
+ *                                   Patches area party entrance points.                                           *
+ * --------------------------------------------------------------------------------------------------------------- *
+ *  This is a modified version of the ALTER_AREA_ENTRANCE WeiDU function that patches coordinates and orientation  *
+ *  of area party entrance points, and allows to modify its name.                                                  *
+ *  For all integer variables, a negative value results in no change to that field and the default value is -1.    *
+ *  The variable entrance_name is required.                                                                        *
+ * =============================================================================================================== */
+
+DEFINE_PATCH_FUNCTION ~GW_ALTER_AREA_ENTRANCE~
+  INT_VAR x_coord           = "-1"   // new x coordinate at 0x20; negative values mean no change
+          y_coord           = "-1"   // new y coordinate at 0x22; negative values mean no change
+          orient            = "-1"   // new orientation at 0x24; negative values mean no change
+  STR_VAR entrance_name     = ""     // required, needs to match ascii name at 0x00
+          new_entrance_name = "same" // new entrance_name; "same" means no change
+BEGIN
+
+	PATCH_IF NOT (STRING_LENGTH ~%entrance_name%~ == 0) BEGIN
+
+		SET entrance_found = 0
+
+		GET_OFFSET_ARRAY entrances_array ARE_V10_ENTRANCES // (0x68 4 0x6c 4 0 0 0x68)
+
+		PHP_EACH entrances_array AS index_entrance => entrance_offset BEGIN
+ 
+			PATCH_IF entrance_found == 0 BEGIN
+
+				READ_ASCII entrance_offset ent_name (32) NULL
+				PATCH_IF ("%ent_name%" STRING_COMPARE_CASE "%entrance_name%" = 0) BEGIN
+					SET entrance_found = 1
+					PATCH_IF (x_coord >= 0) BEGIN WRITE_SHORT (entrance_offset + 0x20) x_coord END
+					PATCH_IF (y_coord >= 0) BEGIN WRITE_SHORT (entrance_offset + 0x22) y_coord END
+					PATCH_IF (orient >= 0)  BEGIN WRITE_LONG  (entrance_offset + 0x24) orient END
+					PATCH_IF ("%new_entrance_name%" STRING_COMPARE_CASE "same") BEGIN
+						WRITE_ASCIIE entrance_offset ~%new_entrance_name%~ #32
+					END
+				END
+
+			END
+
+		END
+
+	END
+
+END
+
+
+/* ================================================================================================================ *
+ *  FUNCTION GW_ALTER_AREA_REGION: Modifie les régions (area triggers) dans une carte.                              *
+ *                                 Patches area triggers.                                                           *
+ * ---------------------------------------------------------------------------------------------------------------- *
+ *  This is a modified version of the ALTER_AREA_REGION WeiDU function that patches almost settings of a given      *
+ *  area trigger, and allows to modify its name.                                                                    *
+ *  For all integer variables except info_point, a negative value results in no change and the default value is -1. *
+ *  The variable info_point results in no change if it has the default value 99999999.                              *
+ *  In the case of flags, a value of 1 will set the flag and a value of 0 will unset it.                            *
+ *  For all string variables except region_name, the default value is the string "same", which results in no change *
+ *  to that field.                                                                                                  *
+ * ================================================================================================================ */
+
+DEFINE_PATCH_FUNCTION ~GW_ALTER_AREA_REGION~
+  INT_VAR type                  = "-1" // region type at 0x20; negative values mean no change
+          cursor                = "-1" // cursor type at 0x34; negative values mean no change
+          trap_detect           = "-1" // difficulty of trap detection at 0x68; negative values mean no change
+          trap_remove           = "-1" // difficulty of trap removal at 0x6a; negative values mean no change
+          trapped               = "-1" // is trapped? at 0x6c; negative values mean no change
+          detected              = "-1" // is detected? at 0x6e; negative values mean no change
+          // flag_ vars affect flags starting at 0x60; 0 means remove flag, 1 means add flag, -1 no change
+          flag_locked           = "-1" // locked, bit0
+          flag_resets           = "-1" // trap resets, bit1
+          flag_party_required   = "-1" // party required, bit2
+          flag_trap_detectable  = "-1" // trap can be detected, bit3
+          flag_trap_enemies     = "-1" // trap can be set off by enemies, bit4
+          flag_tutorial         = "-1" // tutorial trigger, bit5
+          flag_trap_npcs        = "-1" // trap can be set off by npcs, bit6
+          flag_silent           = "-1" // silent trigger, bit7
+          flag_deactivated      = "-1" // deactivated, bit8
+          flag_impassable_npc   = "-1" // can not be passed by npcs, bit9
+          flag_activation_point = "-1" // use activation point, bit10
+          flag_connect_to_door  = "-1" // connected to door, bit11
+          bounding_left         = "-1"
+          bounding_top          = "-1"
+          bounding_right        = "-1"
+          bounding_bottom       = "-1"
+          info_point            = 99999999
+          launch_x              = "-1"
+          launch_y              = "-1"
+          activate_x            = "-1"
+          activate_y            = "-1"
+  STR_VAR region_name           = ""     // required, at 0x00, used to match region
+          new region_name       = "same" // changes region_name; "same" means no change
+          destination_area      = "same" // changes destination area at 0x38; "same" means no change
+          entrance_name         = "same" // changes entrance name at 0x40; "same" means no change
+          door_key              = "same" // legacy
+          door_script           = "same" // legacy
+          region_key            = EVAL "%door_key%"   // resref of key to unlock at 0x74; "same" means no change
+          region_script         = EVAL"%door_script%" // resref of region script at 0x7c; "same" means no change
+BEGIN
+
+	READ_ASCII 0x04 version (4)
+	PATCH_IF ("%version%" STRING_COMPARE_CASE "V9.1" = 0) BEGIN // iwd2, are v9.1
+		READ_SHORT 0x6a trig_num
+		READ_LONG  0x6c trig_off
+	END ELSE BEGIN
+		READ_SHORT 0x5a trig_num
+		READ_LONG  0x5c trig_off
+	END
+
+	FOR (index = 0 ; index < trig_num ; ++index) BEGIN
+
+		READ_ASCII (trig_off + (index * 0xc4)) trig_name_file (32) NULL
+		PATCH_IF ("%region_name%" STRING_COMPARE_CASE  "%trig_name_file%" = 0) BEGIN
+			PATCH_IF (type >= 0)                 BEGIN WRITE_SHORT (trig_off + 0x20 + (index * 0xc4)) type        END
+			PATCH_IF (cursor >= 0)               BEGIN WRITE_LONG  (trig_off + 0x34 + (index * 0xc4)) cursor      END
+			PATCH_IF (trap_detect >= 0)          BEGIN WRITE_SHORT (trig_off + 0x68 + (index * 0xc4)) trap_detect END
+			PATCH_IF (trap_remove >= 0)          BEGIN WRITE_SHORT (trig_off + 0x6a + (index * 0xc4)) trap_remove END
+			PATCH_IF (trapped >= 0)              BEGIN WRITE_SHORT (trig_off + 0x6c + (index * 0xc4)) trapped     END
+			PATCH_IF (detected >= 0)             BEGIN WRITE_SHORT (trig_off + 0x6e + (index * 0xc4)) detected    END
+			PATCH_IF (flag_locked = 0)           BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b11111110) END
+			PATCH_IF (flag_resets = 0)           BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b11111101) END
+			PATCH_IF (flag_party_required = 0)   BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b11111011) END
+			PATCH_IF (flag_trap_detectable = 0)  BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b11110111) END
+			PATCH_IF (flag_trap_enemies = 0)     BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b11101111) END
+			PATCH_IF (flag_tutorial = 0)         BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b11011111) END
+			PATCH_IF (flag_trap_npcs = 0)        BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b10111111) END
+			PATCH_IF (flag_silent = 0)           BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BAND 0b01111111) END
+			PATCH_IF (flag_deactivated = 0)      BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BAND 0b11111110) END
+			PATCH_IF (flag_impassable_npc = 0)   BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BAND 0b11111101) END
+			PATCH_IF (flag_activation_point = 0) BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BAND 0b11111011) END
+			PATCH_IF (flag_connect_to_door = 0)  BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BAND 0b11110111) END
+			PATCH_IF (flag_locked = 1)           BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT0) END
+			PATCH_IF (flag_resets = 1)           BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT1) END
+			PATCH_IF (flag_party_required = 1)   BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT2) END
+			PATCH_IF (flag_trap_detectable = 1)  BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT3) END
+			PATCH_IF (flag_trap_enemies = 1)     BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT4) END
+			PATCH_IF (flag_tutorial = 1)         BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT5) END
+			PATCH_IF (flag_trap_npcs = 1)        BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT6) END
+			PATCH_IF (flag_silent = 1)           BEGIN WRITE_BYTE  (trig_off + 0x60 + (index * 0xc4)) (THIS BOR BIT7) END
+			PATCH_IF (flag_deactivated = 1)      BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BOR BIT0) END
+			PATCH_IF (flag_impassable_npc = 1)   BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BOR BIT1) END
+			PATCH_IF (flag_activation_point = 1) BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BOR BIT2) END
+			PATCH_IF (flag_connect_to_door = 1)  BEGIN WRITE_BYTE  (trig_off + 0x61 + (index * 0xc4)) (THIS BOR BIT3) END
+			PATCH_IF ("%new_region_name%" STRING_COMPARE_CASE "same") BEGIN
+				WRITE_ASCIIE (trig_off + (index * 0xc4)) "%new_region_name%" #32
+			END
+			PATCH_IF ("%destination_area%" STRING_COMPARE_CASE "same") BEGIN
+				WRITE_ASCIIE (trig_off + 0x38 + (index * 0xc4)) "%destination_area%" #8
+			END
+			PATCH_IF ("%entrance_name%" STRING_COMPARE_CASE "same") BEGIN
+				WRITE_ASCIIE (trig_off + 0x40 + (index * 0xc4)) "%entrance_name%" #32
+			END
+			PATCH_IF ("%region_key%" STRING_COMPARE_CASE "same") BEGIN
+				WRITE_ASCIIE (trig_off + 0x74 + (index * 0xc4)) "%region_key%" #8
+			END
+			PATCH_IF ("%region_script%" STRING_COMPARE_CASE "same") BEGIN
+				WRITE_ASCIIE (trig_off + 0x7c + (index * 0xc4)) "%region_script%" #8
+			END
+			PATCH_IF (bounding_left >= 0)     BEGIN WRITE_SHORT (trig_off + 0x22 + (index * 0xc4)) bounding_left   END
+			PATCH_IF (bounding_top >= 0)      BEGIN WRITE_SHORT (trig_off + 0x24 + (index * 0xc4)) bounding_top    END
+			PATCH_IF (bounding_right >= 0)    BEGIN WRITE_SHORT (trig_off + 0x26 + (index * 0xc4)) bounding_right  END
+			PATCH_IF (bounding_bottom >= 0)   BEGIN WRITE_SHORT (trig_off + 0x28 + (index * 0xc4)) bounding_bottom END
+			PATCH_IF (info_point != 99999999) BEGIN WRITE_LONG  (trig_off + 0x64 + (index * 0xc4)) info_point      END
+			PATCH_IF (launch_x >= 0)          BEGIN WRITE_SHORT (trig_off + 0x70 + (index * 0xc4)) launch_x        END
+			PATCH_IF (launch_y >= 0)          BEGIN WRITE_SHORT (trig_off + 0x72 + (index * 0xc4)) launch_y        END
+			PATCH_IF (activate_x >= 0)        BEGIN WRITE_SHORT (trig_off + 0x84 + (index * 0xc4)) activate_x      END
+			PATCH_IF (activate_y >= 0)        BEGIN WRITE_SHORT (trig_off + 0x86 + (index * 0xc4)) activate_y      END
+		END
+
+	END
+
+END

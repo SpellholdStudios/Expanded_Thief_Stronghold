@@ -1,0 +1,581 @@
+/* ===================================================================================================== *
+ *  v3.0.0                                                                                               *
+ *                                                                                                       *
+ *        E X P A N D E D    T H I E F    S T R O N G H O L D    ( m a i n    c o m p o n e n t )        *
+ *                                                                                                       *
+ * ===================================================================================================== */
+
+PRINT @21  // ~Installing portraits and sound sets...~
+SILENT
+
+// Loads macros and functions library dealing area patching
+INCLUDE ~%MOD_FOLDER%/lib/gw_are_functions.tpa~
+
+/* ======================== *
+ *  Installing audio files  *
+ * ======================== */
+
+ACTION_IF NOT (GAME_IS ~bgt eet~) BEGIN
+	ACTION_IF (DIRECTORY_EXISTS ~%MOD_FOLDER%/audio/%LANGUAGE%~) BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = EVAL ~MOD_FOLDER/audio/%LANGUAGE%~
+			        oggdec_path = ~MOD_FOLDER/audio~
+			        sox_path    = ~MOD_FOLDER/audio~
+		END
+	END ELSE BEGIN
+		LAF HANDLE_AUDIO
+			STR_VAR audio_path  = ~MOD_FOLDER/audio/english~
+			        oggdec_path = ~MOD_FOLDER/audio~
+			        sox_path    = ~MOD_FOLDER/audio~
+		END
+	END
+END
+
+COPY ~gbthfkp/portraits~ ~override~
+
+
+/* ====================== *
+ *  Installing dialogues  *
+ * ====================== */
+
+PRINT @22  // ~Installing dialogues...~
+SILENT
+
+// Pick Pockets
+COMPILE ~gbthfkp/dialogs/tspick01.d~
+
+// Guild
+COMPILE  ~gbthfkp/dialogs/tsgt01.d~
+COMPILE  ~gbthfkp/dialogs/tsgt02.d~
+COMPILE  ~gbthfkp/dialogs/tsgt03.d~
+COMPILE  ~gbthfkp/dialogs/tsgt04.d~
+COMPILE  ~gbthfkp/dialogs/tsgt05.d~
+COMPILE  ~gbthfkp/dialogs/tsgt06.d~
+COMPILE  ~gbthfkp/dialogs/tsgg01.d~
+COMPILE  ~gbthfkp/dialogs/tsglt1.d~
+COMPILE  ~gbthfkp/dialogs/tsglt2.d~
+COMPILE  ~gbthfkp/dialogs/tsgs1.d~
+COMPILE  ~gbthfkp/dialogs/tskamuzu.d~
+COMPILE  ~gbthfkp/dialogs/tslath01.d~
+COMPILE  ~gbthfkp/dialogs/tsdrunk1.d~
+COMPILE  ~gbthfkp/dialogs/tswench1.d~
+COMPILE  ~gbthfkp/dialogs/tsama1.d~
+
+//COMPILE  ~gbthfkp/dialogs/lt01minsctran.d~
+
+// Narlen Darkwalk
+COMPILE  ~gbthfkp/dialogs/tsnarlen.d~
+COMPILE  ~gbthfkp/dialogs/tsblackl.d~
+COMPILE  ~gbthfkp/dialogs/tsnbad1.d~
+COMPILE  ~gbthfkp/dialogs/tssmugb.d~
+COMPILE  ~gbthfkp/dialogs/tssmugf.d~
+COMPILE  ~gbthfkp/dialogs/tssmugm.d~
+
+// Guard House Assault
+COMPILE  ~gbthfkp/dialogs/ts5bad.d~
+COMPILE  ~gbthfkp/dialogs/ts5thf.d~
+
+
+/* ==================== *
+ *  Installing scripts  *
+ * ==================== */
+
+PRINT @23  // ~Installing scripts...~
+SILENT
+
+// Compiling new scripts.
+// ----------------------
+COMPILE /* Prison */
+        ~gbthfkp/scripts/tsgrd.baf~
+        ~gbthfkp/scripts/tsgrdgo.baf~
+        ~gbthfkp/scripts/tsgrdwiz.baf~
+        /* Guild */
+        ~gbthfkp/scripts/tsdrunk1.baf~
+        ~gbthfkp/scripts/tsgbase.baf~
+        ~gbthfkp/scripts/tsgthief.baf~
+        ~gbthfkp/scripts/tsguild.baf~
+        ~gbthfkp/scripts/tsjoster.baf~
+        ~gbthfkp/scripts/ts0321.baf~
+        ~gbthfkp/scripts/ts0322.baf~
+        ~gbthfkp/scripts/ts0323.baf~
+        ~gbthfkp/scripts/ts0324.baf~
+        ~gbthfkp/scripts/tsspy1.baf~
+        ~gbthfkp/scripts/tsshthdr.baf~
+        ~gbthfkp/scripts/tswench1.baf~
+        /* Narlen Darkwalk */
+        ~gbthfkp/scripts/tstaxbox.baf~
+        ~gbthfkp/scripts/tsncut1.baf~
+        ~gbthfkp/scripts/tssmug.baf~
+        ~gbthfkp/scripts/ts0010.baf~
+        ~gbthfkp/scripts/ts0011.baf~
+        /* Guard House Assault */
+        ~gbthfkp/scripts/ts0020.baf~
+        ~gbthfkp/scripts/ts5bad.baf~
+        ~gbthfkp/scripts/ts5base.baf~
+        ~gbthfkp/scripts/ts5thf.baf~
+        ~gbthfkp/scripts/ts5use.baf~
+        ~gbthfkp/scripts/ts5wiz.baf~
+        ~gbthfkp/scripts/tsdkgdgo.baf~
+        ~gbthfkp/scripts/tsspy2.baf~
+
+// Expend existing scripts
+// -----------------------
+
+// Add Pick Pockets 
+EXTEND_BOTTOM ~ar0020.bcs~ ~gbthfkp/scripts/ar0020addb01.baf~
+EXTEND_BOTTOM ~ar0300.bcs~ ~gbthfkp/scripts/ar0300addb01.baf~
+EXTEND_BOTTOM ~ar0400.bcs~ ~gbthfkp/scripts/ar0400addb01.baf~
+EXTEND_BOTTOM ~ar0500.bcs~ ~gbthfkp/scripts/ar0500addb01.baf~
+EXTEND_BOTTOM ~ar0700.bcs~ ~gbthfkp/scripts/ar0700addb01.baf~
+EXTEND_BOTTOM ~ar0800.bcs~ ~gbthfkp/scripts/ar0800addb01.baf~
+EXTEND_BOTTOM ~ar0900.bcs~ ~gbthfkp/scripts/ar0900addb01.baf~
+EXTEND_BOTTOM ~ar1000.bcs~ ~gbthfkp/scripts/ar1000addb01.baf~
+
+// Narlen
+EXTEND_BOTTOM ~baldur.bcs~ ~gbthfkp/scripts/balduraddb01.baf~
+
+// Guard House Assault
+EXTEND_BOTTOM ~ar0300.bcs~ ~gbthfkp/scripts/ar0300addb02.baf~
+
+// Prison
+EXTEND_BOTTOM ~ar1000.bcs~ ~gbthfkp/scripts/ar1000addb02.baf~
+EXTEND_TOP    ~ar1005.bcs~ ~gbthfkp/scripts/ar1005.baf~
+
+// Guard House Assault
+EXTEND_TOP    ~ar0332.bcs~ ~gbthfkp/scripts/ar0332.baf~
+EXTEND_TOP    ~ar0333.bcs~ ~gbthfkp/scripts/ar0333.baf~
+
+// Guard Captain
+EXTEND_TOP    ~docsol03.bcs~ ~gbthfkp/scripts/tsdkgdgo.baf~
+
+
+/* ====================== *
+ *  Installing creatures  *
+ * ====================== */
+
+PRINT @24  // ~Installing creatures...~
+SILENT
+
+/* -------------- *
+ *  Pick-Pockets  *
+ * -------------- */
+COPY ~gbthfkp/creatures/tspick1.cre~ ~override~ // Nobleman
+     ~gbthfkp/creatures/tspick2.cre~ ~override~ // Noblewoman
+     ~gbthfkp/creatures/tspick3.cre~ ~override~ // Commoner
+     ~gbthfkp/creatures/tspick4.cre~ ~override~ // Commoner (woman)
+     ~gbthfkp/creatures/tspick5.cre~ ~override~ // Sailor
+     ~gbthfkp/creatures/tspick6.cre~ ~override~ // Sailor (woman)
+     ~gbthfkp/creatures/tspick7.cre~ ~override~ // Peasant
+     ~gbthfkp/creatures/tspick8.cre~ ~override~ // id.
+ 
+
+/* ----------------- *
+ *  Narlen Darkwalk  *
+ * ----------------- */
+COPY ~gbthfkp/creatures/tsnarlen.cre~ ~override~ // Narlen Darkwalk
+     ~gbthfkp/creatures/tssmugb.cre~  ~override~ // Rogue
+     ~gbthfkp/creatures/tssmugf.cre~  ~override~ // Rogue (woman)
+     ~gbthfkp/creatures/tssmugm.cre~  ~override~ // Rogue
+
+// Black Lily
+COPY ~gbthfkp/creatures/tsblackl.cre~ ~override~
+	SAY INITIAL_MEETING @102 // ~'Twill be the darkest day ye never seen before I don't have what ye need.~ [BLACKL01]
+	SAY DAMAGE          @103 // ~Ouch!~ [BLACKL03]
+	SAY DYING           @104 // ~Uh... ungh! ~ [BLACKL04]
+	SAY HURT            @105 // ~Help me! Help me please!~
+	SAY SELECT_COMMON1  @101 // ~Off wit ye now! I've got counting to do.~ [BLACKL02]
+	SAY SELECT_COMMON2  @102
+
+// Gruuk the Hairy
+COPY ~gbthfkp/creatures/tsnbad1.cre~ ~override~
+	SAY NAME1 @106
+	SAY NAME2 @106
+
+// Old Yeller
+COPY ~gbthfkp/creatures/tsndoor.cre~ ~override~
+	SAY NAME1 @107
+	SAY NAME2 @107
+
+/* --------------------- *
+ *  Guard House Assault  *
+ * --------------------- */
+COPY ~gbthfkp/creatures/tsspy2.cre~  ~override~
+     ~gbthfkp/creatures/ts5grd.cre~  ~override~ // Barracks Guard
+     ~gbthfkp/creatures/ts5grd1.cre~ ~override~ // id.
+     ~gbthfkp/creatures/ts5grd2.cre~ ~override~ // id.
+     ~gbthfkp/creatures/ts5wiz.cre~  ~override~ // Militia Wizard
+
+// Cpt. Sterling
+COPY ~gbthfkp/creatures/ts5bad.cre~ ~override~
+	SAY NAME1 @108
+	SAY NAME2 @108
+
+// Lt. Betta
+COPY ~gbthfkp/creatures/ts5door.cre~ ~override~
+	SAY NAME1 @109
+	SAY NAME2 @109
+
+// Myriza
+COPY ~gbthfkp/creatures/ts5thf1.cre~ ~override~
+	SAY NAME1 @111
+	SAY NAME2 @111
+
+// Keltar
+COPY ~gbthfkp/creatures/ts5thf2.cre~ ~override~
+	SAY NAME1 @112
+	SAY NAME2 @112
+
+// Genja
+COPY ~gbthfkp/creatures/ts5thf3.cre~ ~override~
+	SAY NAME1 @113
+	SAY NAME2 @113
+
+// Gelt Foldum
+COPY ~gbthfkp/creatures/ts5thf4.cre~ ~override~
+	SAY NAME1 @114
+	SAY NAME2 @114
+
+// Issa Kealn
+COPY ~gbthfkp/creatures/ts5thf5.cre~ ~override~
+	SAY NAME1 @115
+	SAY NAME2 @115
+
+// Hawrath
+COPY ~gbthfkp/creatures/ts5thf6.cre~ ~override~
+	SAY NAME1 @116
+	SAY NAME2 @116
+
+// Amnian Soldier
+COPY_EXISTING ~docsol01.cre~ ~override~
+	WRITE_ASCII SCRIPT_CLASS ~tsdkGdGo~
+
+// Barracks Guard
+COPY_EXISTING ~docsol02.cre~ ~override~
+	WRITE_ASCII SCRIPT_CLASS ~tsdkGdGo~
+
+/* ------- *
+ *  Guild  *
+ * ------- */
+COPY ~gbthfkp/creatures/tsspy1.cre~ ~override~
+
+// Hanz
+COPY_EXISTING ~shth01.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsgthief~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsguild~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgt01~ #8
+
+// Goshan
+COPY_EXISTING ~shth02.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsgthief~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsguild~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgt02~ #8
+
+// Kretor
+COPY_EXISTING ~shth03.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsgthief~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsguild~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgt03~ #8
+
+// Morsa
+COPY_EXISTING ~shth04.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsgthief~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsguild~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgt04~ #8
+
+// Joster
+COPY_EXISTING ~shth05.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~TSJoster~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsguild~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgt05~ #8
+
+// Varia
+COPY_EXISTING ~shth06.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsgthief~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsguild~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgt06~ #8
+
+// Brannel
+COPY_EXISTING ~shthdr01.cre~    ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsguild~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tssHTHDR~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgG01~ #8
+
+// Jariel
+COPY_EXISTING ~shthlt01.cre~    ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsguild~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~None~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgLT1~ #8
+
+// Lathan
+COPY_EXISTING ~shthlt02.cre~    ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsguild~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~None~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgLT2~ #8
+
+// Rattell
+COPY_EXISTING ~shthstor.cre~    ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsguild~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~None~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~tsgBase~ #8
+	WRITE_ASCII DIALOG          ~tsgS1~ #8
+
+// Ama
+COPY_EXISTING ~shthass1.cre~ ~override/tsama1.cre~
+	WRITE_ASCII DIALOG ~tsama1~ #8
+
+// Bert
+COPY_EXISTING ~trtavp01.cre~ ~override/tsdrunk1.cre~
+	SAY NAME1 @121
+	SAY NAME2 @121
+	SAY INITIAL_MEETING #4970    // ~W-whoa... Why're the streets so wobbly?~ [DRUNK03]
+	SAY SELECT_COMMON1  #4967    // ~Ha ha ha ha ha! Haa ha ha! *burp* ...eh, sorry—'scuse me!~ [DRUNK01]
+	SAY SELECT_COMMON2  #4969    // ~Blaaarrrghghgh... *cough* Corn? When did I eats corn...?~ [DRUNK02]
+	SAY SELECT_COMMON3  #4970
+	SAY SELECT_COMMON4  #4972    // ~I needs some ale. *burp* Eh...~ [DRUNK04]
+	SAY PICKED_POCKET   #4972
+	WRITE_LONG  0x028   ~0x4101~ // Animation STATIC_PEASANT_MAN_STOOL
+	WRITE_ASCII SCRIPT_OVERRIDE ~None~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsdrunk1~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~None~ #8
+	WRITE_ASCII DEATHVAR        ~tsdrunk1~
+	WRITE_ASCII DIALOG          ~tsdrunk1~
+
+// Tom
+COPY_EXISTING ~trtavp01.cre~ ~override/tsdrunk2.cre~
+	SAY NAME1 @122
+	SAY NAME2 @122
+	SAY INITIAL_MEETING #4970
+	SAY SELECT_COMMON1  #4967
+	SAY SELECT_COMMON2  #4969
+	SAY SELECT_COMMON3  #4970
+	SAY SELECT_COMMON4  #4972
+	SAY PICKED_POCKET   #4972
+	WRITE_LONG  0x028   ~0x4101~ // Animation STATIC_PEASANT_MAN_STOOL
+	WRITE_ASCII SCRIPT_OVERRIDE ~None~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsdrunk1~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~None~ #8
+	WRITE_ASCII DEATHVAR        ~tsdrunk2~
+	WRITE_ASCII DIALOG          ~tsdrunk1~
+
+// Bill Huggins
+COPY_EXISTING ~trtavp01.cre~ ~override/tsdrunk3.cre~
+	SAY NAME1 @123
+	SAY NAME2 @123
+	SAY INITIAL_MEETING #4970
+	SAY SELECT_COMMON1  #4967
+	SAY SELECT_COMMON2  #4969
+	SAY SELECT_COMMON3  #4970
+	SAY SELECT_COMMON4  #4972
+	SAY PICKED_POCKET   #4972
+	WRITE_ASCII SCRIPT_OVERRIDE ~None~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tsdrunk1~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~None~ #8
+	WRITE_ASCII DEATHVAR        ~tsdrunk3~
+	WRITE_ASCII DIALOG          ~tsdrunk1~
+
+// Jancie
+COPY_EXISTING ~wench1.cre~ ~override/tswench1.cre~
+	SAY NAME1 @124
+	SAY NAME2 @124
+	WRITE_LONG  0x014 15       // XP when killed
+	WRITE_SHORT 0x024 7        // Current HP
+	WRITE_SHORT 0x026 7        // Maximum HP
+	WRITE_LONG  0x028 ~0xc610~ // Animation HARLOT_WOMAN
+	SAY INITIAL_MEETING #4866  // ~Why, ye're all such BIG men.~ [SWENC02]
+	SAY DAMAGE          #12550 // ~~ [SWENC05]
+	SAY DYING           #12551 // ~~ [SWENC06]
+	SAY SELECT_COMMON1  #4920  // ~Hey, sexy. Do you want to take a look at me diddeys?~ [FESTH01]
+	SAY SELECT_COMMON2  #4921  // ~Well, if ya wants to go strappin' with this nab, you'll first have to give up the socket money.~ [FESTH02]
+	SAY SELECT_COMMON3  #4922  // ~I'm a fine-lookin' strumpet, ain't I?~ [FESTH03]
+	SAY SELECT_COMMON4  #4923  // ~are ya interested in some thrills, darlin'?~ [FESTH04]
+	SAY PICKED_POCKET   #4868  // ~Please, seat yerselves wherever you wish.~ [SWENC04]
+	WRITE_BYTE  0x237 2        // Sex FEMALE
+	WRITE_BYTE  0x270 128      // Allegiance NEUTRAL
+	WRITE_BYTE  0x271 1        // General HUMANOID
+	WRITE_BYTE  0x272 1        // Race HUMAN
+	WRITE_BYTE  0x273 155      // Class INNOCENT
+	WRITE_BYTE  0x275 2        // Gender FEMALE
+	WRITE_ASCII SCRIPT_OVERRIDE ~tsguild~ #8
+	WRITE_ASCII SCRIPT_CLASS    ~tswench1~ #8
+	WRITE_ASCII SCRIPT_RACE     ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~None~ #8
+	WRITE_ASCII SCRIPT_DEFAULT  ~None~ #8
+	WRITE_ASCII DEATHVAR        ~tswench1~
+	WRITE_ASCII DIALOG          ~tswench1~
+
+/* -------- *
+ *  Prison  *
+ * -------- */
+COPY ~gbthfkp/creatures/tsgrd00.cre~ ~override~ // Amnian Centurion
+     ~gbthfkp/creatures/tsgrd01.cre~ ~override~ // Amnian Legionary
+     ~gbthfkp/creatures/tsgrd02.cre~ ~override~ // Cowled Enforcer
+
+// Prisoner
+COPY_EXISTING ~pris01.cre~      ~override~
+              ~pris02.cre~      ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~tsgrdGo~ #8
+
+// Prison Guard
+COPY_EXISTING ~prisong1.cre~    ~override~
+              ~prisong2.cre~    ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~tsgrdGo~ #8
+
+// Prison Keeper
+COPY_EXISTING ~prisonk1.cre~    ~override~
+	WRITE_ASCII SCRIPT_OVERRIDE ~None~ #8
+	WRITE_ASCII SCRIPT_GENERAL  ~tsgrdGo~ #8
+
+
+/* ============================= *
+ *  Installing Stores and Items  *
+ * ============================= */
+
+PRINT @25  // ~Installing items...~
+SILENT
+
+COPY ~gbthfkp/items/tspick.itm~ ~override~
+
+/* ------- *
+ *  Guild  *
+ * ------- */
+
+// Rattell the Fence
+COPY ~gbthfkp/stores/tsstore1.sto~ ~override~
+	//WRITE_ASCII 0x44 ~TSRumor1~
+	SAY 0xa4 @211 // ~Briney Grog~
+	SAY 0xb8 @212 // ~Stout Lager~
+	SAY 0xcc @213 // ~Black Sun Ale~
+	SAY 0xe0 @214 // ~Red Dragon Firewater~
+	SAY 0xf4 @215 // ~Old Winyards~
+
+// Kamuzu's Potions
+COPY ~gbthfkp/stores/tskamuzu.sto~ ~override~
+	SAY NAME2 @201
+
+// CHARNAME>'s Strongbox Key
+COPY ~gbthfkp/items/tskey.itm~ ~override~
+	SAY NAME1 @301
+	SAY NAME2 @301
+	SAY DESC @302
+
+/* ----------------- *
+ *  Narlen Darkwalk  *
+ * ----------------- */
+
+// Black Lily's Jewel Fence
+COPY ~gbthfkp/stores/tsblackl.sto~ ~override~
+	SAY NAME2 @202
+
+// Cat's Claw
+COPY ~gbthfkp/items/tsnloot1.itm~ ~override~
+	SAY NAME2 @303
+	SAY DESC  @304
+
+/* --------------------- *
+ *  Guard House Assault  *
+ * --------------------- */
+
+// Sword of Olidammara +4
+COPY ~gbthfkp/items/ts5loot1.itm~ ~override~
+	SAY NAME2 @305
+	SAY DESC @306
+
+
+/* ====================== *
+ *  Installing new areas  *
+ * ====================== */
+
+PRINT @26 // ~Installing areas...~
+SILENT
+
+COPY ~gbthfkp/areas~ ~override~
+
+/* ------- *
+ *  Guild  *
+ * ------- */
+
+// Thief Stronghold (Hideout)
+COPY_EXISTING ~ar0321.are~ ~override~
+	WRITE_ASCII 0x94  ~ts0321~ #8    // area script
+
+// Thief Stronghold (1st Floor)
+COPY_EXISTING ~ar0322.are~ ~override~
+	WRITE_ASCII 0x94  ~ts0322~ #8    // area script
+
+// Thief Stronghold (2nd Floor)
+COPY_EXISTING ~ar0323.are~ ~override~
+	WRITE_ASCII  0x94  ~TS0323~ #8    // area script
+	WRITE_LONG   0x7c8 ~0x00000001~   // 01 00 00 00 h (in Near Infinity)
+	WRITE_ASCII  0x7e8 ~TSTaxBox~
+	WRITE_ASCII  0x818 ~TSKey~
+
+// Thief Stronghold (3rd Floor)
+COPY_EXISTING ~ar0324.are~ ~override~
+	WRITE_ASCII 0x94  ~ts0324~ #8    // area script
+
+/* --------------------- *
+ *  Guard House Assault  *
+ * --------------------- */
+
+// Barracks in the Docks
+COPY_EXISTING ~ar0332.are~ ~override~
+	WRITE_ASCII 0x94 ~AR0332~ #8 // area script
+	// patch existing transitions
+	LPF ~ALTER_AREA_REGION~ INT_VAR flag_impassable_npc = 1 STR_VAR region_name = Tran0300 END // flags: NPC's can't pass (bit 9)
+	LPF ~GW_ALTER_AREA_REGION~ INT_VAR flag_impassable_npc = 1 STR_VAR region_name = Tran0333 new_region_name = TnTS0020 destination_area = TS0020 entrance_name = ExitTS0020a END
+	// change Exit0333 entrance name
+	LPF ~GW_ALTER_AREA_ENTRANCE~ STR_VAR entrance_name = "Exit0333" new_entrance_name = "ExitTS0020" END
+BUT_ONLY
+
+COPY_EXISTING ~ar0333.are~ ~override~ 
+	WRITE_ASCII 0x94 ~AR0333~ #8
+	// patch existing transitions
+	LPF ~ALTER_AREA_REGION~ INT_VAR flag_impassable_npc = 1 STR_VAR region_name = Tran0300 END // flags: NPC's can't pass (bit 9)
+	LPF ~GW_ALTER_AREA_REGION~ INT_VAR flag_impassable_npc = 1 STR_VAR region_name = Tran0332 new_region_name = TnTS0020 destination_area = TS0020 entrance_name = ExitTS0020b END
+	// change Exit0332 entrance name
+	LPF ~GW_ALTER_AREA_ENTRANCE~ STR_VAR entrance_name = "Exit0332" new_entrance_name = "ExitTS0020" END
+BUT_ONLY
+
+/* -------- *
+ *  Prison  *
+ * -------- */
+COPY_EXISTING ~ar1005.are~    ~override~
+	WRITE_ASCII 0x94 ~AR1005~ #8 // area script
+BUT_ONLY

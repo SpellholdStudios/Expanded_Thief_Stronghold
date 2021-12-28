@@ -36,13 +36,44 @@
 
 ##### Version 3.0.0 &nbsp;(, 2021)
 
+- Added *gbthfkp.ini* metadata file (including dynamic installation order syntax and global `LABELS`) to support AL|EN's "Project Infinity"
+- Replaced `AUTHOR` keyword with `SUPPORT`
+- Added Immutability concept.
+- 
+- 
+- Externalized tp2 code into *main_component.tpa* library for more comfortable readability and maintenance.
 - Commented code as much as possible.
+- Added `REQUIRE_PREDICATE` conditions to avoid installing the mod in inaccurate games.
+- Added native BG2:EE and EET compatibility
+    - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
+    - Added `ADD_JOURNAL` entries.
+    - Removed items usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
+    - 
+    - Provided accurate sized NPC portraits for EE games.
+- 
+- Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.
+- Script files: removed *OnCreation()* action from blocks that have a `LOCALS/GLOBAL` associated with them.
+- Spells installation: removed useless `SAY NAME2` patches
 - Included BWP Fixpack fixes: Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
-- Removed useless tra files.
+- Modernized area patching with homemade `GW_ALTER_AREA_ENTRANCE` and `GW_ALTER_AREA_REGION` WeiDU function. 
+- <ins>Sword of Olidammara +4</ins> (ts5loot1.itm):
+    - Fixes wrong effects probability (15 %, was 5%).
+    - Fixed wrong portrait icon (Confused, was Charmed).
+- Hard-coded general items names and descriptions whenever relevant.
+- Moved installation messages from *gwthfkp.tra* file *setup.tra* file for more comfortable readability.
+- Added foreign languages WeiDU prompts when available.
+- Proofread English strrefs (Gwendolyne).
+- Added French translation (by ).
+- Moved useless files into new :file_folder: "*legacy*" folder.
 - Lower cased files.
+- Included Linux and mac OS versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
+- Added OggDec to v1.9.7 and added sox v14.4.1 for mac.
+- Added archive libiconv-1.9.2-1-src.7z with iconv license info
+- Updated WeiDU installer to v249.
+- Uploaded mod to official Spellhold Studios GitHub mirror account
 
 ## 
-
+ 
 ##### Version 2.20 &nbsp;(April 1, 2010)
 
 - Wisp’s Unfinished Business compatibility fix.

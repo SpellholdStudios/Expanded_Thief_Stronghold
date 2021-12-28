@@ -2,11 +2,20 @@
  *  GB's Expanded Thief Stronghold: Installation messages  *
  * ======================================================= */
 
-@1  = ~Requiere el Trono de Bhaal.~
-@2  = ~Expanded Thief Stronghold (Fortaleza de Ladrones Expandida)~
+@0  = ~Expanded Thief Stronghold (Fortaleza de Ladrones Expandida)~
+/*@1  = ~Requiere el Trono de Bhaal.~
 @3  = ~Mejorar encuentros aleatorios. (w/Kensai Ryu, ToB req.)~
 @4  = ~GB Scripts (scripts de jugadores)~
-@5  = ~Inhabilite el componente de ' Mae'Var mejorado '~
+@5  = ~Inhabilite el componente de ' Mae'Var mejorado '~*/
+
+@11 = ~Este mod no esta disponible para tu juego.~
+
+@21 = ~Instalando de retratos y sound sets...~
+@22 = ~Instalando dialogos...~
+@23 = ~Instalando scripts...~
+@24 = ~Instalando criaturas...~
+@25 = ~Instalando objetos...~
+@26 = ~Instalando areas...~
 
 
 /* =============== *

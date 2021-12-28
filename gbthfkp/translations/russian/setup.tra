@@ -2,8 +2,17 @@
  *  GB's Expanded Thief Stronghold: Installation messages  *
  * ======================================================= */
 
-@1 = "Этот компонент требует установки аддона Трон Баала."
-@2 = "Расширенный воровской стронхолд"
-@3 = "Усиленные случайные встречи (автор Kensai Ryu, необходима установка Трона Баала)"
-@4 = "Общие скрипты поведения персонажей"
-@5 = "Запретить установку 'Улучшенного Мае'Вара (восстанавливает оригинальные параметры)"
+@0  = ~Expanded Thief Stronghold~
+/*@1  = ~This component requires the Throne of Bhaal expansion.~
+@3  = ~Enhanced Random Encounters (w/Kensai Ryu, ToB req.)~
+@4  = ~GB Scripts (player character scripts)~
+@5  = ~Disable the 'Improved Mae'Var' component (restore game default files)~*/
+
+@11 = ~You must have BG2, ToB, BGT, BG2:EE or EET installed to install this mod~
+
+@21 = ~Installing portraits and sound sets...~
+@22 = ~Installing dialogues...~
+@23 = ~Installing scripts...~
+@24 = ~Installing creatures...~
+@25 = ~Installing items...~
+@26 = ~Installing areas...~

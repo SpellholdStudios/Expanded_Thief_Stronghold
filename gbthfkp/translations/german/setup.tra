@@ -2,11 +2,20 @@
  *  GB's Expanded Thief Stronghold: Installation messages  *
  * ======================================================= */
 
-@1   = ~Diese Komponenten benoetigen die 'Thron des Bhaal' Erweiterung.~ 
-@2   = ~Erweiterte Diebesgilde~
+@0  = ~Erweiterte Diebesgilde~
+/*@1   = ~Diese Komponenten benoetigen die 'Thron des Bhaal' Erweiterung.~ 
 @3   = ~Erweiterte Zufallsbegegnungen (von Kensai Ryu, TdB benoetigt)~ 
 @4   = ~GB Skripte (Skripte fuer Spielercharaktere)~
-@5   = ~'Verbesserten Mae'Var' deaktivieren (stellt Originaldateien wieder her)~ 
+@5   = ~'Verbesserten Mae'Var' deaktivieren (stellt Originaldateien wieder her)~*/
+
+@11 = ~Diese Mod benoetigt BG2, TdB, BGT, BG2:EE oder EET.~
+
+@21 = ~Porträts und sound clips werden installiert...~
+@22 = ~Dialoge werden installiert...~
+@23 = ~Skripte werden installiert...~
+@24 = ~Kreature werden installiert...~
+@25 = ~Gegenstände werden installiert...~
+@26 = ~Area werden installiert...~
 
 
 /* =============== *
