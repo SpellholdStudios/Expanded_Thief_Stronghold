@@ -51,6 +51,9 @@ This mod expands the thief stronghold to make it more interesting by adding new 
 ###### That's where this mod comes in - it expands quite a bit on the original stronghold, fixes some existing bugs and has a lot of (I hope) cute touches.
 </p>
 </details><br>
+
+**Note:** This mod that was first released at <a href="http://blucher.fortunecity.com/bgstuff/bgstuff.html">Gebhard Blucher's web page</a>. As this site is no more available since many years, it was time to save it from disappearance. It is now hosted at Spellhold Studios with Gebhard Blucher's authorization.
+
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -70,6 +73,8 @@ This mod is designed to work on the following Infinity Engine games:
 ## 
 
 #### Other Mods Compatibility
+
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. However, we cannot test every single one. If you encounter any bugs, please <a href="http://www.shsforums.net/forum/127-mod-resurrections">report them on the mod forum!</a>.
 
 
 ## 
@@ -149,8 +154,49 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
+**Author:** Gebhard Blucher  
 
+## 
 
+#### Special Acknowledgements to:
+
+- <a href="http://www.spellholdstudios.net/">Spellhold Studios</a> team for hosting the mod (<a href="http://www.shsforums.net">Forums</a>).
+- Gebhard Blucher, where ever you are, for creating this mod!
+- Leomar, for having maintained it for so many years.
+- Native EE compatibility: Gwendolyne.
+- French translation: JohnBob.
+- Italian translation: ilot.
+- Russian translation: aerie.ru and prowler.
+- Spanish translation: Dufroise and Immortality of Clan DLAN.
+- German translation: Dyara.
+- AL|EN for his Infinity Auto Packager tool.
+- Everyone else from <a href="https://www.gibberlings3.net/forums/">The Gibberlings Three</a>, <a href="http://www.shsforums.net/">Spellhold Studios</a> forums, and the other Infinity Engine gaming and modding communities who offered their help and support.
+
+## 
+
+#### Programs/tools used in creation:
+
+- <a href="https://github.com/WeiDUorg/weidu/releases"><acronym title="Weimer Dialogue Utility">WeiDU</acronym></a>, by Wes Weimer, the bigg and Wisp.
+- <a href="https://github.com/Argent77/NearInfinity/releases">Near Infinity</a>, by Jon Olav Hauglid, FredSRichardson, and Argent77.
+- <a href="https://gibberlings3.github.io/iesdp/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a>, maintained by igi and lynx.
+- <a href="https://www.gibberlings3.net/mods/tools/dltcep/"><acronym title="Dragonlance Total Conversion Editor Pro">DLTCEP</acronym></a>, by Avenger..
+- <a href="http://notepad-plus-plus.org/">Notepad++</a>, by the Notepad++ team, Don Ho, and the spellcheck plug-in.
+- <a href="http://www.shsforums.net/files/file/1048-weidu-highlighter-for-notepad/">WeiDU Notepad++ Highlighters</a>, by Argent77.
+- <a href="https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it">Infinity Auto Packager</a>, by AL|EN.
+
+## 
+
+#### Copyrights Information
+
+###### Expanded Thief Stronghold is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Gebhard Blucher, based on material from the game Baldur's Gate and its expansion.
+###### All mod content is &copy;Gebhard Blucher.
+###### Baldur's Gate, Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
+
+###### This mod was created to be freely enjoyed by all Baldur's Gate players, and its content is free of rights. Please note that any and all redistribution and/or hosting of this mod is prohibited without permission from the authors.
+
+###### The modding community for the Infinity Engine has been going strong for more than 10 years now, and is the culmination of thousands of unpaid modding hours by fellow fans of the game. Modders produce their best work and players get the best, well-supported mods when we all work together.
+###### There are two big ways to upset this harmony. One is to claim someone else's work as your own. The second is to host and redistribute a mod without permission from the author.
+###### Be kind to your fellow players and modders. Don't do either.</br></br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -181,7 +227,7 @@ In addition to the methods above for removing individual components, you can com
 - Included BWP Fixpack Vlad's Timer problem fix <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581787">here</a> and <a href="http://www.shsforums.net/topic/47635-notes-oddities-and-possible-bugs-in-my-bwp-game-spoilers/?p=581804">here</a>.
 - Modernized area patching with homemade `GW_ALTER_AREA_ENTRANCE` and `GW_ALTER_AREA_REGION` WeiDU functions. 
 - <ins>Sword of Olidammara +4</ins> (ts5loot1.itm):
-    - Fixed wrong effects probability (15 %, was 5%).
+    - Fixed wrong effects probability (15%, was 5%).
     - Fixed wrong portrait icon (Confused, was Charmed).
 - Hard-coded general items names and descriptions whenever relevant.
 - Moved installation messages from *gwthfkp.tra* file *setup.tra* file for more comfortable readability.
