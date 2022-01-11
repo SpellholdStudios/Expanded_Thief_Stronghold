@@ -14,7 +14,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 
 **Author:** Gebhard Blucher  
-**Mod Forum:** <a href="">TODO</a><br><br>
+**Mod Forum:** <a href="http://www.shsforums.net/forum/127-mod-resurrections/">Spellhold Studios</a><br><br>
 
 ## 
 

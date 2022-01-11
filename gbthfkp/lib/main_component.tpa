@@ -271,7 +271,7 @@ COPY_EXISTING ~maeguy01.cre~    ~override~
 	WRITE_ASCII 0x34  ~TSMAEGUY~ #8  // small portrait
 
 // Mae'Var
-COPY_EXISTING ~maevar01.cre~    ~override~
+COPY_EXISTING ~maevar.cre~      ~override~
 	WRITE_ASCII 0x34  ~TSMAEVAR~ #8  // small portrait
 
 // Hanz
