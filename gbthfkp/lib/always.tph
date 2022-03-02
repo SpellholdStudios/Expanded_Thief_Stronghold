@@ -95,6 +95,6 @@ ACTION_IF !VARIABLE_IS_SET is_ee BEGIN // Always block must run only once per in
 		END
 
 	// TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version)
-	LOAD_TRA "%gw_tra_loc%/%LANGUAGE%/setup.tra" "%gw_tra_loc%/%LANGUAGE%/gwthfkp.tra"
+	LOAD_TRA "%gw_tra_loc%/%LANGUAGE%/setup.tra" "%gw_tra_loc%/%LANGUAGE%/gbthfkp.tra"
 
 END	// of ACTION_IF !VARIABLE_IS_SET is_ee BEGIN
