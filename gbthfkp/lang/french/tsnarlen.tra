@@ -1,13 +1,13 @@
 // TSNARLEN translation file
-@1   = ~Hep, vous là-bas ! C'est une chance que j'vous ai repéré ! On était pas très loin de la ville, les gars, Lily et moi quand une bande d'flibustiers nous sont tombés d'sus à côté de la fabrique de rhum.~ ~Hep, vous là-bas ! C'est une chance que j'vous ai repérée ! On était pas très loin de la ville, les gars, Lily et moi quand une bande d'flibustiers nous sont tombés d'sus à côté de la fabrique de rhum.~
-@2   = ~Des orques, j'dirais, avec des airs de bourreaux. La moitié des hommes tchatchent avec le diable, Lily et les autres sont ficelés comme des sauciflards et à leur merci. Moi, j'ai pris la tangente avec une âme damnée sur les talons.~
+@1   = ~Hep, vous là-bas ! C'est une chance que j'vous ai repéré ! On était pas très loin de la ville, les gars, Lis et moi quand une bande d'flibustiers nous sont tombés d'sus à côté de la fabrique de rhum.~ ~Hep, vous là-bas ! C'est une chance que j'vous ai repérée ! On était pas très loin de la ville, les gars, Lis et moi quand une bande d'flibustiers nous sont tombés d'sus à côté de la fabrique de rhum.~
+@2   = ~Des orques, j'dirais, avec des airs de bourreaux. La moitié des hommes tchatchent avec le diable, Lis et les autres sont ficelés comme des sauciflards et à leur merci. Moi, j'ai pris la tangente avec une âme damnée sur les talons.~
 @3   = ~Maintenant, j'pense qu'avec votre aide, ont pourrait rend' visite à ceux qu'ont garroté nos p'tits et les 'scamoter avant qu'ils soient tout amochés. Vous en dites quoi ? Prêt à vous mouiller ?~ ~Maintenant, j'pense qu'avec votre aide, ont pourrait rend' visite à ceux qu'ont garroté nos p'tits et les 'scamoter avant qu'ils soient tout amochés. Vous en dites quoi ? Prête à vous mouiller ?~
 @4   = ~Ouais ! On va libérer les nôtres et réduire ces forbans au silence avant qu'ils ouvrent leurs mirettes.~
 @5   = ~Vous êtes une sale fripouille, Narlen, et je vais enfoncer mon couteau profondément dans votre panse et vous faire cracher votre argot jusqu'en enfer. Dégainez votre épée, imbécile !~
 @6   = ~Bon r'um alors ! On se retrouve aux portes de la ville dès que v's avez mis vos bottes !~
 @7   = ~Sauvez Lis Noir et les voleurs de la Porte de Baldur
 
-Les Vvoleurs de la Porte de Baldur ont été pris en embuscade par des bandits orques ! Narlen Marchombre a eu du mal à s'en sortir vivant, et Lis Noir et les autres sont retenus captifs dans le repaire des orques. Je dois retrouver Narlen ce soir, avant minuit, près des Portes de la ville. Beaucoup de voleurs ont déjà péri et, si nous n'agissons pas rapidement, il sera trop tard pour empêcher Lis Noir et sa bande de finir dans une marmite orque !~
+Les voleurs de la Porte de Baldur ont été pris en embuscade par des bandits orques ! Narlen Marchombre a eu du mal à s'en sortir vivant, et Lis Noir et les autres sont retenus captifs dans le repaire des orques. Je dois retrouver Narlen ce soir, avant minuit, près des Portes de la ville. Beaucoup de voleurs ont déjà péri et, si nous n'agissons pas rapidement, il sera trop tard pour empêcher Lis Noir et sa bande de finir dans une marmite orque !~
 @8   = ~Quoi ? Alor' c'est comme ça, hein ? Je ne me laisserais pas tordre le coup sans rien faire !~
 @9   = ~Narlen Marchombre - Une sale fripouille!
 
@@ -16,13 +16,13 @@ Cet imbécile de Narlen Marchombre, a eu le culot de me demander de l'aide. J'ai 
 @11  = ~Oui. Allons-y.~
 @12  = ~Pas tout de suite. J'ai besoin de plus temps pour me préparer.~
 @13  = ~Par ici, <CHARNAME>.~
-@14  = ~Traînez pas trop, sinon Lily et la bande seront sûrement rôtis au p'tit matin.~
+@14  = ~Traînez pas trop, sinon Lis et la bande seront sûrement rôtis au p'tit matin.~
 @15  = ~Nous y sommes. Ne vous éloignez pas. Les bougres sont un peu plus au nord.~
 @16  = ~Par là, <CHARNAME>. La planque de ces charognes est dans cette grotte.~
 @17  = ~Ça, c'est fait, et plutôt bien fait ! On pleurera les disparus quand on s'ra posés au foyer. On se verra au deuxième étage de la guilde, <CHARNAME>.~
-@18  = ~Ça, c'est fait, mais c'est bien triste pour Lily. Elle va me manquer, ça c'est sûr. On pleurera les disparus quand on s'ra posés au foyer. On se verra au deuxième étage de la guilde, <CHARNAME>.~
+@18  = ~Ça, c'est fait, mais c'est bien triste pour Lis. Elle va me manquer, ça c'est sûr. On pleurera les disparus quand on s'ra posés au foyer. On se verra au deuxième étage de la guilde, <CHARNAME>.~
 @19  = ~Maintenant, <CHARNAME>, avec la bande, on va continuer nos p'tites affaires. Vérifie ton coffre tous les cinq jours environ.~
-@20  = ~Les Voleurs de la Porte de Baldur
+@20  = ~Les voleurs de la Porte de Baldur
 
 Narlen et les voleurs de la Porte de Baldur vont rapporter un sacré butin, c'est certain. Je dois vérifier le coffre au deuxième étage de la guilde tous les cinq jours environ pour récupérer ma part. Ça sera comme passer à la banque, comme on dit. Je suis sûr que Narlen et sa bande compléteront bien mon équipe.~
 @21  = ~À vot' service, <CHARNAME>. De quoi avez-vous besoin ?~
@@ -30,7 +30,7 @@ Narlen et les voleurs de la Porte de Baldur vont rapporter un sacré butin, c'est
 @23  = ~Tout le butin que les gars récupèrent, on le planque dans le coffre. Il est dans votre bureau, à cet étage.~
 @24  = ~À vot' service, <CHARNAME>. De quoi avez-vous besoin ?~
 @25  = ~J'ai égaré la clé de mon coffre. Vous en avez une copie ?~
-@26  = ~Nan. On peut y déposer des objets, mais vous seul pouvez accéder au contenu. Même not' meilleure crocheteur ne pourrait pas l'ouvrir.~ ~Nan. On peut y déposer des objets, mais vous seule pouvez accéder au contenu. Même not' meilleure crocheteur ne pourrait pas l'ouvrir.~
+@26  = ~Nan. On peut y déposer des objets, mais vous seul pouvez accéder au contenu. Même not' meilleur crocheteur ne pourrait pas l'ouvrir.~ ~Nan. On peut y déposer des objets, mais vous seule pouvez accéder au contenu. Même not' meilleur crocheteur ne pourrait pas l'ouvrir.~
 @27  = ~Tout ce qu'on peut faire, c'est détruire le coffre et en faire fabriquer un autre. Mais ça vous coûtera un bras.~
 @28  = ~Combien ?~
 @29  = ~Cinq mille pièces d'or, environ. Une rançon de roi, ça c'est sûr. Vous voulez qu'on l'fasse ?~

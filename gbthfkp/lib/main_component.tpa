@@ -28,6 +28,11 @@ ACTION_IF NOT (is_trilo) BEGIN
 	END
 END
 
+
+/* ====================== *
+ *  Installing portraits  *
+ * ====================== */
+
 COPY ~gbthfkp/portraits%ee_file%~ ~override~
 
 
