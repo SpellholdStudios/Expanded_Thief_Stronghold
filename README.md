@@ -205,7 +205,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="versions" id="versions"></a>Version History
 
-##### Version 3.0.0 &nbsp;(December , 2021)
+##### Version 3.0.0 &nbsp;(March 2, 2022)
 
 - Added *gbthfkp.ini* metadata file (including dynamic installation order syntax and global `LABELS`) to support AL|EN's "Project Infinity"
 - Replaced `AUTHOR` keyword with `SUPPORT`.
@@ -292,17 +292,17 @@ In addition to the methods above for removing individual components, you can com
 
 ##### Version 2.14 &nbsp;(July 28, 2006)
 
-- If you want the old Improved Mae'Var, it can be found in the /_debug/impmaevar.rar archive; just extract the files into the override.
+- If you want the old "*Improved Mae'Var*" component, it can be found in the /_debug/impmaevar.rar archive; just extract the files into the override.
 - Also, added a few banters, and tweaked (reduced) the environnemental chat in the tavern front of the guild. Some other minor changes.
 
 ## 
 
 ##### Version 2.13 &nbsp;(July 26, 2006): Some significant changes.
 
-- After much deliberation and some discussion, I've decided to remove the "Improved Mae'Var" component of the mod completely. If you want him, it is still out there in Westly Weimer's Tactics mod (in pretty much the same form as when I sent him off to Wes). Increasing the difficulty of the game is not part of this mod.
+- After much deliberation and some discussion, I've decided to remove the "*Improved Mae'Var*" component of the mod completely. If you want him, it is still out there in Westly Weimer's Tactics mod (in pretty much the same form as when I sent him off to Wes). Increasing the difficulty of the game is not part of this mod.
 - Another change is that you may now enter the Dock Barracks before the assault on the guild house. I had originally cut that area off until the assault to prevent some possible exploits, but I've decided that it doesn't matter. Besides, as SixOfSpades told me, it's nice to go in there and talk to the guards when you aren't on the quest. This mod is about expanding the content of the game, not removing access to content (no matter how thin that content may be).
 - The storefront is now a proper tavern, a real "front" for the illegal activities within. Rattell now has drinks for sale (I highly recommend tasting the Old Winyards wine, myself), and there are a few patrons inside getting drunk, as well as saucy tavern wench! Brannel (the guard who used to be outside the guild) is now located inside. He serves as a bouncer keeping people out of the back rooms.
-- Every half a tenday the chance that your thieves will be arrested is recalculated, based on the difficulty of the tasks assigned to them. Previously I had carried over a scripting (quirk? error? inconsistency?) made by Bioware that allowed thieves to operate with impunity, no matter how outrageous your demands, as long as you didn't change their activities. Now there is always a chance each week that your thieves will be caught by the law, unless you assign them to be inactive (in which case they are doing nothing but cooling their heels, and so risk no chance of getting arrested).
+- Every half a ten-day the chance that your thieves will be arrested is recalculated, based on the difficulty of the tasks assigned to them. Previously I had carried over a scripting (quirk? error? inconsistency?) made by Bioware that allowed thieves to operate with impunity, no matter how outrageous your demands, as long as you didn't change their activities. Now there is always a chance each week that your thieves will be caught by the law, unless you assign them to be inactive (in which case they are doing nothing but cooling their heels, and so risk no chance of getting arrested).
 - On a more technical note, I've made further changes to the .tp2 and other files in the mod package. Most changes were made with an eye to improving "friendliness" with other mods. (Though *some* small amount of destructive patching remains in place in regards to the few NPCs and areas comprising the stronghold experience. This is a conscious decision on my part, as obviously changes within the guild are quite extensive and many are vital to the proper functioning of this mod.) However, unless you install another mod making changes to the actual guild and its NPCs, there should be no problems. (Note that this only makes sense as two mods trying to do similar things logically won't work together despite the virtues of WeiDU without some coordination between the mod makers.)
 - Also I've cleaned up quite a few of the .tra and .d files to make them easier to read, and the changes to them more apparent. Lastly this version has the usual tweaks and buglet fixes, etc., etc.
 
@@ -331,7 +331,7 @@ In addition to the methods above for removing individual components, you can com
 
 ##### Version 2.9 &nbsp;(July 20, 2006)
 
-- Disabled the "Random Encounters" and the "Remove Improved Mae'Var" components. The random encounters may return, but right now I find them to be too annoyingly frequent. As for Mae'var, I like his "improveness" and feel the component to remove him is unneeded.
+- Disabled the "*Random Encounters*" and the "*Remove Improved Mae'Var*" components. The random encounters may return, but right now I find them to be too annoyingly frequent. As for Mae'var, I like his "improveness" and feel the component to remove him is unneeded.
 - Also some minor tweakage and buglet fixes:
   - Fixed a problem with the area outside of the orc being flagged as a random encounter (no save) area.
   - Tweaked a few lines of dialogue.
@@ -343,13 +343,13 @@ In addition to the methods above for removing individual components, you can com
 
 ##### Version 2.8
 
-- Fixed a minor translation error (missing string with the new 'remove improved Mae'Var' component. Thanks again Dyara! (I translated the Spanish entry myself, and it probably shows. :-)
+- Fixed a minor translation error (missing string with the new '*remove improved Mae'Var*' component. Thanks again Dyara! (I translated the Spanish entry myself, and it probably shows. :-)
 
 ## 
 
 ##### Version 2.7
 
-- New install-time option to disable the Improved Mae'Var component of this mod.
+- New install-time option to disable the '*Improved Mae'Var*' component of this mod.
 
 ## 
 
