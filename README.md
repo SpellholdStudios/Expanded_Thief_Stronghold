@@ -1,11 +1,11 @@
-![Latest Release](https://img.shields.io/github/v/release/GwendolyneFreddy/Expanded_Thief_Stronghold?include_prereleases&color=darkred)<a name="top" id="top"> </a>
-![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/GwendolyneFreddy/Expanded_Thief_Stronghold?color=gold)
+![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Expanded_Thief_Stronghold?include_prereleases&color=darkred)<a name="top" id="top"> </a>
+![GitHub (Pre-)Release Date](https://img.shields.io/github/release-date-pre/SpellholdStudios/Expanded_Thief_Stronghold?color=gold)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macOS%20%7C%20linux%20%7C%20Project%20Infinity&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Russian%20%7C%20Spanish&color=limegreen)
 
 ![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BGII%20%7C%20BGT%20%7C%20BG2%3AEE%20%7C%20EET&color=dodgerblue)
 
-<div align="center"><h1></a>Expanded Thief Stronghold (WIP)</h1>
+<div align="center"><h1></a>Expanded Thief Stronghold</h1>
 
 <h3>A mod hosted at Spellhold Studios for Baldur's Gate II: ToB (original and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
@@ -18,11 +18,11 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## 
 
-[![Created Badge](https://badges.pufler.dev/created/GwendolyneFreddy/Expanded_Thief_Stronghold?style=plastic)](https://badges.pufler.dev)
-![GitHub repo size](https://img.shields.io/github/repo-size/GwendolyneFreddy/Expanded_Thief_Stronghold?style=plastic)
-[![Visits Badge](https://badges.pufler.dev/visits/GwendolyneFreddy/Expanded_Thief_Stronghold?color=cyan&style=plastic)](https://badges.pufler.dev) 
+[![Created Badge](https://badges.pufler.dev/created/SpellholdStudios/Expanded_Thief_Stronghold?style=plastic)](https://badges.pufler.dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/SpellholdStudios/Expanded_Thief_Stronghold?style=plastic)
+[![Visits Badge](https://badges.pufler.dev/visits/SpellholdStudios/Expanded_Thief_Stronghold?color=cyan&style=plastic)](https://badges.pufler.dev) 
 ![Maintenance](https://img.shields.io/static/v1?label=maintained%3F&message=yes&color=greenlight&style=plastic)
-![GitHub contributors](https://img.shields.io/github/contributors/GwendolyneFreddy/Expanded_Thief_Stronghold?color=blueviolet&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/GwendolyneFreddy/Expanded_Thief_Stronghold?size=30&padding=5&bots=true)](https://badges.pufler.dev)
+![GitHub contributors](https://img.shields.io/github/contributors/SpellholdStudios/Expanded_Thief_Stronghold?color=blueviolet&style=plastic) [![Contributors Display](https://badges.pufler.dev/contributors/SpellholdStudios/Expanded_Thief_Stronghold?size=30&padding=5&bots=true)](https://badges.pufler.dev)
 
 ## 
 
@@ -42,6 +42,9 @@ Baldur's Gate Trilogy and EET<h3>
 ## <a name="intro" id="intro"></a>Overview
 
 This mod expands the thief stronghold to make it more interesting by adding new quests and importing Narlen Darkwalk and Black Lilly from the Baldur's Gate Shadow Thieves guild into Athkatla.
+
+<div align="center"><img src="gbthfkp/readme/images/gbthfkp.png" title="Expanded Thief Stronghold portraits : Black Lily, Narlen Darkwalk, Kamuzu and Mae'Var"></div><br>
+
 
 <details><summary><ins>Original note from Gebhard Blucher</ins></summary>
 <p>
@@ -218,7 +221,7 @@ In addition to the methods above for removing individual components, you can com
 - Added native BG2:EE and EET compatibility
     - Added WeiDU's built-in `HANDLE_CHARSETS` function to convert string entries for EE games.
     - Added `ADD_JOURNAL` entries.
-    - Removed items' usability restriction flags in items descriptions for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
+    - Restored items' usability restriction flags in descriptions for original games and removed them for EE games with `GW_UPDATE_ITM_DESCRIPTION_TO_EE` WeiDU function.
     - Provided accurate sized NPC portraits for EE games.
 - Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Mae'Var and Kumuzu their PPE portraits.
 - Replaced .wav sound clips with .ogg files, rewrote their installation procedure with WeiDU's built-in `HANDLE_AUDIO` function, and provided localized missing sound clips only when needed.

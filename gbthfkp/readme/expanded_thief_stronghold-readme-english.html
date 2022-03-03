@@ -12,6 +12,103 @@
 	
 	<link href="images/shsweb.ico" rel="icon" type="image/bmp" />
 
+	<style>
+	/* ---------------- *
+	 *  Portraits Animated Frame  *
+	 * ---------------- */
+	.portraits {
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		width:436px; height:174px;
+		color: #781808;
+		text-decoration: none;
+		transition: 4s all;
+		overflow: hidden;
+	}
+
+	.portraits span {
+		position: absolute;
+		display: block;
+	}
+
+	.portraits span:nth-child(1) {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(90deg,transparent,#781808);
+		animation: animate1 4s linear infinite;
+	}
+
+	@keyframes animate1 {
+		0% {
+			left: -100%;
+		}
+		50%,100% {
+			left: 100%;
+		}
+	}
+
+	.portraits span:nth-child(2) {
+		top: -100%;
+		right: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(180deg,transparent,#781808);
+		animation: animate2 4s linear infinite;
+		animation-delay: 1s;
+	}
+
+	@keyframes animate2 {
+		0% {
+			top: -100%;
+		}
+		50%,100% {
+			top: 100%;
+		}
+	}
+
+	.portraits span:nth-child(3) {
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(270deg,transparent,#781808);
+		animation: animate3 4s linear infinite;
+		animation-delay: 2s;
+	}
+
+	@keyframes animate3 {
+		0% {
+			right: -100%;
+		}
+		50%,100% {
+			right: 100%;
+		}
+	}
+
+	.portraits span:nth-child(4) {
+		bottom: -100%;
+		left: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(360deg,transparent,#781808);
+		animation: animate4 4s linear infinite;
+		animation-delay: 3s;
+	}
+
+	@keyframes animate4 {
+		0%{
+			bottom: -100%;
+		}
+		50%,100%{
+			bottom: 100%;
+		}
+	}
+	
+	</style>
+
   </head>
 
   <body>
@@ -49,9 +146,19 @@
 
 		<h2>Overview</h2><br>
 
-		  <p style="margin-top:2%;">
+		<p style="margin-top:2%;">
 			This mod expands the thief stronghold to make it more interesting by adding new quests and importing Narlen Darkwalk and Black Lilly from the Baldur's Gate Shadow Thieves guild into Athkatla.
-		  </p>
+		</p>
+
+		<div style="display: flex; flex-flow: row wrap; margin-top:1%; justify-content: space-evenly; align-items: center;">
+			<div style="margin-top:10px;" class="portraits" >
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<img src="images/gbthfkp.png" title="Expanded Thief Stronghold portraits : Black Lily, Narlen Darkwalk, Kamuzu and Mae'Var" />
+			</div>
+		</div>
 
 		<div style="margin: 10px auto;width: 90%; border-style: solid; border-width: 1px; border-color: #781808; margin-top: 32px; padding: 6px;">
 			<div class="quotetitle">
@@ -328,7 +435,7 @@
 			  <ul>
 				<li style="margin-left:-6%; margin-right:-6%;">Added <acronym title="Weimer Dialogue Utility">WeiDU</acronym>'s built-in <span class="tp2" style="color: purple;">HANDLE_CHARSETS</span> function to convert string entries for EE games.</li>
 				<li style="margin-left:-6%; margin-right:-6%;">Added <span class="tp2" style="color: green;">ADD_JOURNAL</span> function.</li>
-				<li style="margin-left:-6%; margin-right:-6%;">Removed items' usability restriction flags in items descriptions for EE games with <span class="tp2" style="color: #C00040;">GW_UPDATE_ITM_DESCRIPTION_TO_EE</span> <acronym title="Weimer Dialogue Utility">WeiDU</acronym> function.</li>
+				<li style="margin-left:-6%; margin-right:-6%;">Restored items' usability restriction flags in descriptions for original games and removed them for EE games with <span class="tp2" style="color: #C00040;">GW_UPDATE_ITM_DESCRIPTION_TO_EE</span> <acronym title="Weimer Dialogue Utility">WeiDU</acronym> function.</li>
 				<li style="margin-left:-6%; margin-right:-6%;">Provided accurate sized NPC portraits for EE games.</li>
 			  </ul>
 			<li>Replaced old portraits with PPE ones to insure compatibility with EE games (it was impossible to resize the original ones), and gave Mae'Var and Kumuzu their PPE portraits.</li>
