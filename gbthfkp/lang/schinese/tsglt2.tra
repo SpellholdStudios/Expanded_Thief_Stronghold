@@ -1,3 +1,3 @@
 // SHTHLT02 translation file
-@1   = ~祝您有美好的一天。如果我拒绝与您交谈，您能理解吗？我只与会长<CHARNAME>讨论业务。~ [LATHAN08] // almost the same as #34145
-@18  = ~你好，<CHARNAME>，我应该和你谈谈目前公会事务的状况。出了些事情，我认为这需要你的关注。~ [LATHAN07]
+@1   = "ף�������õ�һ�졣����Ҿܾ�������̸��������������ֻ��᳤<CHARNAME>����ҵ��" [LATHAN08] // almost the same as #34145
+@18  = "��ã�<CHARNAME>����Ӧ�ú���̸̸Ŀǰ���������״��������Щ���飬����Ϊ����Ҫ��Ĺ�ע��" [LATHAN07]
