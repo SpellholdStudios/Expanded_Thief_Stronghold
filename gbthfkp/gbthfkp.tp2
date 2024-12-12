@@ -45,6 +45,10 @@ LANGUAGE ~Italiano (traduzione di ilot)~
          ~gbthfkp/lang/italian/setup.tra~
          ~gbthfkp/lang/italian/gbthfkp.tra~
 
+LANGUAGE ~Simplified Chinese (translation: Lewis Liu)~
+         ~schinese~
+         ~gbthfkp/lang/schinese/setup.tra~
+         ~gbthfkp/lang/schinese/gbthfkp.tra~
 
 /* ============================================= *
  *  Expanded Thief Stronghold  (main component)  *

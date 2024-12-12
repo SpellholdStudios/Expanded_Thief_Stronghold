@@ -1,0 +1,18 @@
+/* ======================================================= *
+ *  GB's Expanded Thief Stronghold: Installation messages  *
+ * ======================================================= */
+
+@0  = ~盗贼据点扩展~
+/*@1  = ~This component requires the Throne of Bhaal expansion.~
+@3  = ~Enhanced Random Encounters (w/Kensai Ryu, ToB req.)~
+@4  = ~GB Scripts (player character scripts)~
+@5  = ~Disable the 'Improved Mae'Var' component (restore game default files)~*/
+
+@11 = ~你只能在BG2、ToB、BGT、BG2:EE或EET安装这个mod。~
+
+@21 = ~安装头像和声音集……~
+@22 = ~安装对话……~
+@23 = ~安装脚本……~
+@24 = ~安装生物……~
+@25 = ~安装物品……~
+@26 = ~安装区域……~
